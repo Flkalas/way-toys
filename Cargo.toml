@@ -1,5 +1,5 @@
 [workspace]
-members = ["crates/waytoys-core"]
+members = ["crates/waytoys-core", "crates/waytoys-overlay"]
 resolver = "3"
 
 [workspace.package]

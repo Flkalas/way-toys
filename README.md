@@ -24,3 +24,5 @@ cargo clippy --workspace --all-targets -- -D warnings
 ```
 
 Cargo 워크스페이스는 현재 공통 라이브러리 골격만 포함합니다. UI 및 Wayland 시스템 라이브러리는 구현 방식을 검증한 뒤 추가합니다. `Cargo.lock`은 저장소에서 관리하고 빌드 산출물 `target/`은 제외합니다.
+
+오버레이 프로토타입의 실행 방법과 검증 결과는 [Wayland 오버레이 기술 검증](docs/overlay-poc.ko.md)을 참고하세요.

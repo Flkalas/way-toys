@@ -92,7 +92,7 @@ GPU 메모리는 PSS에 포함되는 전체 비용이라고 가정하지 않는�
 | 선택 모드·취소 | 통과: 첫 출력 드래그 좌표 및 Esc |
 | 출력 변경·반복 종료 | 미검증 |
 | 실제 Wayland 세션 | 미검증 |
-| 혼합 배율 | 미검증 |
+| 혼합 배율 | 중첩 KWin에서 선택 실패 재현; 실제 Wayland 로그인은 미검증 |
 | CPU PSS / GPU 메모리 | 최종 앱 선택 모드 3,696 KiB 한 차례 / 미측정; KWin은 접근 거부 |
 
 ## XRDP 중첩 KWin의 혼합 배율 시각 검증
@@ -112,3 +112,76 @@ GPU 메모리는 PSS에 포함되는 전체 비용이라고 가정하지 않는�
 2026-10-30 `DISPLAY=:0`, KDE X11, `loginctl`의 `Remote=no`인 로컬 세션에서 같은 격리 중첩 KWin과 `xdotool` 합성 드래그를 다시 실행했다. 첫 출력 800×600·100%, 둘째 출력 600×400에서 (150,100)→(450,300)을 드래그했다. 둘째 출력이 100%면 `output=1 x=150 y=100 width=300 height=200`이었고, 150%면 `output=0 x=633.33203125 y=66.6640625 width=165.66796875 height=133.3359375`로 잘못 선택되었다. 두 창은 서로 떨어져 있었으며, 혼합 배율 시각 캡처는 위에 보존한 XRDP 실험 이미지와 각각 바이트 단위로 같았다.
 
 이 결과는 앞선 현상이 XRDP 세션에서만 나타나는 것은 아님을 보여준다. 다만 양쪽 모두 X11 위의 중첩 KWin과 합성 입력이므로 물리 Wayland 로그인이나 실제 마우스에서도 발생한다는 뜻은 아니며, 문제가 KWin, 입력 주입 또는 클라이언트 중 어디에서 발생하는지 아직 구분하지 못했다.
+
+
+## 과거 대화의 실험 명령과 결과
+
+이 절은 2026-10-29~30 대화 및 당시 남은 로컬 스크립트·로그를 정리한 것이다. XRDP 실험의 원본 임시 스크립트와 로그는 보존되지 않았으므로 재현 명령의 세부 사항은 로컬 X11 실험의 원본에 근거한다. 다음 기록은 Waytoys 선택 오버레이 실험이며 Flameshot 캡처 이미지를 재현한 실험이 아니다.
+
+### 공통 조건과 정확한 입력
+
+- Debian 13, KWin 6.3.6, Rust 디버그 빌드 `waytoys-overlay --select`; 구현 기준 커밋 `3e9dbcd`, 로컬 시험 당시 `f28c06f`.
+- 호스트는 X11이고, 독립 `dbus-run-session` 안에서 임시 `XDG_RUNTIME_DIR`, `XDG_CONFIG_HOME`, `XDG_CACHE_HOME`, `XDG_DATA_HOME`을 사용했다. `kscreen-doctor` 호출에는 반드시 **별도 세션의** `WAYLAND_DISPLAY`, `XDG_SESSION_TYPE=wayland`, `QT_QPA_PLATFORM=wayland`가 적용되어야 한다. 호스트 세션의 디스플레이 설정에 실행해서는 안 된다.
+- 중첩 컴포지터 시작 명령:
+
+```sh
+kwin_wayland --x11-display "$DISPLAY" --socket waytoys-local \
+  --width 800 --height 600 --output-count 2 \
+  --no-lockscreen --no-global-shortcuts --no-kactivities
+```
+
+- 같은 격리 세션에서 첫 출력은 100%, 둘째는 비교에 따라 100% 또는 150%로 지정했다.
+
+```sh
+kscreen-doctor output.X11-0.scale.1 output.X11-1.scale.1     # 대조군
+kscreen-doctor output.X11-0.scale.1 output.X11-1.scale.1.5   # 혼합 배율
+```
+
+- 당시 `wmctrl -lp`에서 중첩 KWin PID에 해당하는 첫 번째·두 번째 X11 창 ID를 찾아 `first`, `second`에 넣었다. 첫 출력은 800×600, 둘째는 창을 600×400으로 조정했다. X11 창 위치는 겹치지 않도록 옮겼다.
+
+```sh
+xdotool windowsize "$second" 600 400
+xdotool windowmove "$first" 700 200
+xdotool windowmove "$second" 1600 200
+kscreen-doctor -o
+./target/debug/waytoys-overlay --select
+```
+
+- 오버레이는 별도 프로세스로 실행하고, 둘째 창의 **X11 창 기준 좌표** `(150,100)`에서 `(450,300)`으로 합성 드래그했다. 버튼을 놓기 전 각 중첩 창의 이미지를 캡처했다. `import`는 ImageMagick 도구다.
+
+```sh
+xdotool windowactivate --sync "$second" mousemove --window "$second" 150 100 \
+  mousedown 1 mousemove --sync --window "$second" 450 300 sleep 1
+import -window "$first" first.png
+import -window "$second" second.png
+xdotool mouseup 1
+```
+
+위 명령을 별도 터미널에서 무작정 순서대로 실행하면 격리된 D-Bus·Wayland 환경 변수나 창 ID가 전달되지 않는다. 자동 재현은 아래 스크립트 절차를 사용한다. 스크립트는 마우스 포인터와 창 포커스를 실제로 움직이므로 테스트 중에는 호스트 입력을 사용하지 않는다.
+
+### 대화 순서대로 결과
+
+1. **초기 중첩 테스트 (2026-10-29):** 각각 640×480인 두 출력을 생성했다. Wayland registry에서 `zwlr_layer_shell_v1` v5와 `wl_output` v4 두 개가 관측됐다. 첫 출력에서 `(100,120)`→`(300,260)` 드래그 시 `output=0 x=100 y=120 width=200 height=140`; 별도 실행에서 `Esc` 취소를 확인했다. 표시 모드의 실제 입력 통과, 출력 추가·제거, 물리 Wayland 세션은 확인하지 않았다. 이 프로브와 실행 스크립트의 원본은 현재 보존되지 않았다.
+2. **메모리:** 중첩 출력 두 개의 디버그 빌드에서 초기 표시 모드 PSS 2,960 KiB, 이후 선택 모드 PSS 3,696 KiB를 각각 한 차례 기록했다. 빌드·모드가 달라 직접 비교할 수 없고, `smaps_rollup` 접근 거부로 KWin PSS는 측정하지 못했다. GPU와 종료 전후는 미측정이다.
+3. **XRDP X11 혼합 배율 (2026-10-29):** 800×600·100%와 600×400·150% 출력의 둘째 창에 합성 드래그했을 때 첫 화면 오른쪽에 테두리가 나타났다. 로그 `output=0 x=633.33203125 y=66.6640625 width=165.66796875 height=133.3359375`. 둘 다 100%인 대조군은 `output=1 x=150 y=100 width=300 height=200`. 둘째 창을 호스트에서 200픽셀 옮겨도 150% 결과는 같았다. 실제 캡처는 이 문서의 위 그림이다.
+4. **로컬 X11 재시험 (2026-10-30):** `DISPLAY=:0`, `Remote=no`. 물리 화면 배치는 DP-1-1 3600×2400+0+1440, DP-1-2 2560×1440+668+0이었다. 위의 동일 배율 및 혼합 배율 실험에서 XRDP와 동일한 로그를 얻었다. `wmctrl -lpG`의 중첩 창 실제 위치는 첫 창 `701,228 800×600`, 둘째 `1601,228 600×400`; 장식과 창 관리자에 따라 달라질 수 있다. 150%일 때 `kscreen-doctor`는 둘째 화면 물리 600×400, 논리 400×267, 배율 1.5를 보고했고 Waytoys는 정수 배율 2, 버퍼 800×534를 기록했다. 혼합 배율 PNG는 XRDP 캡처와 SHA-256이 같았다.
+
+**해석의 한계:** xdotool 합성 입력과 중첩 KWin의 X11 백엔드가 포함된다. 입력이 실제 둘째 출력으로 올바르게 전달됐는지 독립적인 증거가 없으므로 KWin 자체나 Waytoys의 버그로 단정할 수 없다. 로컬 시험 재현도 물리 Wayland 로그인 세션 검증을 대신하지 않는다. 실험 세션의 창 제목, 출력 이름, 위치, 해상도와 배율, 앱 로그를 함께 보존하고, 사용 중인 KWin·Qt·배포판·코드 버전을 기록해야 한다.
+
+### 저장소 재현 스크립트 (2026-10-31 재검증)
+
+현재 사용 가능한 X11 데스크톱에서 저장소 루트 기준 아래 명령을 각각 실행한다. `cargo`, `git`, `dbus-run-session`, `kwin_wayland`, `kscreen-doctor`, `wmctrl`, `xdotool`, ImageMagick `import`가 필요하다. 명령은 KWin 두 창과 오버레이를 띄우고 실제 포커스와 포인터를 조작한다. 창이 가려지지 않는 충분한 화면 공간이 필요하다.
+
+```sh
+scripts/reproduce-nested-overlay.sh equal
+scripts/reproduce-nested-overlay.sh mixed
+```
+
+각 명령은 실행 시작 시 임시 결과 디렉터리를 출력한다. 선택적으로 두 번째 인수에 결과 디렉터리를 지정할 수 있다. `environment.log`에는 Git HEAD·수정 상태·DISPLAY·KWin 버전, `outputs.log`에는 출력 설정, `windows.log`에는 X11 창 위치·크기, `overlay.log`에는 선택 좌표, `first.png`와 `second.png`에는 드래그 중 화면이 기록된다. `kwin.log`와 `scale.log`도 남는다. 디렉터리는 실험 종료 후 보존되며, 로그에 개인 환경 정보가 포함될 수 있으므로 공유 전에 확인한다.
+
+- `equal`: 두 출력 100%; 예상 관찰 `selection output=1 x=150 y=100 width=300 height=200`.
+- `mixed`: 둘째 출력 150%; 과거 관찰 `selection output=0 x=633.33203125 y=66.6640625 width=165.66796875 height=133.3359375`.
+
+스크립트의 성공 종료는 선택 로그가 수집됐다는 뜻이다. 관찰이 과거와 같은지, 두 번째 입력이 실제 둘째 Wayland 출력에 전달됐는지는 결과를 직접 비교해야 한다. 출력명·크기가 기대와 다르거나 선택 이벤트가 없으면 `INCONCLUSIVE`로 종료한다. 특히 기존 실험과 같이 `wmctrl` 창 열거 순서로 첫째·둘째를 추정하므로 이 순서와 출력 이름의 대응이 모든 시스템에서 보장되지는 않는다. 접근 가능한 X11 `DISPLAY`/`XAUTHORITY`가 필요하며 활성 세션과 다른 값이면 실패한다.
+
+2026-10-31 KWin 6.3.6, XRDP X11 `DISPLAY=:10`에서 최종 스크립트를 두 모드로 실행했다. `equal`은 위 정상 좌표, `mixed`는 위의 잘못된 출력·좌표를 다시 기록했다. 임시 결과는 각각 `/tmp/waytoys-repro-equal.PDTOeX`, `/tmp/waytoys-repro-mixed.xiVdiG`에 남았다. 두 시험에서 코드의 Git HEAD 표기는 각각 `2bd4416`, `f28c06f`였고 UI 코드 자체는 과거 구현과 같았으며 문서·스크립트에 미커밋 변경이 있었다. XRDP 격리 시험이므로 물리 Wayland 세션과 Flameshot 동작은 여전히 미검증이다.

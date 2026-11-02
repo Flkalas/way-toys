@@ -1,0 +1,4 @@
+Oct 31 05:04:53 waytoys-kde systemd[725]: Started waytoys-settings-22-invalid.service - [systemd-run] /home/debian/projects/way-toys/target/debug/waytoys-zones-settings --config-dir /home/debian/waytoys-test-results/settings-22/invalid.
+Oct 31 05:05:01 waytoys-kde systemd[725]: Stopping waytoys-settings-22-invalid.service - [systemd-run] /home/debian/projects/way-toys/target/debug/waytoys-zones-settings --config-dir /home/debian/waytoys-test-results/settings-22/invalid...
+Oct 31 05:05:01 waytoys-kde systemd[725]: Stopped waytoys-settings-22-invalid.service - [systemd-run] /home/debian/projects/way-toys/target/debug/waytoys-zones-settings --config-dir /home/debian/waytoys-test-results/settings-22/invalid.
+Oct 31 05:05:01 waytoys-kde systemd[725]: waytoys-settings-22-invalid.service: Consumed 260ms CPU time, 79.6M memory peak.

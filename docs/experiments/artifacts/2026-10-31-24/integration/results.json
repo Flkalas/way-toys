@@ -1,0 +1,300 @@
+[
+  {
+    "test": "mid_shift",
+    "passed": true,
+    "observed": {
+      "id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}",
+      "caption": "WaytoysProbe — Konsole",
+      "app": "org.kde.konsole",
+      "geometry": [
+        573,
+        16,
+        259,
+        448
+      ],
+      "opacity": 0.8,
+      "move": false,
+      "resize": false
+    }
+  },
+  {
+    "test": "ctrl_span",
+    "passed": true,
+    "observed": {
+      "id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}",
+      "caption": "WaytoysProbe — Konsole",
+      "app": "org.kde.konsole",
+      "geometry": [
+        16,
+        16,
+        816,
+        448
+      ],
+      "opacity": 0.8,
+      "move": false,
+      "resize": false
+    }
+  },
+  {
+    "test": "cross_output",
+    "passed": true,
+    "observed": {
+      "id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}",
+      "caption": "WaytoysProbe — Konsole",
+      "app": "org.kde.konsole",
+      "geometry": [
+        864,
+        16,
+        199.13043478260872,
+        593.9130434782609
+      ],
+      "opacity": 0.8,
+      "move": false,
+      "resize": false
+    }
+  },
+  {
+    "test": "shift_release",
+    "passed": true,
+    "observed": {
+      "during": [
+        {
+          "id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}",
+          "caption": "WaytoysProbe — Konsole",
+          "app": "org.kde.konsole",
+          "geometry": [
+            449.973388671875,
+            216.0032958984375,
+            500,
+            320
+          ],
+          "opacity": 0.8,
+          "move": true,
+          "resize": false
+        }
+      ],
+      "after": {
+        "id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}",
+        "caption": "WaytoysProbe — Konsole",
+        "app": "org.kde.konsole",
+        "geometry": [
+          449.973388671875,
+          216.0032958984375,
+          500,
+          320
+        ],
+        "opacity": 0.8,
+        "move": false,
+        "resize": false
+      }
+    }
+  },
+  {
+    "test": "escape",
+    "passed": true,
+    "observed": {
+      "id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}",
+      "caption": "WaytoysProbe — Konsole",
+      "app": "org.kde.konsole",
+      "geometry": [
+        100,
+        60,
+        500,
+        320
+      ],
+      "opacity": 0.8,
+      "move": false,
+      "resize": false
+    }
+  },
+  {
+    "test": "disable",
+    "passed": true,
+    "observed": [
+      {
+        "id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}",
+        "caption": "WaytoysProbe — Konsole",
+        "app": "org.kde.konsole",
+        "geometry": [
+          449.973388671875,
+          216.0032958984375,
+          500,
+          320
+        ],
+        "opacity": 0.4,
+        "move": true,
+        "resize": false
+      },
+      {
+        "paths": {
+          "app": "/home/debian/waytoys-test-results/settings-23/app",
+          "zones": "/home/debian/waytoys-test-results/settings-23/zones"
+        },
+        "settings": {
+          "run_at_login": true,
+          "enabled": {
+            "zones": false
+          }
+        },
+        "ready": false,
+        "blocked": false,
+        "error": null
+      },
+      {
+        "id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}",
+        "caption": "WaytoysProbe — Konsole",
+        "app": "org.kde.konsole",
+        "geometry": [
+          449.973388671875,
+          216.0032958984375,
+          500,
+          320
+        ],
+        "opacity": 0.8,
+        "move": true,
+        "resize": false
+      }
+    ]
+  },
+  {
+    "test": "lease_timeout",
+    "passed": true,
+    "observed": [
+      {
+        "id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}",
+        "caption": "WaytoysProbe — Konsole",
+        "app": "org.kde.konsole",
+        "geometry": [
+          449.973388671875,
+          216.0032958984375,
+          500,
+          320
+        ],
+        "opacity": 0.8,
+        "move": true,
+        "resize": false
+      },
+      {
+        "id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}",
+        "caption": "WaytoysProbe — Konsole",
+        "app": "org.kde.konsole",
+        "geometry": [
+          638,
+          4,
+          206,
+          432
+        ],
+        "opacity": 0.8,
+        "move": false,
+        "resize": false
+      }
+    ]
+  },
+  {
+    "test": "host_killed",
+    "passed": true,
+    "observed": [
+      {
+        "id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}",
+        "caption": "WaytoysProbe — Konsole",
+        "app": "org.kde.konsole",
+        "geometry": [
+          449.973388671875,
+          216.0032958984375,
+          500,
+          320
+        ],
+        "opacity": 0.8,
+        "move": true,
+        "resize": false
+      },
+      {
+        "id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}",
+        "caption": "WaytoysProbe — Konsole",
+        "app": "org.kde.konsole",
+        "geometry": [
+          638,
+          4,
+          206,
+          432
+        ],
+        "opacity": 0.8,
+        "move": false,
+        "resize": false
+      }
+    ]
+  },
+  {
+    "test": "excluded_case",
+    "passed": true,
+    "observed": {
+      "excluded": {
+        "id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}",
+        "caption": "WaytoysProbe — Konsole",
+        "app": "org.kde.konsole",
+        "geometry": [
+          638,
+          4,
+          206,
+          432
+        ],
+        "opacity": 0.8,
+        "move": false,
+        "resize": false
+      },
+      "different_case": {
+        "id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}",
+        "caption": "WaytoysProbe — Konsole",
+        "app": "org.kde.konsole",
+        "geometry": [
+          573,
+          16,
+          259,
+          448
+        ],
+        "opacity": 0.8,
+        "move": false,
+        "resize": false
+      }
+    }
+  },
+  {
+    "test": "corrupt_preferences",
+    "passed": true,
+    "observed": {
+      "paths": {
+        "app": "/home/debian/waytoys-test-results/settings-23/app",
+        "zones": "/home/debian/waytoys-test-results/settings-23/zones"
+      },
+      "settings": {
+        "run_at_login": true,
+        "enabled": {
+          "zones": true
+        }
+      },
+      "ready": false,
+      "blocked": false,
+      "error": "Zones 설정 읽기 실패 · 원본 보존: JSON error: expected value at line 1 column 1"
+    }
+  },
+  {
+    "test": "screen_lock",
+    "passed": true,
+    "observed": [
+      {
+        "id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}",
+        "caption": "WaytoysProbe — Konsole",
+        "app": "org.kde.konsole",
+        "geometry": [
+          449.973388671875,
+          216.0032958984375,
+          500,
+          320
+        ],
+        "opacity": 0.8,
+        "move": false,
+        "resize": false
+      }
+    ]
+  }
+]

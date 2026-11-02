@@ -1,0 +1,59 @@
+{
+  "id": "3e682cb3-ae27-444b-90a0-8e55f56a4b86",
+  "ok": true,
+  "result": {
+    "tabs": [
+      {
+        "browserPageId": "96e4aa3f-9b1f-44a4-9f04-0d1fd724b109",
+        "profileId": "default",
+        "index": 0,
+        "url": "file:///D:/Github/utils/way-toys/docs/experiments/artifacts/2026-10-31-22/delivery/clipboard.png",
+        "title": "clipboard.png (3922×1252)",
+        "active": false,
+        "loadError": null,
+        "certificateFailure": null,
+        "worktreeId": "9b28ec3a-32e7-4b4a-9604-a9a38eed8167::D:/Github/utils",
+        "profileLabel": "Default"
+      },
+      {
+        "browserPageId": "72c3e935-f8dd-4b68-be5b-a812ccdfe69f",
+        "profileId": "default",
+        "index": 1,
+        "url": "file:///D:/Github/utils/way-toys/docs/experiments/artifacts/2026-10-31-24/runtime-native/screen.png",
+        "title": "screen.png (3922×1252)",
+        "active": false,
+        "loadError": null,
+        "certificateFailure": null,
+        "worktreeId": "9b28ec3a-32e7-4b4a-9604-a9a38eed8167::D:/Github/utils",
+        "profileLabel": "Default"
+      },
+      {
+        "browserPageId": "3b0f88f3-1405-4f56-a285-48a8d4f38fc7",
+        "profileId": "default",
+        "index": 2,
+        "url": "file:///D:/Github/utils/way-toys/docs/experiments/artifacts/2026-10-31-24/existing-editor/clipboard.png",
+        "title": "clipboard.png (3922×1252)",
+        "active": false,
+        "loadError": null,
+        "certificateFailure": null,
+        "worktreeId": "9b28ec3a-32e7-4b4a-9604-a9a38eed8167::D:/Github/utils",
+        "profileLabel": "Default"
+      },
+      {
+        "browserPageId": "f1ee59c1-f59d-4b79-bdc1-3b412d8f1eeb",
+        "profileId": "default",
+        "index": 3,
+        "url": "file:///D:/Github/utils/way-toys/docs/experiments/artifacts/2026-10-31-24/delivery/screen.png",
+        "title": "screen.png (3922×1252)",
+        "active": true,
+        "loadError": null,
+        "certificateFailure": null,
+        "worktreeId": "9b28ec3a-32e7-4b4a-9604-a9a38eed8167::D:/Github/utils",
+        "profileLabel": "Default"
+      }
+    ]
+  },
+  "_meta": {
+    "runtimeId": "9e4df291-82eb-4dcc-94ff-fdb3490622cf"
+  }
+}

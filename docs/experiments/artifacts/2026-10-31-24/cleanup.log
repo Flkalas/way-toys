@@ -1,0 +1,56 @@
+{"pointer": {"x": 650, "y": 230}, "windows": [{"id": "{efb90c15-2606-4d84-947f-924b5eff6186}", "caption": "WaytoysProbe — Konsole", "app": "org.kde.konsole", "geometry": [573, 16, 259, 448], "opacity": 0.8, "move": false, "resize": false}]}
+{
+  "utc": "2026-10-31T08:04:57.820002+00:00",
+  "elapsed_seconds": 5.000134516994876,
+  "processes": [
+    {
+      "unit": "waytoys-runtime.service",
+      "pid": 56031,
+      "before": {
+        "rss_kib": 32664,
+        "peak_rss_kib": 37680,
+        "pss_kib": 30734,
+        "threads": 8,
+        "cpu_ticks": 471
+      },
+      "after": {
+        "rss_kib": 32664,
+        "peak_rss_kib": 37680,
+        "pss_kib": 30734,
+        "threads": 8,
+        "cpu_ticks": 474
+      },
+      "cpu_seconds": 0.03
+    }
+  ]
+}
+{
+  "paths": {
+    "app": "/home/debian/waytoys-test-results/settings-23/app",
+    "zones": "/home/debian/waytoys-test-results/settings-23/zones"
+  },
+  "settings": {
+    "run_at_login": false,
+    "enabled": {
+      "zones": true
+    }
+  },
+  "ready": true,
+  "blocked": false,
+  "error": null
+}
+MainPID=0
+ActiveState=inactive
+
+MainPID=0
+ActiveState=inactive
+{"attached":false,"epoch":"45c6dab0-684b-4835-bbae-d044a2f82804","outputs":[{"geometry":[0,0,848,480],"name":"Virtual-1"},{"geometry":[848,0,1113,626],"name":"Virtual-2"}],"protocol":1}
+fd2469c01e3719989c1835d7020d649497c99db3bfe0ce9e364c5c128cf3af1d  /home/debian/waytoys-test-results/settings-23/zones/outputs/output-Virtual-1.json
+317cce4fb914f530fda6378767dc2fc0af11ada820cd6c9f9066e15d2626cde6  /home/debian/waytoys-test-results/settings-23/zones/outputs/output-Virtual-2.json
+{
+  "run_at_login": false,
+  "enabled": {
+    "zones": true
+  }
+}
+  58000 bash -c export XDG_RUNTIME_DIR=/run/user/1000 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus; python3 /home/debian/projects/way-toys/scripts/kwin-window-probe.py; python3 /home/debian/projects/way-toys/scripts/measure-zones-processes.py waytoys-runtime.service --seconds 5; /home/debian/projects/way-toys/target/debug/waytoys --quit; sleep 0.3; systemctl --user show waytoys-runtime.service waytoys-settings-24.service -p MainPID -p ActiveState; qdbus6 org.kde.KWin /Waytoys/Zones org.waytoys.ZonesBridge1.Snapshot; sha256sum /home/debian/waytoys-test-results/settings-23/zones/outputs/*.json; cat /home/debian/waytoys-test-results/settings-23/app/settings.json; ps -eo pid,args | grep -E "[t]arget/debug/waytoys(-zones-editor|-zones-settings|-settings)?( |$)" || true

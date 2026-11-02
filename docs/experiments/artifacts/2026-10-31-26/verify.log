@@ -1,0 +1,47 @@
+/home/debian/waytoys-test-results/settings-23/app/settings.json: OK
+/home/debian/waytoys-test-results/settings-23/zones/preferences.json: OK
+/home/debian/waytoys-test-results/settings-23/zones/outputs/output-Virtual-1.json: OK
+/home/debian/waytoys-test-results/settings-23/zones/outputs/output-Virtual-2.json: OK
+/home/debian/.config/kwinrc: OK
+{
+  "paths": {
+    "app": "/home/debian/waytoys-test-results/settings-23/app",
+    "zones": "/home/debian/waytoys-test-results/settings-23/zones"
+  },
+  "settings": {
+    "run_at_login": false,
+    "enabled": {
+      "zones": true
+    }
+  },
+  "ready": true,
+  "blocked": false,
+  "error": null
+}
+false
+false
+  UNIT                          LOAD   ACTIVE SUB     DESCRIPTION
+  waytoys-clipboard-77016.scope loaded active running [systemd-run] /usr/bin/wl-copy --type image/png
+  waytoys-runtime.service       loaded active running [systemd-run] /home/debian/projects/way-toys/target/debug/waytoys --background --app-config-dir /home/debian/waytoys-test-results/settings-23/app --config-dir /home/debian/waytoys-test-results/settings-23/zones
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+2 loaded units listed.
+To show all installed unit files use 'systemctl list-unit-files'.
+77113 /usr/bin/wl-copy --type image/png
+{"pointer": {"x": 460, "y": 260}, "windows": [{"id": "{c76fb009-313f-42c5-80e1-92e6483539d6}", "caption": "Waytoys", "app": "waytoys-settings", "geometry": [900, 15, 900, 500.00000000000006], "opacity": 1, "move": false, "resize": false, "minimized": false}]}
+Python syntax: OK
+{"clipboard_pid": 77113, "rss_kib": 900, "pss_kib": 210}
+13.7
+Linux waytoys-kde 6.12.113+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.113-1 (2026-10-15) x86_64 GNU/Linux
+rustc 1.99.1 (58cf8f9c3 2026-10-13)
+cargo 1.99.1 (5f94df478 2026-08-27)
+kwin-wayland	4:6.3.6-1
+libqt6core6t64:amd64	6.8.2+dfsg-9+deb13u2
+python3-dbus	1.4.0-1
+wl-clipboard	2.2.1-2
+8432fc8ac252db4f941c97860b01b2d268dbfc755eb0d5b43c80231c23bcb0fa  target/debug/waytoys-capture
+8ffa14ede71a46215e13efa8c01e238c1c180116fe2269241205667ceee742ad  target/debug/waytoys
+3b8ad9b67c1dd33f6dd0e5118c497206905c9c45a2c12052cb9374da7378280c  target/debug/waytoys-settings

@@ -1,0 +1,46 @@
+{"pointer": {"x": 650, "y": 230}, "windows": [{"id": "{efb90c15-2606-4d84-947f-924b5eff6186}", "caption": "WaytoysProbe — Konsole", "app": "org.kde.konsole", "geometry": [100, 60, 500, 320], "opacity": 0.8, "move": false, "resize": false}]}
+  57087   56000 /home/debian/projects/way-toys/target/debug/waytoys-zones-editor --config-dir /home/debian/waytoys-test-results/settings-23/zones --output Virtual-1
+{
+  "utc": "2026-10-31T08:02:28.697096+00:00",
+  "elapsed_seconds": 5.000145384998177,
+  "processes": [
+    {
+      "unit": "waytoys-runtime.service",
+      "pid": 56031,
+      "before": {
+        "rss_kib": 12312,
+        "peak_rss_kib": 12312,
+        "pss_kib": 10382,
+        "threads": 8,
+        "cpu_ticks": 189
+      },
+      "after": {
+        "rss_kib": 12312,
+        "peak_rss_kib": 12312,
+        "pss_kib": 10382,
+        "threads": 8,
+        "cpu_ticks": 191
+      },
+      "cpu_seconds": 0.02
+    },
+    {
+      "unit": "waytoys-settings-24.service",
+      "pid": 56000,
+      "before": {
+        "rss_kib": 109868,
+        "peak_rss_kib": 109868,
+        "pss_kib": 104570,
+        "threads": 8,
+        "cpu_ticks": 3631
+      },
+      "after": {
+        "rss_kib": 109868,
+        "peak_rss_kib": 109868,
+        "pss_kib": 104570,
+        "threads": 8,
+        "cpu_ticks": 3677
+      },
+      "cpu_seconds": 0.46
+    }
+  ]
+}

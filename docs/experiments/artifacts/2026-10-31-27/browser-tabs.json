@@ -1,0 +1,47 @@
+{
+  "id": "a36c3cad-eea5-4176-8643-09dd1edde689",
+  "ok": true,
+  "result": {
+    "tabs": [
+      {
+        "browserPageId": "e9ee9635-c391-4487-b234-e57259dbbb0b",
+        "profileId": "default",
+        "index": 0,
+        "url": "file:///D:/Github/utils/way-toys/docs/experiments/artifacts/2026-10-31-26/delivery-final/selection-screen.png",
+        "title": "selection-screen.png (3922×1252)",
+        "active": false,
+        "loadError": null,
+        "certificateFailure": null,
+        "worktreeId": "9b28ec3a-32e7-4b4a-9604-a9a38eed8167::D:/Github/utils",
+        "profileLabel": "Default"
+      },
+      {
+        "browserPageId": "970d9541-4285-4c52-998f-f3a436108c0c",
+        "profileId": "default",
+        "index": 1,
+        "url": "file:///D:/Github/utils/way-toys/docs/experiments/artifacts/2026-10-31-27/final-screen/clipboard-final.png",
+        "title": "clipboard-final.png (3922×1252)",
+        "active": false,
+        "loadError": null,
+        "certificateFailure": null,
+        "worktreeId": "9b28ec3a-32e7-4b4a-9604-a9a38eed8167::D:/Github/utils",
+        "profileLabel": "Default"
+      },
+      {
+        "browserPageId": "e5f69608-0181-4625-8c3f-f2db879ae034",
+        "profileId": "default",
+        "index": 2,
+        "url": "file:///D:/Github/utils/way-toys/docs/experiments/artifacts/2026-10-31-27/final-screen/settings-final.png",
+        "title": "settings-final.png (3922×1252)",
+        "active": true,
+        "loadError": null,
+        "certificateFailure": null,
+        "worktreeId": "9b28ec3a-32e7-4b4a-9604-a9a38eed8167::D:/Github/utils",
+        "profileLabel": "Default"
+      }
+    ]
+  },
+  "_meta": {
+    "runtimeId": "9e4df291-82eb-4dcc-94ff-fdb3490622cf"
+  }
+}

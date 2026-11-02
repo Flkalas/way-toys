@@ -1,0 +1,4 @@
+  37213     725 102284 /home/debian/projects/way-toys/target/debug/waytoys-zones-settings --config-dir /home/debian/waytoys-test-results/settings-22/config
+  37367   37213 32564 /home/debian/projects/way-toys/target/debug/waytoys-zones-editor --config-dir /home/debian/waytoys-test-results/settings-22/config --output Virtual-2
+fd2469c01e3719989c1835d7020d649497c99db3bfe0ce9e364c5c128cf3af1d  /home/debian/waytoys-test-results/settings-22/config/outputs/output-Virtual-1.json
+317cce4fb914f530fda6378767dc2fc0af11ada820cd6c9f9066e15d2626cde6  /home/debian/waytoys-test-results/settings-22/config/outputs/output-Virtual-2.json

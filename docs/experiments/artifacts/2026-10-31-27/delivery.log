@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\Github\utils\way-toys\scripts\test-paste-vm.py", line 252, in <module>
+    try:detail=fn()
+               ~~^^
+  File "D:\Github\utils\way-toys\scripts\test-paste-vm.py", line 213, in lock_and_delivery
+    assert 440<=small['geometry'][2]<560,small
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'id': '{113bccd0-216c-48d7-8e50-849c9c703814}', 'caption': 'Waytoys Clipboard', 'app': 'waytoys-paste', 'geometry': [100, 25, 560, 400], 'opacity': 1, 'move': False, 'resize': False, 'minimized': False}

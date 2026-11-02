@@ -1,0 +1,36 @@
+[
+  {
+    "type": "key",
+    "key": "meta_l",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "shift",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "s",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "s",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "shift",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "meta_l",
+    "down": false
+  },
+  {
+    "type": "wait",
+    "seconds": 0.7
+  }
+]

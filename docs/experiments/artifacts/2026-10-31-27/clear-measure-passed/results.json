@@ -1,0 +1,10 @@
+[
+  {
+    "name": "clear_and_measure",
+    "passed": true,
+    "detail": {
+      "pins_survived_ui_clear": true,
+      "picker_pid_gone": 96545
+    }
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "browserPageId": "d9b01b5b-5209-474b-8cde-208b5b263d64",
+    "profileId": "default",
+    "index": 2,
+    "url": "file:///D:/Github/utils/way-toys/docs/experiments/artifacts/2026-10-31-22/preview-after/clipboard.png",
+    "title": "clipboard.png (3922×1252)",
+    "active": false,
+    "loadError": null,
+    "certificateFailure": null,
+    "worktreeId": "9b28ec3a-32e7-4b4a-9604-a9a38eed8167::D:/Github/utils",
+    "profileLabel": "Default"
+  },
+  {
+    "browserPageId": "96e4aa3f-9b1f-44a4-9f04-0d1fd724b109",
+    "profileId": "default",
+    "index": 3,
+    "url": "file:///D:/Github/utils/way-toys/docs/experiments/artifacts/2026-10-31-22/delivery/clipboard.png",
+    "title": "clipboard.png (3922×1252)",
+    "active": true,
+    "loadError": null,
+    "certificateFailure": null,
+    "worktreeId": "9b28ec3a-32e7-4b4a-9604-a9a38eed8167::D:/Github/utils",
+    "profileLabel": "Default"
+  }
+]

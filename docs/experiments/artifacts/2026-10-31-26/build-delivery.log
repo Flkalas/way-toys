@@ -1,0 +1,6 @@
+    Checking waytoys-zones-settings v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones-settings)
+    Checking waytoys-capture v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-capture)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.14s
+   Compiling waytoys-zones-settings v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones-settings)
+   Compiling waytoys-capture v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-capture)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.94s

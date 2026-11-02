@@ -1,0 +1,41 @@
+Restored the previous Meta+V assignment; desktop entry retained
+kbuildsycoca6 running...
+Meta+V assigned to Waytoys Clipboard; previous keys saved in /home/debian/.local/state/waytoys/paste-shortcut.json
+Installed /home/debian/.local/share/applications/org.waytoys.Paste.desktop -> /home/debian/projects/way-toys/target/debug/waytoys-paste
+kbuildsycoca6 running...
+Meta+V already assigned to Waytoys Clipboard
+Installed /home/debian/.local/share/applications/org.waytoys.Paste.desktop -> /home/debian/projects/way-toys/target/debug/waytoys-paste
+{
+  "before": [
+    [
+      "org.waytoys.Paste.desktop",
+      "_launch"
+    ]
+  ],
+  "restored": [
+    [
+      "plasmashell",
+      "show-on-mouse-pos"
+    ]
+  ],
+  "after": [
+    [
+      "org.waytoys.Paste.desktop",
+      "_launch"
+    ]
+  ],
+  "other_shortcuts": {
+    "301989971": [
+      [
+        "org.waytoys.Capture.desktop",
+        "_launch"
+      ]
+    ],
+    "16777225": [
+      [
+        "org.kde.spectacle.desktop",
+        "_launch"
+      ]
+    ]
+  }
+}

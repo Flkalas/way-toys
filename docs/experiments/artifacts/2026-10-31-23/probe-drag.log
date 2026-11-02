@@ -1,0 +1,35 @@
+Oct 31 07:06:23 waytoys-kde systemd[725]: Started waytoys-bridge-probe.service - [systemd-run] /usr/bin/python3 /home/debian/projects/way-toys/scripts/kwin-bridge-poc.py.
+Oct 31 07:06:23 waytoys-kde python3[41112]: Traceback (most recent call last):
+Oct 31 07:06:23 waytoys-kde python3[41112]:   File "/home/debian/projects/way-toys/scripts/kwin-bridge-poc.py", line 8, in <module>
+Oct 31 07:06:23 waytoys-kde python3[41112]:     from gi.repository import GLib
+Oct 31 07:06:23 waytoys-kde python3[41112]: ModuleNotFoundError: No module named 'gi'
+Oct 31 07:06:23 waytoys-kde systemd[725]: waytoys-bridge-probe.service: Main process exited, code=exited, status=1/FAILURE
+Oct 31 07:06:23 waytoys-kde systemd[725]: waytoys-bridge-probe.service: Failed with result 'exit-code'.
+Oct 31 07:06:43 waytoys-kde systemd[725]: Started waytoys-bridge-probe.service - [systemd-run] /usr/bin/python3 /home/debian/projects/way-toys/scripts/kwin-bridge-poc.py.
+Oct 31 07:06:44 waytoys-kde python3[41359]: probe ready {'Virtual-1': [0, 0, 848, 480], 'Virtual-2': [848, 0, 1113, 626]}
+Oct 31 07:07:16 waytoys-kde python3[41359]: {"ctrl": false, "id": 1, "kind": "update", "output": "Virtual-2", "position": [1299.9524536132812, 110.0008544921875], "sequence": 1, "shift": true}
+Oct 31 07:07:16 waytoys-kde python3[41359]: {"ctrl": false, "id": 1, "kind": "update", "output": "Virtual-2", "position": [1099.9505615234375, 179.9979248046875], "sequence": 2, "shift": true}
+Oct 31 07:07:16 waytoys-kde python3[41359]: {"ctrl": false, "id": 1, "kind": "update", "output": "Virtual-2", "position": [1099.9505615234375, 179.9979248046875], "sequence": 3, "shift": true}
+Oct 31 07:07:16 waytoys-kde python3[41359]: {"ctrl": false, "id": 1, "kind": "drop", "output": "Virtual-2", "position": [1099.9505615234375, 179.9979248046875], "sequence": 4, "shift": true}
+Oct 31 07:07:16 waytoys-kde python3[41359]: {"id": 1, "kind": "cancel", "reason": "complete", "sequence": 5}
+Oct 31 07:07:16 waytoys-kde python3[41359]: target accepted: 1
+Oct 31 05:18:26 waytoys-kde kwin_wayland_wrapper[37729]: pci id for fd 14: 1b36:0100, driver (null)
+Oct 31 05:18:26 waytoys-kde kwin_wayland_wrapper[37729]: kmsro: driver missing
+Oct 31 05:18:26 waytoys-kde kwin_wayland_wrapper[37729]: libEGL warning: egl: failed to create dri2 screen
+Oct 31 05:18:26 waytoys-kde kwin_wayland_wrapper[37729]: pci id for fd 14: 1b36:0100, driver (null)
+Oct 31 05:18:26 waytoys-kde kwin_wayland_wrapper[37729]: kmsro: driver missing
+Oct 31 05:18:26 waytoys-kde kwin_wayland_wrapper[37729]: libEGL warning: egl: failed to create dri2 screen
+Oct 31 05:18:26 waytoys-kde kscreenlocker_greet[37729]: PAM unable to dlopen(pam_sss.so): /usr/lib/security/pam_sss.so: cannot open shared object file: No such file or directory
+Oct 31 05:18:26 waytoys-kde kscreenlocker_greet[37729]: PAM adding faulty module: pam_sss.so
+Oct 31 05:18:26 waytoys-kde kscreenlocker_greet[37729]: PAM unable to dlopen(pam_kwallet5.so): /usr/lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+Oct 31 05:18:26 waytoys-kde kscreenlocker_greet[37729]: PAM adding faulty module: pam_kwallet5.so
+Oct 31 05:18:26 waytoys-kde kscreenlocker_greet[37729]: PAM unable to dlopen(pam_kwallet5.so): /usr/lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+Oct 31 05:18:26 waytoys-kde kscreenlocker_greet[37729]: PAM adding faulty module: pam_kwallet5.so
+Oct 31 05:18:26 waytoys-kde kscreenlocker_greet[37729]: PAM unable to dlopen(pam_fprintd.so): /usr/lib/security/pam_fprintd.so: cannot open shared object file: No such file or directory
+Oct 31 05:18:26 waytoys-kde kscreenlocker_greet[37729]: PAM adding faulty module: pam_fprintd.so
+Oct 31 05:18:26 waytoys-kde kscreenlocker_greet[37729]: PAM unable to dlopen(pam_kwallet5.so): /usr/lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+Oct 31 05:18:26 waytoys-kde kscreenlocker_greet[37729]: PAM adding faulty module: pam_kwallet5.so
+Oct 31 07:06:23 waytoys-kde kwin_wayland_wrapper[777]: Waytoys bridge loaded (protocol 1)
+Oct 31 07:06:51 waytoys-kde kwin_wayland_wrapper[777]: kf.notifications: No event config could be found for event id "unlocked" under notifyrc file for app "ksmserver"
+Oct 31 07:07:16 waytoys-kde kwin_wayland_wrapper[777]: kwin_scene_opengl: 0x1: GL_INVALID_OPERATION in glDrawBuffers(unsupported buffer GL_BACK_LEFT)
+Oct 31 07:07:16 waytoys-kde kwin_wayland_wrapper[777]: Waytoys snap id=1 x=864.0 y=16.0 w=400.0 h=594.0

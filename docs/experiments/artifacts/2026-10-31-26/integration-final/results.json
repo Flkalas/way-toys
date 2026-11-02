@@ -1,0 +1,99 @@
+[
+  {
+    "name": "single_and_paste",
+    "passed": true,
+    "detail": {
+      "image": {
+        "width": 321,
+        "height": 141,
+        "sha256": "a672edac5e0036759319b92c1cf884ff137d51989849fcb4665b729ecb0bfbf6",
+        "rgba_sha256": "d53b699143eb50d4019c35329d5b867a2bf3578f62cb44b146b5ff0a03a2010f"
+      },
+      "pasted": {
+        "paste": true,
+        "width": 321,
+        "height": 141,
+        "rgba_sha256": "d53b699143eb50d4019c35329d5b867a2bf3578f62cb44b146b5ff0a03a2010f",
+        "saved": true
+      },
+      "palette": [
+        "1976d2ff",
+        "388e3cff",
+        "d32f2fff",
+        "fbc02dff"
+      ]
+    }
+  },
+  {
+    "name": "fractional",
+    "passed": true,
+    "detail": {
+      "forward": {
+        "width": 347,
+        "height": 233,
+        "sha256": "baee5a05601ade4bd26d6677be2566b01352b629f33c5feb806a506c7f0a94f7",
+        "rgba_sha256": "596c6869693017ba57424a862139ab40d036308da1cbff9c0f81b8f4745414c0"
+      },
+      "reverse": {
+        "width": 347,
+        "height": 233,
+        "sha256": "baee5a05601ade4bd26d6677be2566b01352b629f33c5feb806a506c7f0a94f7",
+        "rgba_sha256": "596c6869693017ba57424a862139ab40d036308da1cbff9c0f81b8f4745414c0"
+      }
+    }
+  },
+  {
+    "name": "crossing",
+    "passed": true,
+    "detail": {
+      "width": 403,
+      "height": 173,
+      "sha256": "2ff31aba4651dab06487dd2072b0d0533b5199138689ccf8683b751d4396a5d0",
+      "rgba_sha256": "9690d4270343ccc1610eb486315c246e8c46ee5e29e05665877aaab28aef54cc"
+    }
+  },
+  {
+    "name": "cancellation",
+    "passed": true,
+    "detail": {
+      "preserved_sha256": "2ff31aba4651dab06487dd2072b0d0533b5199138689ccf8683b751d4396a5d0",
+      "duplicate": "capture already running"
+    }
+  },
+  {
+    "name": "cleanup_and_resume",
+    "passed": true,
+    "detail": {
+      "status": {
+        "paths": {
+          "app": "/home/debian/waytoys-test-results/settings-23/app",
+          "zones": "/home/debian/waytoys-test-results/settings-23/zones"
+        },
+        "settings": {
+          "run_at_login": false,
+          "enabled": {
+            "zones": true
+          }
+        },
+        "ready": true,
+        "blocked": false,
+        "error": null
+      },
+      "window": {
+        "id": "{86815119-cb54-4548-b6e4-0a2a058cb413}",
+        "caption": "WaytoysCaptureProbe",
+        "app": "org.waytoys.CaptureProbe",
+        "geometry": [
+          573,
+          16,
+          259,
+          448
+        ],
+        "opacity": 1,
+        "move": false,
+        "resize": false
+      },
+      "clipboard_sha256": "2ff31aba4651dab06487dd2072b0d0533b5199138689ccf8683b751d4396a5d0"
+    }
+  }
+]

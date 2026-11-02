@@ -1,0 +1,20 @@
+{
+  "custom-layouts": [
+    {
+      "uuid": "overlapping-canvas-example",
+      "name": "Overlapping Canvas",
+      "type": "canvas",
+      "info": {
+        "ref-width": 1280,
+        "ref-height": 720,
+        "zones": [
+          { "X": 80, "Y": 140, "width": 620, "height": 450 },
+          { "X": 510, "Y": 260, "width": 640, "height": 380 },
+          { "X": 800, "Y": 120, "width": 360, "height": 200 },
+          { "X": 130, "Y": 185, "width": 200, "height": 140 }
+        ],
+        "sensitivity-radius": 20
+      }
+    }
+  ]
+}

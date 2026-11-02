@@ -1,0 +1,11 @@
+lock_and_delivery: passed
+Traceback (most recent call last):
+  File "D:\Github\utils\way-toys\scripts\test-paste-vm.py", line 269, in <module>
+    try:detail=fn()
+               ~~^^
+  File "D:\Github\utils\way-toys\scripts\test-paste-vm.py", line 244, in clear_and_measure
+    wait_for(lambda:snapshot()['listing']['recent']==0,'confirmed clear did not remove recent entries')
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Github\utils\way-toys\scripts\test-paste-vm.py", line 46, in wait_for
+    raise AssertionError(description)
+AssertionError: confirmed clear did not remove recent entries

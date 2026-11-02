@@ -1,0 +1,91 @@
+[
+  {
+    "name": "seed",
+    "passed": true,
+    "detail": {
+      "text": {
+        "id": 5,
+        "mime": "text/plain;charset=utf-8",
+        "preview": "Waytoys clipboard 한글 확인\n두 번째 줄 · 27",
+        "width": 0,
+        "height": 0,
+        "size": 52,
+        "pinned": false,
+        "created": 1793445632
+      },
+      "image": {
+        "id": 3,
+        "mime": "image/png",
+        "preview": "이미지 96 × 64",
+        "width": 96,
+        "height": 64,
+        "size": 261,
+        "pinned": false,
+        "created": 1793445115
+      },
+      "sensitive_skipped": true,
+      "geometry": {
+        "id": "{fd1cd53d-3f07-427e-8857-b288636382e2}",
+        "caption": "Waytoys Clipboard",
+        "app": "waytoys-paste",
+        "geometry": [
+          930,
+          15,
+          580,
+          590.4347826086956
+        ],
+        "opacity": 1,
+        "move": false,
+        "resize": false,
+        "minimized": false
+      }
+    }
+  },
+  {
+    "name": "pin_and_paste",
+    "passed": true,
+    "detail": {
+      "text": {
+        "bytes": 52,
+        "kind": "text",
+        "sha256": "2f6aeeb1c5eadfc5cbefc37f33c6d97b581ae4c07b5af3231c49a0c1220dadcf"
+      },
+      "image": {
+        "height": 64,
+        "kind": "image",
+        "sha256": "570f134b457b27b3466cc967b0b1963bc1d3497e8df7afe51b82bf49f235e241",
+        "width": 96
+      },
+      "pinned_ids": [
+        5,
+        3
+      ]
+    }
+  },
+  {
+    "name": "preserve_and_restart",
+    "passed": true,
+    "detail": {
+      "pinned_ids": [
+        3,
+        5
+      ],
+      "clipboard_survived": true,
+      "geometry": {
+        "id": "{ce64108c-7b03-42c1-b506-e21f7eecf6bf}",
+        "caption": "Waytoys Clipboard",
+        "app": "waytoys-paste",
+        "geometry": [
+          930,
+          15,
+          580,
+          590.4347826086956
+        ],
+        "opacity": 1,
+        "move": false,
+        "resize": false,
+        "minimized": false
+      }
+    }
+  }
+]

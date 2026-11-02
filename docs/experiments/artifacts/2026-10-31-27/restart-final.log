@@ -1,0 +1,39 @@
+{
+  "paths": {
+    "app": "/home/debian/waytoys-test-results/settings-23/app",
+    "zones": "/home/debian/waytoys-test-results/settings-23/zones",
+    "paste": "/home/debian/waytoys-test-results/settings-23/app/paste"
+  },
+  "settings": {
+    "run_at_login": false,
+    "enabled": {
+      "zones": true,
+      "paste": true
+    }
+  },
+  "ready": true,
+  "blocked": false,
+  "error": null,
+  "paste_ready": true,
+  "paste_error": null
+}
+Running as unit: waytoys-settings-27-final.service; invocation ID: b543e78dd7474a02b5db4da1547b8e0d
+{
+  "paths": {
+    "app": "/home/debian/waytoys-test-results/settings-23/app",
+    "zones": "/home/debian/waytoys-test-results/settings-23/zones",
+    "paste": "/home/debian/waytoys-test-results/settings-23/app/paste"
+  },
+  "settings": {
+    "run_at_login": false,
+    "enabled": {
+      "zones": true,
+      "paste": true
+    }
+  },
+  "ready": true,
+  "blocked": false,
+  "error": null,
+  "paste_ready": true,
+  "paste_error": null
+}

@@ -1,0 +1,852 @@
+{
+  "utc": "2026-10-31T05:19:46+00:00",
+  "os_release": "PRETTY_NAME=\"Debian GNU/Linux 13 (trixie)\"\nNAME=\"Debian GNU/Linux\"\nVERSION_ID=\"13\"\nVERSION=\"13 (trixie)\"\nVERSION_CODENAME=trixie\nDEBIAN_VERSION_FULL=13.7\nID=debian\nHOME_URL=\"https://www.debian.org/\"\nSUPPORT_URL=\"https://www.debian.org/support\"\nBUG_REPORT_URL=\"https://bugs.debian.org/\"\n",
+  "kernel": "6.12.113+deb13-amd64",
+  "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+  "cargo": "cargo 1.99.1 (5f94df478 2026-08-27)",
+  "kwin": "QThreadStorage: Thread 0x55cc4b63c4c0 exited after QThreadStorage 1 destroyed\nQThreadStorage: Thread 0x55cc4b63c4c0 exited after QThreadStorage 0 destroyed\nkwin 6.3.6",
+  "noto_package": "fonts-noto-cjk\t1:20240730+repack1-1",
+  "noto_match": "NotoSansCJK-Regular.ttc: \"Noto Sans CJK KR\" \"Regular\"",
+  "cpu_count": 2,
+  "memtotal": "MemTotal:        8138564 kB",
+  "outputs": {
+    "features": 255,
+    "outputs": [
+      {
+        "clones": [],
+        "connected": true,
+        "currentModeId": "35",
+        "enabled": true,
+        "followPreferredMode": false,
+        "icon": "",
+        "id": 1,
+        "modes": [
+          {
+            "id": "1",
+            "name": "1024x768@60",
+            "refreshRate": 60.00400161743164,
+            "size": {
+              "height": 768,
+              "width": 1024
+            }
+          },
+          {
+            "id": "10",
+            "name": "1920x1200@60",
+            "refreshRate": 59.8849983215332,
+            "size": {
+              "height": 1200,
+              "width": 1920
+            }
+          },
+          {
+            "id": "11",
+            "name": "1920x1200@60",
+            "refreshRate": 59.95000076293945,
+            "size": {
+              "height": 1200,
+              "width": 1920
+            }
+          },
+          {
+            "id": "12",
+            "name": "1920x1080@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 1080,
+              "width": 1920
+            }
+          },
+          {
+            "id": "13",
+            "name": "1600x1200@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 1200,
+              "width": 1600
+            }
+          },
+          {
+            "id": "14",
+            "name": "1680x1050@60",
+            "refreshRate": 59.95399856567383,
+            "size": {
+              "height": 1050,
+              "width": 1680
+            }
+          },
+          {
+            "id": "15",
+            "name": "1680x1050@60",
+            "refreshRate": 59.882999420166016,
+            "size": {
+              "height": 1050,
+              "width": 1680
+            }
+          },
+          {
+            "id": "16",
+            "name": "1400x1050@60",
+            "refreshRate": 59.97800064086914,
+            "size": {
+              "height": 1050,
+              "width": 1400
+            }
+          },
+          {
+            "id": "17",
+            "name": "1400x1050@60",
+            "refreshRate": 59.948001861572266,
+            "size": {
+              "height": 1050,
+              "width": 1400
+            }
+          },
+          {
+            "id": "18",
+            "name": "1600x900@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 900,
+              "width": 1600
+            }
+          },
+          {
+            "id": "19",
+            "name": "1280x1024@60",
+            "refreshRate": 60.02000045776367,
+            "size": {
+              "height": 1024,
+              "width": 1280
+            }
+          },
+          {
+            "id": "2",
+            "name": "4096x2160@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 2160,
+              "width": 4096
+            }
+          },
+          {
+            "id": "20",
+            "name": "1440x900@60",
+            "refreshRate": 59.887001037597656,
+            "size": {
+              "height": 900,
+              "width": 1440
+            }
+          },
+          {
+            "id": "21",
+            "name": "1440x900@60",
+            "refreshRate": 59.9010009765625,
+            "size": {
+              "height": 900,
+              "width": 1440
+            }
+          },
+          {
+            "id": "22",
+            "name": "1280x960@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 960,
+              "width": 1280
+            }
+          },
+          {
+            "id": "23",
+            "name": "1280x854@60",
+            "refreshRate": 59.95100021362305,
+            "size": {
+              "height": 854,
+              "width": 1280
+            }
+          },
+          {
+            "id": "24",
+            "name": "1366x768@60",
+            "refreshRate": 59.790000915527344,
+            "size": {
+              "height": 768,
+              "width": 1366
+            }
+          },
+          {
+            "id": "25",
+            "name": "1366x768@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 768,
+              "width": 1366
+            }
+          },
+          {
+            "id": "26",
+            "name": "1360x768@60",
+            "refreshRate": 60.01499938964844,
+            "size": {
+              "height": 768,
+              "width": 1360
+            }
+          },
+          {
+            "id": "27",
+            "name": "1280x800@60",
+            "refreshRate": 59.810001373291016,
+            "size": {
+              "height": 800,
+              "width": 1280
+            }
+          },
+          {
+            "id": "28",
+            "name": "1280x800@60",
+            "refreshRate": 59.90999984741211,
+            "size": {
+              "height": 800,
+              "width": 1280
+            }
+          },
+          {
+            "id": "29",
+            "name": "1280x768@60",
+            "refreshRate": 59.869998931884766,
+            "size": {
+              "height": 768,
+              "width": 1280
+            }
+          },
+          {
+            "id": "3",
+            "name": "4096x2160@60",
+            "refreshRate": 59.939998626708984,
+            "size": {
+              "height": 2160,
+              "width": 4096
+            }
+          },
+          {
+            "id": "30",
+            "name": "1280x768@60",
+            "refreshRate": 59.994998931884766,
+            "size": {
+              "height": 768,
+              "width": 1280
+            }
+          },
+          {
+            "id": "31",
+            "name": "1280x720@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 720,
+              "width": 1280
+            }
+          },
+          {
+            "id": "32",
+            "name": "1152x768@60",
+            "refreshRate": 59.95000076293945,
+            "size": {
+              "height": 768,
+              "width": 1152
+            }
+          },
+          {
+            "id": "33",
+            "name": "800x600@60",
+            "refreshRate": 60.31700134277344,
+            "size": {
+              "height": 600,
+              "width": 800
+            }
+          },
+          {
+            "id": "34",
+            "name": "800x600@56",
+            "refreshRate": 56.25,
+            "size": {
+              "height": 600,
+              "width": 800
+            }
+          },
+          {
+            "id": "35",
+            "name": "848x480@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 480,
+              "width": 848
+            }
+          },
+          {
+            "id": "36",
+            "name": "720x480@60",
+            "refreshRate": 59.9379997253418,
+            "size": {
+              "height": 480,
+              "width": 720
+            }
+          },
+          {
+            "id": "37",
+            "name": "640x480@60",
+            "refreshRate": 59.939998626708984,
+            "size": {
+              "height": 480,
+              "width": 640
+            }
+          },
+          {
+            "id": "4",
+            "name": "2560x1600@60",
+            "refreshRate": 59.98699951171875,
+            "size": {
+              "height": 1600,
+              "width": 2560
+            }
+          },
+          {
+            "id": "5",
+            "name": "2560x1600@60",
+            "refreshRate": 59.97200012207031,
+            "size": {
+              "height": 1600,
+              "width": 2560
+            }
+          },
+          {
+            "id": "6",
+            "name": "1920x1440@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 1440,
+              "width": 1920
+            }
+          },
+          {
+            "id": "7",
+            "name": "1856x1392@60",
+            "refreshRate": 59.994998931884766,
+            "size": {
+              "height": 1392,
+              "width": 1856
+            }
+          },
+          {
+            "id": "8",
+            "name": "1792x1344@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 1344,
+              "width": 1792
+            }
+          },
+          {
+            "id": "9",
+            "name": "2048x1152@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 1152,
+              "width": 2048
+            }
+          }
+        ],
+        "name": "Virtual-1",
+        "pos": {
+          "x": 0,
+          "y": 0
+        },
+        "preferredModes": [
+          "1"
+        ],
+        "priority": 1,
+        "replicationSource": 0,
+        "rotation": 1,
+        "scale": 1,
+        "size": {
+          "height": 480,
+          "width": 848
+        },
+        "sizeMM": {
+          "height": 0,
+          "width": 0
+        },
+        "type": 0
+      },
+      {
+        "clones": [],
+        "connected": true,
+        "currentModeId": "68",
+        "enabled": true,
+        "followPreferredMode": false,
+        "icon": "",
+        "id": 2,
+        "modes": [
+          {
+            "id": "38",
+            "name": "1024x768@60",
+            "refreshRate": 60.00400161743164,
+            "size": {
+              "height": 768,
+              "width": 1024
+            }
+          },
+          {
+            "id": "39",
+            "name": "4096x2160@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 2160,
+              "width": 4096
+            }
+          },
+          {
+            "id": "40",
+            "name": "4096x2160@60",
+            "refreshRate": 59.939998626708984,
+            "size": {
+              "height": 2160,
+              "width": 4096
+            }
+          },
+          {
+            "id": "41",
+            "name": "2560x1600@60",
+            "refreshRate": 59.98699951171875,
+            "size": {
+              "height": 1600,
+              "width": 2560
+            }
+          },
+          {
+            "id": "42",
+            "name": "2560x1600@60",
+            "refreshRate": 59.97200012207031,
+            "size": {
+              "height": 1600,
+              "width": 2560
+            }
+          },
+          {
+            "id": "43",
+            "name": "1920x1440@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 1440,
+              "width": 1920
+            }
+          },
+          {
+            "id": "44",
+            "name": "1856x1392@60",
+            "refreshRate": 59.994998931884766,
+            "size": {
+              "height": 1392,
+              "width": 1856
+            }
+          },
+          {
+            "id": "45",
+            "name": "1792x1344@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 1344,
+              "width": 1792
+            }
+          },
+          {
+            "id": "46",
+            "name": "2048x1152@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 1152,
+              "width": 2048
+            }
+          },
+          {
+            "id": "47",
+            "name": "1920x1200@60",
+            "refreshRate": 59.8849983215332,
+            "size": {
+              "height": 1200,
+              "width": 1920
+            }
+          },
+          {
+            "id": "48",
+            "name": "1920x1200@60",
+            "refreshRate": 59.95000076293945,
+            "size": {
+              "height": 1200,
+              "width": 1920
+            }
+          },
+          {
+            "id": "49",
+            "name": "1920x1080@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 1080,
+              "width": 1920
+            }
+          },
+          {
+            "id": "50",
+            "name": "1600x1200@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 1200,
+              "width": 1600
+            }
+          },
+          {
+            "id": "51",
+            "name": "1680x1050@60",
+            "refreshRate": 59.95399856567383,
+            "size": {
+              "height": 1050,
+              "width": 1680
+            }
+          },
+          {
+            "id": "52",
+            "name": "1680x1050@60",
+            "refreshRate": 59.882999420166016,
+            "size": {
+              "height": 1050,
+              "width": 1680
+            }
+          },
+          {
+            "id": "53",
+            "name": "1400x1050@60",
+            "refreshRate": 59.97800064086914,
+            "size": {
+              "height": 1050,
+              "width": 1400
+            }
+          },
+          {
+            "id": "54",
+            "name": "1400x1050@60",
+            "refreshRate": 59.948001861572266,
+            "size": {
+              "height": 1050,
+              "width": 1400
+            }
+          },
+          {
+            "id": "55",
+            "name": "1600x900@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 900,
+              "width": 1600
+            }
+          },
+          {
+            "id": "56",
+            "name": "1280x1024@60",
+            "refreshRate": 60.02000045776367,
+            "size": {
+              "height": 1024,
+              "width": 1280
+            }
+          },
+          {
+            "id": "57",
+            "name": "1440x900@60",
+            "refreshRate": 59.887001037597656,
+            "size": {
+              "height": 900,
+              "width": 1440
+            }
+          },
+          {
+            "id": "58",
+            "name": "1440x900@60",
+            "refreshRate": 59.9010009765625,
+            "size": {
+              "height": 900,
+              "width": 1440
+            }
+          },
+          {
+            "id": "59",
+            "name": "1280x960@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 960,
+              "width": 1280
+            }
+          },
+          {
+            "id": "60",
+            "name": "1280x854@60",
+            "refreshRate": 59.95100021362305,
+            "size": {
+              "height": 854,
+              "width": 1280
+            }
+          },
+          {
+            "id": "61",
+            "name": "1366x768@60",
+            "refreshRate": 59.790000915527344,
+            "size": {
+              "height": 768,
+              "width": 1366
+            }
+          },
+          {
+            "id": "62",
+            "name": "1366x768@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 768,
+              "width": 1366
+            }
+          },
+          {
+            "id": "63",
+            "name": "1360x768@60",
+            "refreshRate": 60.01499938964844,
+            "size": {
+              "height": 768,
+              "width": 1360
+            }
+          },
+          {
+            "id": "64",
+            "name": "1280x800@60",
+            "refreshRate": 59.810001373291016,
+            "size": {
+              "height": 800,
+              "width": 1280
+            }
+          },
+          {
+            "id": "65",
+            "name": "1280x800@60",
+            "refreshRate": 59.90999984741211,
+            "size": {
+              "height": 800,
+              "width": 1280
+            }
+          },
+          {
+            "id": "66",
+            "name": "1280x768@60",
+            "refreshRate": 59.869998931884766,
+            "size": {
+              "height": 768,
+              "width": 1280
+            }
+          },
+          {
+            "id": "67",
+            "name": "1280x768@60",
+            "refreshRate": 59.994998931884766,
+            "size": {
+              "height": 768,
+              "width": 1280
+            }
+          },
+          {
+            "id": "68",
+            "name": "1280x720@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 720,
+              "width": 1280
+            }
+          },
+          {
+            "id": "69",
+            "name": "1152x768@60",
+            "refreshRate": 59.95000076293945,
+            "size": {
+              "height": 768,
+              "width": 1152
+            }
+          },
+          {
+            "id": "70",
+            "name": "800x600@60",
+            "refreshRate": 60.31700134277344,
+            "size": {
+              "height": 600,
+              "width": 800
+            }
+          },
+          {
+            "id": "71",
+            "name": "800x600@56",
+            "refreshRate": 56.25,
+            "size": {
+              "height": 600,
+              "width": 800
+            }
+          },
+          {
+            "id": "72",
+            "name": "848x480@60",
+            "refreshRate": 60,
+            "size": {
+              "height": 480,
+              "width": 848
+            }
+          },
+          {
+            "id": "73",
+            "name": "720x480@60",
+            "refreshRate": 59.9379997253418,
+            "size": {
+              "height": 480,
+              "width": 720
+            }
+          },
+          {
+            "id": "74",
+            "name": "640x480@60",
+            "refreshRate": 59.939998626708984,
+            "size": {
+              "height": 480,
+              "width": 640
+            }
+          }
+        ],
+        "name": "Virtual-2",
+        "pos": {
+          "x": 848,
+          "y": 0
+        },
+        "preferredModes": [
+          "38"
+        ],
+        "priority": 2,
+        "replicationSource": 0,
+        "rotation": 1,
+        "scale": 1.15,
+        "size": {
+          "height": 720,
+          "width": 1280
+        },
+        "sizeMM": {
+          "height": 0,
+          "width": 0
+        },
+        "type": 0
+      }
+    ],
+    "screen": {
+      "currentSize": {
+        "height": 626,
+        "width": 1961
+      },
+      "id": 0,
+      "maxActiveOutputsCount": 2,
+      "maxSize": {
+        "height": 64000,
+        "width": 64000
+      },
+      "minSize": {
+        "height": 0,
+        "width": 0
+      }
+    },
+    "tabletModeAvailable": false,
+    "tabletModeEngaged": false
+  },
+  "preferences": {
+    "use_cursorpos_editor_startupscreen": true,
+    "show_zones_on_all_monitors": false,
+    "overlapping_zones_algorithm": "largest",
+    "show_zone_number": true,
+    "zone_highlight_opacity": 72,
+    "zone_highlight_color": "#ff4400",
+    "zone_color": "#AACDFF",
+    "zone_border_color": "#FFFFFF",
+    "zone_number_color": "#000000",
+    "layout_name_label_enabled": true,
+    "layout_name_label_placement": "top_center",
+    "layout_name_label_text_color": "#FFFFFF",
+    "layout_name_label_background_color": "#262626",
+    "layout_name_label_font_size": 36,
+    "layout_name_label_padding": 12,
+    "layout_name_label_duration": 1500,
+    "make_dragged_window_transparent": false,
+    "move_windows_based_on_position": false,
+    "move_window_across_monitors": true,
+    "flash_zones_on_quick_switch": true,
+    "excluded_apps": "org.kde.konsole\norg.example.TestApp"
+  },
+  "layout_hashes": {
+    "output-Virtual-1.json": "fd2469c01e3719989c1835d7020d649497c99db3bfe0ce9e364c5c128cf3af1d",
+    "output-Virtual-2.json": "317cce4fb914f530fda6378767dc2fc0af11ada820cd6c9f9066e15d2626cde6"
+  },
+  "source_hashes": {
+    "Cargo.toml": "0644fdb21767e8b7c01b26b09ed00f8143e9869345a82e8bb9a2fe829b5f4d5e",
+    "Cargo.lock": "f9ad1efe00f8e7c99bda3c71dbb6d3efe581cf5f15fe103fe77e0786f556089f",
+    "crates/waytoys-zones-settings/src/view.rs": "4533cafa4d6683dd5f6ffe6b749c56dc3e5b3ecf448caa7d88111b85e08c2862",
+    "crates/waytoys-zones-settings/src/preview.rs": "43ba41fbb6b14e62a3f2f86534181acf23ed9ca693c6830e76f2c4277607e93f",
+    "crates/waytoys-zones-settings/src/main.rs": "910f41b6772f3495c1c80c09ef7615f88589a1c95dc190f0a14d099ecaee6422",
+    "crates/waytoys-zones-settings/src/draft.rs": "cfbaef673db1a7c8e611c26e3f2088bc95c62948aa1b7a6a9f9a755896d64bf6",
+    "crates/waytoys-zones-settings/Cargo.toml": "7b19bf691e740e4f23d5f8e95834e5951ffdf8eef39fa1e774891183f6d2ef76",
+    "crates/waytoys-zones-editor/src/wayland.rs": "e201563ce1e4f6d5e93cb97ecd285fab917c2604374153a17c81020091d78a0c",
+    "crates/waytoys-zones-editor/src/ui.rs": "12f359383138e93721585b234484252d3aff94689623e087196188afb6e1fda6",
+    "crates/waytoys-zones-editor/src/store.rs": "898be6bab1c6bc0e539644817c2499b7eab6ed481820e2b12e035fbe6a7a90cd",
+    "crates/waytoys-zones-editor/src/render.rs": "706a3549f4ffca61cda45442e505d0d5d0df6fe4486cba19297686adaae2a3c8",
+    "crates/waytoys-zones-editor/src/preview.rs": "1484b49b008f7241724958ebe7b4e7bfe7f3bfaab4a985a980b782019ae4fbc1",
+    "crates/waytoys-zones-editor/src/main.rs": "058005a773e70b5ab069ea79c850a40c48fdc95f6fc01b589c90755a33fb2af0",
+    "crates/waytoys-zones-editor/src/lib.rs": "373e971796543da8cf50c11a101e69566c51dd18f9dc8fa13b84823159562967",
+    "crates/waytoys-zones-editor/src/controller.rs": "fa88c83f4093b43461802598a007312558e2a5d5af36e7d107df1df6c04ec825",
+    "crates/waytoys-zones-editor/Cargo.toml": "4bf8625cbfbdb37849aa1227129cde36c59535f99a351751231bfbf19d0f64aa",
+    "crates/waytoys-zones-config/tests/preferences.rs": "8a56b3ea28948b6760b4c0c074c26c43c2bb2293ac9ff985c733e0f62f9b5eef",
+    "crates/waytoys-zones-config/src/store.rs": "fddee9d5377929f3e52346e8aa238f4ea1f5f03140beeada60afa18f96a5175c",
+    "crates/waytoys-zones-config/src/model.rs": "53e32f174ba3055c811a56301bc1d594060f93fe607bfec59d54ffba3a4ebc3d",
+    "crates/waytoys-zones-config/src/lib.rs": "0395185b724661dc2b5446ad9033ef361708c17832298de2def49a522647c50c",
+    "crates/waytoys-zones-config/Cargo.toml": "da271700d5056ecadf34db5c97f3584f4ad06306c64df876730acf769788da1f",
+    "crates/waytoys-zones/tests/cli.rs": "c16972010517e77f76e95d42a5770556701b36032c32fbd254c543fc3fab36a1",
+    "crates/waytoys-zones/src/settings.rs": "29abfc36a6805451ee9bfab92c4789a0f917aacc162fd378ad80623fdb85b8a9",
+    "crates/waytoys-zones/src/selection.rs": "a0b591e337457afd2b15868c223f2e6d66f62565ed974ae1f1e0d9141a99ee11",
+    "crates/waytoys-zones/src/model.rs": "09176c0ca739f164e04fdab77f699209fc70baaa4792f7bd3171c09714907c0d",
+    "crates/waytoys-zones/src/main.rs": "4b4f157965f2aeadb08829094f2885c3a4b68e895c8798e16870bd60cf069acb",
+    "crates/waytoys-zones/src/magnetic_snap.rs": "633f3cc10b35fd7d3fb1fcad57cc69c3f7c0f373c0532abd9cbcde736c8a0c85",
+    "crates/waytoys-zones/src/lib.rs": "214d9b99637decfc09d0c784e1ef284dbd023b4d9eafeb5b9ad17f085a59ce1c",
+    "crates/waytoys-zones/src/layout.rs": "6b7ded12af266e2d1158728438f88d6e230036289f4d246be8315a8553352ad5",
+    "crates/waytoys-zones/src/grid_editor.rs": "b1dc5b1e5e4856016b86edf3ae9bc49e90caff5788609043ce8e99834a7c0e2f",
+    "crates/waytoys-zones/src/geometry.rs": "39fab653bd888c440cc2459698d30ac1788f5fc44612021f62af4a04c4c40beb",
+    "crates/waytoys-zones/src/canvas_editor.rs": "40e7f0d78e37e1f65e5e82c653444ee744d9bfefc28419ca46eefde7317eb5b6",
+    "crates/waytoys-zones/Cargo.toml": "cd110e6b8ca574048450e845ec2d19d4a1990f7fe74aff7fa9f1ce5a7f7f5cf4",
+    "crates/waytoys-overlay/src/main.rs": "c6fd24478f69ce0caa757d598e4199d5ba88a9293a78f4a41ca8591069cec3b8",
+    "crates/waytoys-overlay/Cargo.toml": "88482fb747727f4a58d91222677796bad301f4d08aa890b01251978295cca8a6",
+    "crates/waytoys-core/Cargo.toml": "3ee707249114e3b7b19139719b2c194809681267e3a3496ad345588d4b96229e",
+    "crates/waytoys-core/src/lib.rs": "0cf5e19c8a2f92e00332548e86c03ca54e06ba8e99c913067a25a8951a15b982",
+    "scripts/zones-settings-vm.ps1": "38446cf39ea6b1e7ff1fb5d83bb97195638fdd6e21873d14038f8f596dcf340a",
+    "scripts/measure-zones-processes.py": "f532c941555aee6e06577241110e538de7582256926072a1283bc31c9d681cea"
+  },
+  "units": {
+    "waytoys-settings-21": "MainPID=0\nActiveState=inactive",
+    "waytoys-settings-21-reopen": "MainPID=0\nActiveState=inactive",
+    "waytoys-settings-22": "MainPID=0\nActiveState=inactive",
+    "waytoys-settings-22-invalid": "MainPID=0\nActiveState=inactive",
+    "waytoys-settings-22-final": "MainPID=0\nActiveState=inactive",
+    "waytoys-preview-22": "MainPID=0\nActiveState=inactive",
+    "waytoys-zones-settings-dev": "MainPID=37213\nActiveState=active"
+  },
+  "processes": [
+    {
+      "pid": 37213,
+      "args": [
+        "/home/debian/projects/way-toys/target/debug/waytoys-zones-settings",
+        "--config-dir",
+        "/home/debian/waytoys-test-results/settings-22/config"
+      ]
+    }
+  ]
+}

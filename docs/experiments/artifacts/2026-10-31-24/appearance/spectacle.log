@@ -1,0 +1,8 @@
+Oct 31 07:58:27 waytoys-kde systemd[725]: Started waytoys-capture-editor-20261031-165827-60f399.service - [systemd-run] /usr/bin/spectacle --fullscreen --gui.
+Oct 31 07:58:27 waytoys-kde spectacle[56881]: libEGL warning: pci id for fd 13: 1b36:0100, driver (null)
+Oct 31 07:58:27 waytoys-kde spectacle[56881]: pci id for fd 14: 1b36:0100, driver (null)
+Oct 31 07:58:27 waytoys-kde spectacle[56881]: kmsro: driver missing
+Oct 31 07:58:27 waytoys-kde spectacle[56881]: libEGL warning: egl: failed to create dri2 screen
+Oct 31 07:58:27 waytoys-kde spectacle[56881]: pci id for fd 14: 1b36:0100, driver (null)
+Oct 31 07:58:27 waytoys-kde spectacle[56881]: kmsro: driver missing
+Oct 31 07:58:27 waytoys-kde spectacle[56881]: libEGL warning: egl: failed to create dri2 screen

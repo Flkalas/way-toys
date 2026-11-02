@@ -1,0 +1,30 @@
+ERROR:dbus.connection:Unable to set arguments ('/tmp/waytoys-window-1ch51sdn.js', 'waytoys-test-probe-45107') according to signature 's': <class 'TypeError'>: Fewer items found in D-Bus signature than in Python arguments
+Traceback (most recent call last):
+  File "/home/debian/projects/way-toys/scripts/kwin-window-probe.py", line 54, in <module>
+    sid = scripting.loadScript(path, script_name)
+  File "/usr/lib/python3/dist-packages/dbus/proxies.py", line 72, in __call__
+    return self._proxy_method(*args, **keywords)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/dbus/proxies.py", line 141, in __call__
+    return self._connection.call_blocking(self._named_service,
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+                                          self._object_path,
+                                          ^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+                                          args,
+                                          ^^^^^
+                                          **keywords)
+                                          ^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/dbus/connection.py", line 687, in call_blocking
+    message.append(signature=signature, *args)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Fewer items found in D-Bus signature than in Python arguments
+/etc/sddm.conf.d/20-waytoys.conf:User=debian
+/etc/sddm.conf.d/20-waytoys.conf:Session=plasma.desktop
+QThreadStorage: Thread 0x5609ff8e04c0 exited after QThreadStorage 1 destroyed
+QThreadStorage: Thread 0x5609ff8e04c0 exited after QThreadStorage 0 destroyed
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/debian/projects/way-toys/target/kwin-zones
+ninja: no work to do.
+Installed /usr/lib/x86_64-linux-gnu/qt6/plugins/kwin/plugins/waytoys_zones_bridge.so. Log out and back in after updating an already loaded plugin.

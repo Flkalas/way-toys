@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "D:\Github\utils\way-toys\scripts\test-paste-vm.py", line 259, in <module>
+    try:detail=fn()
+               ~~^^
+  File "D:\Github\utils\way-toys\scripts\test-paste-vm.py", line 216, in lock_and_delivery
+    guest("python3 - <<'PY'\nimport dbus\np=dbus.Interface(dbus.SessionBus().get_object('org.kde.kglobalaccel','/kglobalaccel'),'org.kde.KGlobalAccel')\nassert (0x08000000|0x01000037) in p.shortcut(dbus.Array(['kwin','Window Resize','',''],signature='s'))\nPY")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Github\utils\way-toys\scripts\test-paste-vm.py", line 26, in guest
+    if check and proc.returncode:raise RuntimeError((proc.stderr or proc.stdout).decode(errors='replace'))
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+AssertionError
+

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\Github\utils\way-toys\scripts\test-capture-vm.py", line 283, in <module>
+    try:detail=fn()
+               ~~^^
+  File "D:\Github\utils\way-toys\scripts\test-capture-vm.py", line 233, in settings_button
+    restored=settings();assert not restored['minimized'],restored
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'id': '{96a1c2e2-a0ea-4f67-926f-0e41bb914128}', 'caption': 'Waytoys', 'app': 'waytoys-settings', 'geometry': [900, 15, 900, 500.00000000000006], 'opacity': 1, 'move': False, 'resize': False, 'minimized': True}

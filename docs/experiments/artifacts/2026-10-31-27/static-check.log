@@ -1,0 +1,4 @@
+Python AST: OK
+install-paste.sh syntax: OK
+git diff --check: OK
+Exact local/guest SHA-256 match: 85 source files

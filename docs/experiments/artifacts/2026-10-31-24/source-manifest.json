@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Cargo.lock",
+    "sha256": "23a00049dd03cf1b216d53a9e96b56875011a233a0dfb5584485aa23f0bbbc76"
+  },
+  {
+    "path": "Cargo.toml",
+    "sha256": "22b2807b63e9d3ddb0f4b4ffd13c75bdf3ef96679bb6063ff615e79748b56096"
+  },
+  {
+    "path": "crates/waytoys-core/src/client.rs",
+    "sha256": "13a0585309eaa4bb5538e57f728fbe83fba2a37cebbb3e43340698f7b027f7d5"
+  },
+  {
+    "path": "crates/waytoys-core/src/settings.rs",
+    "sha256": "58febc87a8a9bdd5e35d19288435760c6abe826b96435f8c82a75ccf20286f84"
+  },
+  {
+    "path": "crates/waytoys-core/src/storage.rs",
+    "sha256": "1c3b16555d564153e96798b2ad68f6d31d9ba78ce93ffc57d388073beaf8414e"
+  },
+  {
+    "path": "crates/waytoys-runtime/src/main.rs",
+    "sha256": "51c97a77292337676bef8debc4ba6fca2288cc2659f4a45f0e6283b3b83b007b"
+  },
+  {
+    "path": "crates/waytoys-runtime/src/zones.rs",
+    "sha256": "666b6fdfa53eff1085d8ce2b0f7b4e6e54e887a42dab2825bf1c82a69d5dc96c"
+  },
+  {
+    "path": "crates/waytoys-runtime/src/overlay.rs",
+    "sha256": "01efe831a84479385dfdee7d2cf42793688fba55a542af0ec4504cd8878625ff"
+  },
+  {
+    "path": "crates/waytoys-runtime/src/autostart.rs",
+    "sha256": "f4600d9290c870a5be2e3ecea69a9d7274f96a622f31eb92fc647a65dcb2fe74"
+  },
+  {
+    "path": "crates/waytoys-zones-settings/src/lib.rs",
+    "sha256": "9010a4124ee82fb0efb4d438e5c575916786a7eea1f8a2855c3fa6e08ced4edb"
+  },
+  {
+    "path": "crates/waytoys-zones-settings/src/view.rs",
+    "sha256": "befcbfa4f7dfd5ed58fe005c5e3253f2e918d290a4078f42e9f7e99a766bb77b"
+  },
+  {
+    "path": "kwin/zones/bridge.cpp",
+    "sha256": "8d1a861d3b88818c85201fb3b08e87c5df376ca4a9a0c746f4ea8805f64da5e4"
+  }
+]

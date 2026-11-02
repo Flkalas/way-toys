@@ -1,0 +1,1 @@
+[{"type":"move","x":300.5,"y":55},{"type":"move","x":300,"y":55},{"type":"button","down":true},{"type":"move","x":1270.5,"y":55},{"type":"move","x":1270,"y":55},{"type":"button","down":false},{"type":"wait","seconds":0.4}]

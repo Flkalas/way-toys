@@ -1,0 +1,6 @@
+true
+{"attached":false,"epoch":"870a6393-1afc-4b5b-8ec2-e9778f29c446","outputs":[{"geometry":[0,0,848,480],"name":"Virtual-1"},{"geometry":[848,0,1113,626],"name":"Virtual-2"}],"protocol":1}
+Failed to reset failed state of unit waytoys-probe-window.service: Unit waytoys-probe-window.service not loaded.
+Running as unit: waytoys-probe-window.service; invocation ID: b701329bd96b4684969572c24fdaa7fc
+Running as unit: waytoys-runtime-23.service; invocation ID: 6102d1082d4742129d861a7551243a5e
+Running as unit: waytoys-settings-23.service; invocation ID: ff835d4e43a6485bbfb57fdf1c3d4fd6

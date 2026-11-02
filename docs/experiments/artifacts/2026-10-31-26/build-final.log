@@ -1,0 +1,58 @@
+    Checking waytoys-capture v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-capture)
+    Checking waytoys-zones-editor v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones-editor)
+    Checking waytoys-zones-settings v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones-settings)
+    Checking waytoys-zones-config v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones-config)
+    Checking waytoys-core v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-core)
+    Checking waytoys-zones v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones)
+    Checking waytoys-overlay v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-overlay)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.05s
+   Compiling waytoys-capture v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-capture)
+   Compiling waytoys-runtime v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-runtime)
+   Compiling waytoys-zones-settings v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones-settings)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.84s
+   Compiling syn v2.0.119
+   Compiling crossbeam-utils v0.8.23
+   Compiling toml_edit v0.25.17+spec-1.1.0
+   Compiling wayland-scanner v0.31.11
+   Compiling concurrent-queue v2.5.0
+   Compiling wayland-client v0.31.15
+   Compiling enumflags2_derive v0.7.12
+   Compiling proc-macro-crate v3.5.0
+   Compiling enumflags2 v0.7.12
+   Compiling tracing-attributes v0.1.31
+   Compiling zvariant_derive v5.15.1
+   Compiling wayland-protocols v0.32.13
+   Compiling tracing v0.1.44
+   Compiling bytemuck v1.25.2
+   Compiling async-io v2.6.0
+   Compiling zvariant v5.15.1
+   Compiling async-channel v2.5.0
+   Compiling zbus_names v4.3.5
+   Compiling async-signal v0.2.14
+   Compiling xkeysym v0.2.1
+   Compiling calloop v0.14.5
+   Compiling wayland-cursor v0.31.14
+   Compiling xkbcommon v0.8.0
+   Compiling async-process v2.5.0
+   Compiling calloop-wayland-source v0.4.1
+   Compiling zbus_macros v5.19.0
+   Compiling wayland-protocols-misc v0.3.12
+   Compiling wayland-protocols-experimental v20250721.0.1
+   Compiling wayland-protocols-wlr v0.3.12
+   Compiling blocking v1.7.0
+   Compiling async-executor v1.14.0
+   Compiling zbus v5.19.0
+   Compiling smithay-client-toolkit v0.20.0
+   Compiling waytoys-capture v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-capture)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 36.84s
+     Running unittests src/main.rs (target/debug/deps/waytoys_capture-2d64076e3db034b1)
+
+running 5 tests
+test backend::tests::qimage_alpha_formats_are_converted_before_png_encoding ... ok
+test image::tests::fractional_single_output_crop_preserves_original_pixels ... ok
+test image::tests::mixed_outputs_use_highest_density_and_keep_gaps_transparent ... ok
+test image::tests::selection_reverses_clips_and_rejects_empty_or_nonfinite_input ... ok
+test image::tests::painting_does_not_alter_source_and_png_has_straight_rgba ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

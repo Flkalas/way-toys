@@ -1,0 +1,50 @@
+Oct 31 07:40:36 waytoys-kde systemd[725]: Started waytoys-trace-23.service - [systemd-run] /usr/bin/dbus-monitor --session interface=org.waytoys.ZonesBridge1.
+Oct 31 07:40:36 waytoys-kde dbus-monitor[49908]: signal time=1793432436.094569 sender=org.freedesktop.DBus -> destination=:1.814 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+Oct 31 07:40:36 waytoys-kde dbus-monitor[49908]:    string ":1.814"
+Oct 31 07:40:36 waytoys-kde dbus-monitor[49908]: signal time=1793432436.094610 sender=org.freedesktop.DBus -> destination=:1.814 serial=4 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameLost
+Oct 31 07:40:36 waytoys-kde dbus-monitor[49908]:    string ":1.814"
+Oct 31 07:40:36 waytoys-kde dbus-monitor[49908]: method call time=1793432436.358634 sender=:1.231 -> destination=org.kde.KWin serial=2704 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Snapshot
+Oct 31 07:40:36 waytoys-kde dbus-monitor[49908]: method call time=1793432436.359946 sender=:1.231 -> destination=org.kde.KWin serial=2705 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Configure
+Oct 31 07:40:36 waytoys-kde dbus-monitor[49908]:    string "{"enabled":true,"excluded":[],"outputs":["Virtual-1","Virtual-2"],"protocol":1,"transparent":true}"
+Oct 31 07:40:36 waytoys-kde dbus-monitor[49908]: method call time=1793432436.861238 sender=:1.231 -> destination=org.kde.KWin serial=2707 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Snapshot
+Oct 31 07:40:36 waytoys-kde dbus-monitor[49908]: method call time=1793432436.862848 sender=:1.231 -> destination=org.kde.KWin serial=2708 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Configure
+Oct 31 07:40:36 waytoys-kde dbus-monitor[49908]:    string "{"enabled":true,"excluded":[],"outputs":["Virtual-1","Virtual-2"],"protocol":1,"transparent":true}"
+Oct 31 07:40:37 waytoys-kde dbus-monitor[49908]: method call time=1793432437.364567 sender=:1.231 -> destination=org.kde.KWin serial=2709 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Snapshot
+Oct 31 07:40:37 waytoys-kde dbus-monitor[49908]: method call time=1793432437.366049 sender=:1.231 -> destination=org.kde.KWin serial=2710 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Configure
+Oct 31 07:40:37 waytoys-kde dbus-monitor[49908]:    string "{"enabled":true,"excluded":[],"outputs":["Virtual-1","Virtual-2"],"protocol":1,"transparent":true}"
+Oct 31 07:40:37 waytoys-kde dbus-monitor[49908]: method call time=1793432437.867425 sender=:1.231 -> destination=org.kde.KWin serial=2711 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Snapshot
+Oct 31 07:40:37 waytoys-kde dbus-monitor[49908]: method call time=1793432437.868591 sender=:1.231 -> destination=org.kde.KWin serial=2712 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Configure
+Oct 31 07:40:37 waytoys-kde dbus-monitor[49908]:    string "{"enabled":true,"excluded":[],"outputs":["Virtual-1","Virtual-2"],"protocol":1,"transparent":true}"
+Oct 31 07:40:38 waytoys-kde dbus-monitor[49908]: signal time=1793432438.346239 sender=:1.211 -> destination=(null destination) serial=4120 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Event
+Oct 31 07:40:38 waytoys-kde dbus-monitor[49908]:    string "{"ctrl":false,"epoch":"870a6393-1afc-4b5b-8ec2-e9778f29c446","id":6,"kind":"update","output":"Virtual-1","position":[329.98516845703125,99.9903564453125],"sequence":1,"shift":true}"
+Oct 31 07:40:38 waytoys-kde dbus-monitor[49908]: method call time=1793432438.369752 sender=:1.231 -> destination=org.kde.KWin serial=2713 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Snapshot
+Oct 31 07:40:38 waytoys-kde dbus-monitor[49908]: method call time=1793432438.374642 sender=:1.231 -> destination=org.kde.KWin serial=2714 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Configure
+Oct 31 07:40:38 waytoys-kde dbus-monitor[49908]:    string "{"enabled":true,"excluded":[],"outputs":["Virtual-1","Virtual-2"],"protocol":1,"transparent":true}"
+Oct 31 07:40:38 waytoys-kde dbus-monitor[49908]: signal time=1793432438.437860 sender=:1.211 -> destination=(null destination) serial=4124 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Event
+Oct 31 07:40:38 waytoys-kde dbus-monitor[49908]:    string "{"ctrl":false,"epoch":"870a6393-1afc-4b5b-8ec2-e9778f29c446","id":6,"kind":"update","output":"Virtual-1","position":[200.00189208984375,229.99310302734375],"sequence":2,"shift":true}"
+Oct 31 07:40:38 waytoys-kde dbus-monitor[49908]: signal time=1793432438.567924 sender=:1.211 -> destination=(null destination) serial=4125 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Event
+Oct 31 07:40:38 waytoys-kde dbus-monitor[49908]:    string "{"ctrl":true,"epoch":"870a6393-1afc-4b5b-8ec2-e9778f29c446","id":6,"kind":"update","output":"Virtual-1","position":[200.00189208984375,229.99310302734375],"sequence":3,"shift":true}"
+Oct 31 07:40:38 waytoys-kde dbus-monitor[49908]: signal time=1793432438.585783 sender=:1.211 -> destination=(null destination) serial=4126 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Event
+Oct 31 07:40:38 waytoys-kde dbus-monitor[49908]:    string "{"ctrl":true,"epoch":"870a6393-1afc-4b5b-8ec2-e9778f29c446","id":6,"kind":"update","output":"Virtual-1","position":[649.9762268066406,229.99310302734375],"sequence":4,"shift":true}"
+Oct 31 07:40:38 waytoys-kde dbus-monitor[49908]: signal time=1793432438.657859 sender=:1.211 -> destination=(null destination) serial=4127 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Event
+Oct 31 07:40:38 waytoys-kde dbus-monitor[49908]:    string "{"ctrl":true,"epoch":"870a6393-1afc-4b5b-8ec2-e9778f29c446","id":6,"kind":"update","output":"Virtual-2","position":[849.9496154785156,229.99310302734375],"sequence":5,"shift":true}"
+Oct 31 07:40:38 waytoys-kde dbus-monitor[49908]: method call time=1793432438.876452 sender=:1.231 -> destination=org.kde.KWin serial=2715 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Snapshot
+Oct 31 07:40:38 waytoys-kde dbus-monitor[49908]: method call time=1793432438.877712 sender=:1.231 -> destination=org.kde.KWin serial=2716 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Configure
+Oct 31 07:40:38 waytoys-kde dbus-monitor[49908]:    string "{"enabled":true,"excluded":[],"outputs":["Virtual-1","Virtual-2"],"protocol":1,"transparent":true}"
+Oct 31 07:40:39 waytoys-kde dbus-monitor[49908]: signal time=1793432439.150926 sender=:1.211 -> destination=(null destination) serial=4131 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Event
+Oct 31 07:40:39 waytoys-kde dbus-monitor[49908]:    string "{"ctrl":true,"epoch":"870a6393-1afc-4b5b-8ec2-e9778f29c446","id":6,"kind":"update","output":"Virtual-2","position":[849.9496154785156,229.99310302734375],"sequence":6,"shift":true}"
+Oct 31 07:40:39 waytoys-kde dbus-monitor[49908]: signal time=1793432439.153748 sender=:1.211 -> destination=(null destination) serial=4132 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Event
+Oct 31 07:40:39 waytoys-kde dbus-monitor[49908]:    string "{"ctrl":true,"epoch":"870a6393-1afc-4b5b-8ec2-e9778f29c446","id":6,"kind":"drop","output":"Virtual-2","position":[849.9496154785156,229.99310302734375],"sequence":7,"shift":true}"
+Oct 31 07:40:39 waytoys-kde dbus-monitor[49908]: method call time=1793432439.154922 sender=:1.231 -> destination=org.kde.KWin serial=2717 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Target
+Oct 31 07:40:39 waytoys-kde dbus-monitor[49908]:    string "{"epoch":"870a6393-1afc-4b5b-8ec2-e9778f29c446","id":6,"sequence":7,"rect":null}"
+Oct 31 07:40:39 waytoys-kde dbus-monitor[49908]: signal time=1793432439.174777 sender=:1.211 -> destination=(null destination) serial=4133 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Event
+Oct 31 07:40:39 waytoys-kde dbus-monitor[49908]:    string "{"epoch":"870a6393-1afc-4b5b-8ec2-e9778f29c446","id":6,"kind":"cancel","reason":"complete","sequence":8}"
+Oct 31 07:40:39 waytoys-kde dbus-monitor[49908]: method call time=1793432439.379346 sender=:1.231 -> destination=org.kde.KWin serial=2718 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Snapshot
+Oct 31 07:40:39 waytoys-kde dbus-monitor[49908]: method call time=1793432439.380788 sender=:1.231 -> destination=org.kde.KWin serial=2719 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Configure
+Oct 31 07:40:39 waytoys-kde dbus-monitor[49908]:    string "{"enabled":true,"excluded":[],"outputs":["Virtual-1","Virtual-2"],"protocol":1,"transparent":true}"
+Oct 31 07:40:39 waytoys-kde dbus-monitor[49908]: method call time=1793432439.882282 sender=:1.231 -> destination=org.kde.KWin serial=2720 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Snapshot
+Oct 31 07:40:39 waytoys-kde dbus-monitor[49908]: method call time=1793432439.883858 sender=:1.231 -> destination=org.kde.KWin serial=2721 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Configure
+Oct 31 07:40:39 waytoys-kde dbus-monitor[49908]:    string "{"enabled":true,"excluded":[],"outputs":["Virtual-1","Virtual-2"],"protocol":1,"transparent":true}"
+Oct 31 07:40:40 waytoys-kde dbus-monitor[49908]: method call time=1793432440.385347 sender=:1.231 -> destination=org.kde.KWin serial=2722 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Snapshot
+Oct 31 07:40:40 waytoys-kde dbus-monitor[49908]: method call time=1793432440.387565 sender=:1.231 -> destination=org.kde.KWin serial=2723 path=/Waytoys/Zones; interface=org.waytoys.ZonesBridge1; member=Configure
+Oct 31 07:40:40 waytoys-kde dbus-monitor[49908]:    string "{"enabled":true,"excluded":[],"outputs":["Virtual-1","Virtual-2"],"protocol":1,"transparent":true}"

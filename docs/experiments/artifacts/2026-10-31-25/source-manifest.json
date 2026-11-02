@@ -1,0 +1,21 @@
+{
+  "head": "c02799b7bfb7f86a04fa85da0d5ad142f1000b9b",
+  "files": [
+    {
+      "path": "Cargo.lock",
+      "sha256": "680e7b52b39fa4cdefac6e94bb514175f72772678242c3e063a970de8d52cccc"
+    },
+    {
+      "path": "crates/waytoys-zones-settings/Cargo.toml",
+      "sha256": "22ccce4776c5a77835ab25b0048e3f1191caa0fa55565c6770dacb8668d21b84"
+    },
+    {
+      "path": "crates/waytoys-zones-settings/src/lib.rs",
+      "sha256": "a4261dc581c3957cf409b636d7c5d08dd5d23fd4f9764a7ec995d52bc955337d"
+    },
+    {
+      "path": "crates/waytoys-zones-settings/src/view.rs",
+      "sha256": "d177bd83d14ddb7c4941c56b251a3dc406fc7ec64546ecb365f7f8ab024f14a1"
+    }
+  ]
+}

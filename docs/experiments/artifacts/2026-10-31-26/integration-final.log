@@ -1,0 +1,5 @@
+single_and_paste: passed
+fractional: passed
+crossing: passed
+cancellation: passed
+cleanup_and_resume: passed

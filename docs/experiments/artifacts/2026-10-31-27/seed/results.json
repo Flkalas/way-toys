@@ -1,0 +1,44 @@
+[
+  {
+    "name": "seed",
+    "passed": true,
+    "detail": {
+      "text": {
+        "id": 2,
+        "mime": "text/plain;charset=utf-8",
+        "preview": "Waytoys clipboard 한글 확인 두 번째 줄 · 27",
+        "width": 0,
+        "height": 0,
+        "size": 52,
+        "pinned": false,
+        "created": 1793445115
+      },
+      "image": {
+        "id": 3,
+        "mime": "image/png",
+        "preview": "이미지 96 × 64",
+        "width": 96,
+        "height": 64,
+        "size": 261,
+        "pinned": false,
+        "created": 1793445115
+      },
+      "sensitive_skipped": true,
+      "geometry": {
+        "id": "{8a942a3c-ca4c-4261-9c5d-a6ffc62238f9}",
+        "caption": "Waytoys Clipboard",
+        "app": "waytoys-paste",
+        "geometry": [
+          930,
+          15,
+          580,
+          590.4347826086956
+        ],
+        "opacity": 1,
+        "move": false,
+        "resize": false,
+        "minimized": false
+      }
+    }
+  }
+]

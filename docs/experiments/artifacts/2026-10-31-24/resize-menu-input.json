@@ -1,0 +1,1 @@
+[{"type":"move","x":400.5,"y":55},{"type":"move","x":400,"y":55},{"type":"button","button":"right","down":true},{"type":"button","button":"right","down":false},{"type":"wait","seconds":0.3},{"type":"capture","path":"/tmp/waytoys-resize-menu.ppm"}]

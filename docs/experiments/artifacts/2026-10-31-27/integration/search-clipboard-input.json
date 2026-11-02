@@ -1,0 +1,96 @@
+[
+  {
+    "type": "key",
+    "key": "c",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "c",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "l",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "l",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "i",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "i",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "p",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "p",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "b",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "b",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "o",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "o",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "a",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "a",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "r",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "r",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "d",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "d",
+    "down": false
+  },
+  {
+    "type": "wait",
+    "seconds": 0.5
+  }
+]

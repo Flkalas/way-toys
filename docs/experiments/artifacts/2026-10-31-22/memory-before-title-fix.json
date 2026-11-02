@@ -1,0 +1,44 @@
+{
+  "utc": "2026-10-31T05:10:18.189757+00:00",
+  "elapsed_seconds": 10.000130950997118,
+  "processes": [
+    {
+      "unit": "waytoys-settings-22-final",
+      "pid": 36243,
+      "before": {
+        "rss_kib": 103512,
+        "peak_rss_kib": 103512,
+        "pss_kib": 98699,
+        "threads": 5,
+        "cpu_ticks": 630
+      },
+      "after": {
+        "rss_kib": 103512,
+        "peak_rss_kib": 103512,
+        "pss_kib": 98699,
+        "threads": 5,
+        "cpu_ticks": 671
+      },
+      "cpu_seconds": 0.41
+    },
+    {
+      "unit": "waytoys-preview-22",
+      "pid": 36455,
+      "before": {
+        "rss_kib": 28432,
+        "peak_rss_kib": 28432,
+        "pss_kib": 24995,
+        "threads": 1,
+        "cpu_ticks": 171
+      },
+      "after": {
+        "rss_kib": 28432,
+        "peak_rss_kib": 28432,
+        "pss_kib": 24995,
+        "threads": 1,
+        "cpu_ticks": 171
+      },
+      "cpu_seconds": 0.0
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{"pointer": {"x": 650, "y": 230}, "windows": [{"id": "{8237d483-bea6-4383-857a-3a3b9a222e5c}", "caption": "Waytoys", "app": "waytoys-settings", "geometry": [43, 15, 762, 409], "opacity": 1, "move": false, "resize": false}]}
+Traceback (most recent call last):
+  File "/home/debian/projects/way-toys/scripts/test-tray-action.py", line 17, in <module>
+    if bus.get_unix_process_id(service)!=pid: continue
+       ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionBus' object has no attribute 'get_unix_process_id'. Did you mean: 'get_peer_unix_process_id'?
+{"pointer": {"x": 650, "y": 230}, "windows": [{"id": "{8237d483-bea6-4383-857a-3a3b9a222e5c}", "caption": "Waytoys", "app": "waytoys-settings", "geometry": [43, 15, 762, 409], "opacity": 1, "move": false, "resize": false}]}
+Traceback (most recent call last):
+  File "/home/debian/projects/way-toys/scripts/test-tray-action.py", line 17, in <module>
+    if bus.get_unix_process_id(service)!=pid: continue
+       ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionBus' object has no attribute 'get_unix_process_id'. Did you mean: 'get_peer_unix_process_id'?
+MainPID=58085
+ActiveState=active
+
+MainPID=58071
+ActiveState=active
+{
+  "run_at_login": false,
+  "enabled": {
+    "zones": true
+  }
+}

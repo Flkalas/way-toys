@@ -1,0 +1,27 @@
+[
+  {
+    "name": "failures_and_lifetime",
+    "passed": true,
+    "detail": {
+      "clipboard_sha256": "a672edac5e0036759319b92c1cf884ff137d51989849fcb4665b729ecb0bfbf6",
+      "status": {
+        "paths": {
+          "app": "/home/debian/waytoys-test-results/settings-23/app",
+          "zones": "/home/debian/waytoys-test-results/settings-23/zones"
+        },
+        "settings": {
+          "run_at_login": false,
+          "enabled": {
+            "zones": true
+          }
+        },
+        "ready": true,
+        "blocked": false,
+        "error": null
+      },
+      "permission_denied": true,
+      "locked_refused": true,
+      "standalone": true
+    }
+  }
+]

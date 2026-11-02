@@ -1,0 +1,78 @@
+[
+  {
+    "name": "settings_button",
+    "passed": true,
+    "detail": {
+      "before": {
+        "id": "{407ed573-a7bc-47ac-bb0a-f8b2f27b0329}",
+        "caption": "Waytoys",
+        "app": "waytoys-settings",
+        "geometry": [
+          900,
+          15,
+          900,
+          500.00000000000006
+        ],
+        "opacity": 1,
+        "move": false,
+        "resize": false,
+        "minimized": false
+      },
+      "closed": true,
+      "restored": {
+        "id": "{c76fb009-313f-42c5-80e1-92e6483539d6}",
+        "caption": "Waytoys",
+        "app": "waytoys-settings",
+        "geometry": [
+          43,
+          15,
+          762,
+          409
+        ],
+        "opacity": 1,
+        "move": false,
+        "resize": false,
+        "minimized": false
+      },
+      "tray": {
+        "action": "open",
+        "pid": 74760,
+        "item": "org.kde.StatusNotifierItem-74760-1/StatusNotifierItem"
+      },
+      "clipboard_sha256": "a672edac5e0036759319b92c1cf884ff137d51989849fcb4665b729ecb0bfbf6"
+    }
+  },
+  {
+    "name": "preview_and_memory",
+    "passed": true,
+    "detail": {
+      "image": {
+        "width": 321,
+        "height": 141,
+        "sha256": "a672edac5e0036759319b92c1cf884ff137d51989849fcb4665b729ecb0bfbf6",
+        "rgba_sha256": "d53b699143eb50d4019c35329d5b867a2bf3578f62cb44b146b5ff0a03a2010f"
+      },
+      "memory": {
+        "utc": "2026-10-31T10:41:18.766308+00:00",
+        "pid": 77016,
+        "elapsed_seconds": 3.0014824859972578,
+        "before": {
+          "rss_kib": 31104,
+          "peak_rss_kib": 31104,
+          "pss_kib": 24000,
+          "threads": 5,
+          "cpu_ticks": 10
+        },
+        "after": {
+          "rss_kib": 31104,
+          "peak_rss_kib": 31104,
+          "pss_kib": 24000,
+          "threads": 5,
+          "cpu_ticks": 10
+        },
+        "cpu_seconds": 0.0
+      },
+      "capture_exited": true
+    }
+  }
+]

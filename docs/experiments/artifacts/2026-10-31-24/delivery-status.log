@@ -1,0 +1,20 @@
+{"pointer": {"x": 650, "y": 230}, "windows": [{"id": "{e4d71b5d-f240-4836-a06e-7df039aed1ab}", "caption": "Waytoys", "app": "waytoys-settings", "geometry": [1023, 108, 761.7391304347826, 409.56521739130443], "opacity": 1, "move": false, "resize": false}]}
+{
+  "paths": {
+    "app": "/home/debian/waytoys-test-results/settings-23/app",
+    "zones": "/home/debian/waytoys-test-results/settings-23/zones"
+  },
+  "settings": {
+    "run_at_login": false,
+    "enabled": {
+      "zones": true
+    }
+  },
+  "ready": true,
+  "blocked": false,
+  "error": null
+}
+84881c725cd6589c8808638b8ee879dad69d2af85be6f0cfa6410ad3c085fc7c  /home/debian/.config/kwinrc
+fd2469c01e3719989c1835d7020d649497c99db3bfe0ce9e364c5c128cf3af1d  /home/debian/waytoys-test-results/settings-23/zones/outputs/output-Virtual-1.json
+317cce4fb914f530fda6378767dc2fc0af11ada820cd6c9f9066e15d2626cde6  /home/debian/waytoys-test-results/settings-23/zones/outputs/output-Virtual-2.json
+disabled

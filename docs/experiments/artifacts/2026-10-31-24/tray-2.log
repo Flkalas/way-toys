@@ -1,0 +1,14 @@
+{"action": "open", "pid": 58085, "item": "org.kde.StatusNotifierItem-58085-1/StatusNotifierItem"}
+{"pointer": {"x": 650, "y": 230}, "windows": [{"id": "{8237d483-bea6-4383-857a-3a3b9a222e5c}", "caption": "Waytoys", "app": "waytoys-settings", "geometry": [43, 15, 762, 409], "opacity": 1, "move": false, "resize": false}]}
+{"action": "quit", "pid": 58085, "menu_id": 3}
+MainPID=0
+ActiveState=inactive
+
+MainPID=0
+ActiveState=inactive
+{
+  "run_at_login": false,
+  "enabled": {
+    "zones": true
+  }
+}

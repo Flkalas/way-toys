@@ -1,0 +1,21 @@
+[
+  {
+    "y": 280,
+    "x": 560,
+    "type": "move"
+  },
+  {
+    "down": true,
+    "key": "ret",
+    "type": "key"
+  },
+  {
+    "down": false,
+    "key": "ret",
+    "type": "key"
+  },
+  {
+    "seconds": 0.4,
+    "type": "wait"
+  }
+]

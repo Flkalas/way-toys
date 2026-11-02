@@ -1,0 +1,38 @@
+[
+  {
+    "test": "mid_shift",
+    "passed": true,
+    "observed": {
+      "id": "{9e0a57cd-eee8-4d1f-9a67-59801745522f}",
+      "caption": "WaytoysProbe — Konsole",
+      "app": "org.kde.konsole",
+      "geometry": [
+        573,
+        16,
+        259,
+        448
+      ],
+      "opacity": 0.8,
+      "move": false,
+      "resize": false
+    }
+  },
+  {
+    "test": "ctrl_span",
+    "passed": true,
+    "observed": {
+      "id": "{9e0a57cd-eee8-4d1f-9a67-59801745522f}",
+      "caption": "WaytoysProbe — Konsole",
+      "app": "org.kde.konsole",
+      "geometry": [
+        16,
+        16,
+        816,
+        448
+      ],
+      "opacity": 0.8,
+      "move": false,
+      "resize": false
+    }
+  }
+]

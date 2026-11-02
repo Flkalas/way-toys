@@ -1,0 +1,145 @@
+[
+  {
+    "x": 1184,
+    "y": 239,
+    "type": "move"
+  },
+  {
+    "down": true,
+    "type": "button"
+  },
+  {
+    "down": false,
+    "type": "button"
+  },
+  {
+    "x": 1280,
+    "y": 296,
+    "type": "move"
+  },
+  {
+    "down": true,
+    "type": "button"
+  },
+  {
+    "down": false,
+    "type": "button"
+  },
+  {
+    "down": true,
+    "type": "key",
+    "key": "ctrl"
+  },
+  {
+    "down": true,
+    "type": "key",
+    "key": "a"
+  },
+  {
+    "down": false,
+    "type": "key",
+    "key": "a"
+  },
+  {
+    "down": false,
+    "type": "key",
+    "key": "ctrl"
+  },
+  {
+    "down": true,
+    "type": "key",
+    "key": "7"
+  },
+  {
+    "down": false,
+    "type": "key",
+    "key": "7"
+  },
+  {
+    "down": true,
+    "type": "key",
+    "key": "2"
+  },
+  {
+    "down": false,
+    "type": "key",
+    "key": "2"
+  },
+  {
+    "x": 1280,
+    "y": 359,
+    "type": "move"
+  },
+  {
+    "down": true,
+    "type": "button"
+  },
+  {
+    "down": false,
+    "type": "button"
+  },
+  {
+    "down": true,
+    "type": "key",
+    "key": "ctrl"
+  },
+  {
+    "down": true,
+    "type": "key",
+    "key": "a"
+  },
+  {
+    "down": false,
+    "type": "key",
+    "key": "a"
+  },
+  {
+    "down": false,
+    "type": "key",
+    "key": "ctrl"
+  },
+  {
+    "down": true,
+    "type": "key",
+    "key": "shift"
+  },
+  {
+    "down": true,
+    "type": "key",
+    "key": "3"
+  },
+  {
+    "down": false,
+    "type": "key",
+    "key": "3"
+  },
+  {
+    "down": false,
+    "type": "key",
+    "key": "shift"
+  },
+  {
+    "down": true,
+    "type": "key",
+    "key": "1"
+  },
+  {
+    "down": false,
+    "type": "key",
+    "key": "1"
+  },
+  {
+    "down": true,
+    "type": "key",
+    "key": "2"
+  },
+  {
+    "down": false,
+    "type": "key",
+    "key": "2"
+  },
+  {
+    "seconds": 0.5,
+    "type": "wait"
+  }
+]

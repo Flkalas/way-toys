@@ -1,0 +1,186 @@
+[
+  {
+    "type": "key",
+    "key": "left",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "left",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "up",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "up",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "up",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "up",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "up",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "up",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "up",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "up",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "up",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "up",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "ret",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "ret",
+    "down": false
+  },
+  {
+    "type": "wait",
+    "seconds": 0.5
+  }
+]

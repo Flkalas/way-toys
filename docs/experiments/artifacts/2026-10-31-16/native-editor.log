@@ -1,0 +1,92 @@
+Oct 31 03:03:03 waytoys-kde systemd[725]: Started waytoys-grid-editor-16.service - [systemd-run] /home/debian/projects/way-toys/target/debug/waytoys-zones-editor --output Virtual-1 --config-dir /home/debian/waytoys-test-results/grid-editor-16/config.
+Oct 31 03:03:04 waytoys-kde waytoys-zones-editor[20107]: editor opened output=Virtual-1 config=/home/debian/waytoys-test-results/grid-editor-16/config/outputs/output-Virtual-1.json
+Oct 31 03:03:04 waytoys-kde waytoys-zones-editor[20107]: configured output=Virtual-1 logical=848x480 integer_scale=1
+Oct 31 03:03:17 waytoys-kde waytoys-zones-editor[20107]: pointer output=Virtual-1 x=500.00 y=249.99 event=Press { time: 33250926, button: 272, serial: 333 }
+Oct 31 03:03:17 waytoys-kde waytoys-zones-editor[20107]: pointer output=Virtual-1 x=500.00 y=249.99 event=Release { time: 33250967, button: 272, serial: 334 }
+Oct 31 03:03:17 waytoys-kde waytoys-zones-editor[20107]: edit zones=4 dirty=true
+Oct 31 03:04:31 waytoys-kde waytoys-zones-editor[20107]: pointer output=Virtual-1 x=281.99 y=349.98 event=Press { time: 33325078, button: 272, serial: 367 }
+Oct 31 03:04:31 waytoys-kde waytoys-zones-editor[20107]: pointer output=Virtual-1 x=319.99 y=349.98 event=Release { time: 33325202, button: 272, serial: 368 }
+Oct 31 03:04:31 waytoys-kde waytoys-zones-editor[20107]: edit zones=4 dirty=true
+Oct 31 03:04:31 waytoys-kde waytoys-zones-editor[20107]: pointer output=Virtual-1 x=149.97 y=349.98 event=Press { time: 33325285, button: 272, serial: 369 }
+Oct 31 03:04:31 waytoys-kde waytoys-zones-editor[20107]: pointer output=Virtual-1 x=500.00 y=349.98 event=Release { time: 33325410, button: 272, serial: 370 }
+Oct 31 03:04:31 waytoys-kde waytoys-zones-editor[20107]: edit zones=4 dirty=true
+Oct 31 03:04:32 waytoys-kde waytoys-zones-editor[20107]: pointer output=Virtual-1 x=362.00 y=278.99 event=Press { time: 33325493, button: 272, serial: 371 }
+Oct 31 03:04:32 waytoys-kde waytoys-zones-editor[20107]: pointer output=Virtual-1 x=362.00 y=278.99 event=Release { time: 33325534, button: 272, serial: 372 }
+Oct 31 03:04:32 waytoys-kde waytoys-zones-editor[20107]: edit zones=2 dirty=true
+Oct 31 03:04:32 waytoys-kde waytoys-zones-editor[20107]: pointer output=Virtual-1 x=149.97 y=32.00 event=Press { time: 33325617, button: 272, serial: 373 }
+Oct 31 03:04:32 waytoys-kde waytoys-zones-editor[20107]: pointer output=Virtual-1 x=149.97 y=32.00 event=Release { time: 33325659, button: 272, serial: 374 }
+Oct 31 03:04:32 waytoys-kde waytoys-zones-editor[20107]: edit zones=2 dirty=true
+Oct 31 03:04:59 waytoys-kde waytoys-zones-editor[20107]: pointer output=Virtual-1 x=271.99 y=278.99 event=Press { time: 33353061, button: 272, serial: 407 }
+Oct 31 03:04:59 waytoys-kde waytoys-zones-editor[20107]: pointer output=Virtual-1 x=271.99 y=278.99 event=Release { time: 33353103, button: 272, serial: 408 }
+Oct 31 03:04:59 waytoys-kde waytoys-zones-editor[20107]: saved output=Virtual-1 zones=2
+Oct 31 03:04:59 waytoys-kde waytoys-zones-editor[20107]: editor opened output=Virtual-2 config=/home/debian/waytoys-test-results/grid-editor-16/config/outputs/output-Virtual-2.json
+Oct 31 03:04:59 waytoys-kde waytoys-zones-editor[20107]: fractional scale output=Virtual-2 scale=138/120
+Oct 31 03:04:59 waytoys-kde waytoys-zones-editor[20107]: fractional scale output=Virtual-2 scale=120/120
+Oct 31 03:04:59 waytoys-kde waytoys-zones-editor[20107]: fractional scale output=Virtual-2 scale=138/120
+Oct 31 03:04:59 waytoys-kde waytoys-zones-editor[20107]: configured output=Virtual-2 logical=1113x626 integer_scale=2
+Oct 31 03:05:00 waytoys-kde waytoys-zones-editor[20107]: pointer output=Virtual-2 x=400.12 y=299.99 event=Press { time: 33353786, button: 272, serial: 421 }
+Oct 31 03:05:00 waytoys-kde waytoys-zones-editor[20107]: pointer output=Virtual-2 x=400.12 y=299.99 event=Release { time: 33353828, button: 272, serial: 422 }
+Oct 31 03:05:00 waytoys-kde waytoys-zones-editor[20107]: edit zones=4 dirty=true
+Oct 31 03:05:00 waytoys-kde waytoys-zones-editor[20107]: pointer output=Virtual-2 x=185.16 y=299.99 event=Press { time: 33353952, button: 272, serial: 427 }
+Oct 31 03:05:00 waytoys-kde waytoys-zones-editor[20107]: pointer output=Virtual-2 x=185.16 y=299.99 event=Release { time: 33353994, button: 272, serial: 428 }
+Oct 31 03:05:00 waytoys-kde waytoys-zones-editor[20107]: edit zones=5 dirty=true
+Oct 31 03:05:00 waytoys-kde waytoys-zones-editor[20107]: pointer output=Virtual-2 x=185.16 y=449.99 event=Press { time: 33354118, button: 272, serial: 433 }
+Oct 31 03:05:00 waytoys-kde waytoys-zones-editor[20107]: pointer output=Virtual-2 x=222.14 y=449.99 event=Release { time: 33354243, button: 272, serial: 434 }
+Oct 31 03:05:00 waytoys-kde waytoys-zones-editor[20107]: edit zones=5 dirty=true
+Oct 31 03:06:17 waytoys-kde waytoys-zones-editor[20107]: saved output=Virtual-2 zones=5
+Oct 31 03:06:17 waytoys-kde systemd[725]: waytoys-grid-editor-16.service: Consumed 8.196s CPU time, 27M memory peak.
+Oct 31 03:06:17 waytoys-kde systemd[725]: Started waytoys-grid-editor-16-reopen.service - [systemd-run] /home/debian/projects/way-toys/target/debug/waytoys-zones-editor --output Virtual-2 --config-dir /home/debian/waytoys-test-results/grid-editor-16/config.
+Oct 31 03:06:17 waytoys-kde waytoys-zones-editor[20642]: editor opened output=Virtual-2 config=/home/debian/waytoys-test-results/grid-editor-16/config/outputs/output-Virtual-2.json
+Oct 31 03:06:17 waytoys-kde waytoys-zones-editor[20642]: fractional scale output=Virtual-2 scale=138/120
+Oct 31 03:06:17 waytoys-kde waytoys-zones-editor[20642]: fractional scale output=Virtual-2 scale=120/120
+Oct 31 03:06:17 waytoys-kde waytoys-zones-editor[20642]: fractional scale output=Virtual-2 scale=138/120
+Oct 31 03:06:17 waytoys-kde waytoys-zones-editor[20642]: configured output=Virtual-2 logical=1113x626 integer_scale=2
+Oct 31 03:06:50 waytoys-kde waytoys-zones-editor[20642]: pointer output=Virtual-2 x=100.12 y=399.98 event=Press { time: 33464386, button: 272, serial: 524 }
+Oct 31 03:06:50 waytoys-kde waytoys-zones-editor[20642]: pointer output=Virtual-2 x=100.12 y=399.98 event=Release { time: 33464427, button: 272, serial: 525 }
+Oct 31 03:06:50 waytoys-kde waytoys-zones-editor[20642]: edit zones=6 dirty=true
+Oct 31 03:06:50 waytoys-kde waytoys-zones-editor[20642]: pointer output=Virtual-2 x=150.15 y=32.00 event=Press { time: 33464511, button: 272, serial: 526 }
+Oct 31 03:06:50 waytoys-kde waytoys-zones-editor[20642]: pointer output=Virtual-2 x=150.15 y=32.00 event=Release { time: 33464552, button: 272, serial: 527 }
+Oct 31 03:06:50 waytoys-kde waytoys-zones-editor[20642]: edit zones=6 dirty=true
+Oct 31 03:06:50 waytoys-kde waytoys-zones-editor[20642]: pointer output=Virtual-2 x=557.15 y=351.99 event=Press { time: 33464635, button: 272, serial: 528 }
+Oct 31 03:06:50 waytoys-kde waytoys-zones-editor[20642]: pointer output=Virtual-2 x=557.15 y=351.99 event=Release { time: 33464676, button: 272, serial: 529 }
+Oct 31 03:06:50 waytoys-kde waytoys-zones-editor[20642]: editor opened output=Virtual-1 config=/home/debian/waytoys-test-results/grid-editor-16/config/outputs/output-Virtual-1.json
+Oct 31 03:06:50 waytoys-kde waytoys-zones-editor[20642]: configured output=Virtual-1 logical=848x480 integer_scale=1
+Oct 31 03:07:15 waytoys-kde waytoys-zones-editor[20642]: pointer output=Virtual-1 x=779.96 y=32.00 event=Press { time: 33489258, button: 272, serial: 553 }
+Oct 31 03:07:15 waytoys-kde waytoys-zones-editor[20642]: pointer output=Virtual-1 x=779.96 y=32.00 event=Release { time: 33489299, button: 272, serial: 554 }
+Oct 31 03:07:15 waytoys-kde waytoys-zones-editor[20642]: edit zones=2 dirty=false
+Oct 31 03:07:15 waytoys-kde systemd[725]: waytoys-grid-editor-16-reopen.service: Consumed 3.721s CPU time, 28.5M memory peak.
+Oct 31 03:11:17 waytoys-kde systemd[725]: Started waytoys-zones-editor-dev.service - [systemd-run] /home/debian/projects/way-toys/target/debug/waytoys-zones-editor --output Virtual-2 --config-dir /home/debian/waytoys-test-results/grid-editor-16/config.
+Oct 31 03:11:18 waytoys-kde waytoys-zones-editor[21762]: editor opened output=Virtual-2 config=/home/debian/waytoys-test-results/grid-editor-16/config/outputs/output-Virtual-2.json
+Oct 31 03:11:18 waytoys-kde waytoys-zones-editor[21762]: fractional scale output=Virtual-2 scale=138/120
+Oct 31 03:11:18 waytoys-kde waytoys-zones-editor[21762]: fractional scale output=Virtual-2 scale=120/120
+Oct 31 03:11:18 waytoys-kde waytoys-zones-editor[21762]: fractional scale output=Virtual-2 scale=138/120
+Oct 31 03:11:18 waytoys-kde waytoys-zones-editor[21762]: configured output=Virtual-2 logical=1113x626 integer_scale=2
+Oct 31 03:11:18 waytoys-kde waytoys-zones-editor[21762]: buffer output=Virtual-2 logical=1113x626 physical=1280x720 scale=1.15
+MainPID=21762
+MemoryCurrent=28041216
+MemoryPeak=28303360
+562fdc896000-7ffeb54a3000 ---p 00000000 00:00 0                          [rollup]
+Rss:               32028 kB
+Pss:               26526 kB
+Pss_Dirty:         23616 kB
+Pss_Anon:          20016 kB
+Pss_File:           2910 kB
+Pss_Shmem:          3600 kB
+Shared_Clean:       1980 kB
+Shared_Dirty:       7200 kB
+Private_Clean:      2832 kB
+Private_Dirty:     20016 kB
+Referenced:        32028 kB
+Anonymous:         20016 kB
+KSM:                   0 kB
+LazyFree:              0 kB
+AnonHugePages:         0 kB
+ShmemPmdMapped:        0 kB
+FilePmdMapped:         0 kB
+Shared_Hugetlb:        0 kB
+Private_Hugetlb:       0 kB
+Swap:                  0 kB
+SwapPss:               0 kB
+Locked:                0 kB
+Virtual-1	logical=Some((848, 480))	position=Some((0, 0))	integer_scale=1
+Virtual-2	logical=Some((1113, 626))	position=Some((848, 0))	integer_scale=2

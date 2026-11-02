@@ -1,0 +1,16 @@
+[
+  {
+    "type": "key",
+    "key": "ret",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "ret",
+    "down": false
+  },
+  {
+    "type": "wait",
+    "seconds": 0.5
+  }
+]

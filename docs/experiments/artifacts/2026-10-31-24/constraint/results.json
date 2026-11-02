@@ -1,0 +1,36 @@
+[
+  {
+    "test": "size_constraint",
+    "passed": true,
+    "observed": {
+      "before": {
+        "id": "{8069fff9-bc3d-4ab0-ac7b-e26921081133}",
+        "caption": "WaytoysProbe",
+        "app": "org.example.ZoneConstraintProbe",
+        "geometry": [
+          100,
+          60,
+          620,
+          550
+        ],
+        "opacity": 0.8,
+        "move": false,
+        "resize": false
+      },
+      "after": {
+        "id": "{8069fff9-bc3d-4ab0-ac7b-e26921081133}",
+        "caption": "WaytoysProbe",
+        "app": "org.example.ZoneConstraintProbe",
+        "geometry": [
+          449.973388671875,
+          216.0032958984375,
+          620,
+          550
+        ],
+        "opacity": 0.8,
+        "move": false,
+        "resize": false
+      }
+    }
+  }
+]

@@ -1,0 +1,46 @@
+{"pointer": {"x": 523, "y": 239}, "windows": [{"id": "{c1f5e643-1ef2-47cd-b05e-a7140ee5ccd6}", "caption": "Waytoys", "app": "waytoys-zones-settings", "geometry": [1023, 108, 761.7391304347826, 409.56521739130443], "opacity": 1, "move": false, "resize": false}]}
+{"pointer": {"x": 523, "y": 239}, "windows": [{"id": "{c1f5e643-1ef2-47cd-b05e-a7140ee5ccd6}", "caption": "Waytoys", "app": "waytoys-zones-settings", "geometry": [1023, 108, 761.7391304347826, 409.56521739130443], "opacity": 1, "move": false, "resize": false}]}
+{
+  "utc": "2026-10-31T07:54:58.681990+00:00",
+  "elapsed_seconds": 5.000145924997923,
+  "processes": [
+    {
+      "unit": "waytoys-runtime.service",
+      "pid": 56031,
+      "before": {
+        "rss_kib": 12100,
+        "peak_rss_kib": 12100,
+        "pss_kib": 10358,
+        "threads": 8,
+        "cpu_ticks": 13
+      },
+      "after": {
+        "rss_kib": 12100,
+        "peak_rss_kib": 12100,
+        "pss_kib": 10358,
+        "threads": 8,
+        "cpu_ticks": 15
+      },
+      "cpu_seconds": 0.02
+    },
+    {
+      "unit": "waytoys-settings-24.service",
+      "pid": 56000,
+      "before": {
+        "rss_kib": 107740,
+        "peak_rss_kib": 107740,
+        "pss_kib": 103429,
+        "threads": 8,
+        "cpu_ticks": 227
+      },
+      "after": {
+        "rss_kib": 107744,
+        "peak_rss_kib": 107744,
+        "pss_kib": 103433,
+        "threads": 8,
+        "cpu_ticks": 259
+      },
+      "cpu_seconds": 0.32
+    }
+  ]
+}

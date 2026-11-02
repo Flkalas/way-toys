@@ -1,0 +1,10 @@
+[
+  {
+    "test": "window_closed",
+    "passed": true,
+    "observed": {
+      "windows": [],
+      "ready": true
+    }
+  }
+]

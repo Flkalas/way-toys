@@ -1,0 +1,4 @@
+fd2469c01e3719989c1835d7020d649497c99db3bfe0ce9e364c5c128cf3af1d  /home/debian/waytoys-test-results/settings-23/zones/outputs/output-Virtual-1.json
+317cce4fb914f530fda6378767dc2fc0af11ada820cd6c9f9066e15d2626cde6  /home/debian/waytoys-test-results/settings-23/zones/outputs/output-Virtual-2.json
+84881c725cd6589c8808638b8ee879dad69d2af85be6f0cfa6410ad3c085fc7c  /home/debian/.config/kwinrc
+  57087   56000 /home/debian/projects/way-toys/target/debug/waytoys-zones-editor --config-dir /home/debian/waytoys-test-results/settings-23/zones --output Virtual-1

@@ -1,0 +1,7 @@
+[
+  {
+    "name": "pause_and_capture",
+    "passed": false,
+    "error": "Command '['ssh', 'debian@192.168.50.125', 'bash -s']' timed out after 30 seconds"
+  }
+]

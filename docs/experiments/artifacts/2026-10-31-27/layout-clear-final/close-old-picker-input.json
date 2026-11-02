@@ -1,0 +1,16 @@
+[
+  {
+    "type": "key",
+    "key": "esc",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "esc",
+    "down": false
+  },
+  {
+    "type": "wait",
+    "seconds": 0.5
+  }
+]

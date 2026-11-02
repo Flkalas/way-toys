@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\Github\utils\way-toys\scripts\test-capture-vm.py", line 213, in <module>
+    try:detail=fn()
+               ~~^^
+  File "D:\Github\utils\way-toys\scripts\test-capture-vm.py", line 186, in failures_and_lifetime
+    assert digest()==original
+           ^^^^^^^^^^^^^^^^^^
+AssertionError

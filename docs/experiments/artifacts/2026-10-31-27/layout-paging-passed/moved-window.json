@@ -1,0 +1,15 @@
+{
+  "id": "{5ac303f5-01de-44d3-8c2e-c488cfadd397}",
+  "caption": "Waytoys Clipboard",
+  "app": "waytoys-paste",
+  "geometry": [
+    930,
+    15,
+    580,
+    590.4347826086956
+  ],
+  "opacity": 1,
+  "move": false,
+  "resize": false,
+  "minimized": false
+}

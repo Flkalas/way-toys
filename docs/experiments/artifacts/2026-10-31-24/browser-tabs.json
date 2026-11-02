@@ -1,0 +1,32 @@
+[
+  {
+    "id": "cb9cf196-de1d-48d6-8712-ef6ff9e27576",
+    "ok": true,
+    "result": {
+      "browserPageId": "72c3e935-f8dd-4b68-be5b-a812ccdfe69f"
+    },
+    "_meta": {
+      "runtimeId": "9e4df291-82eb-4dcc-94ff-fdb3490622cf"
+    }
+  },
+  {
+    "id": "55b8f3cb-4ead-4273-96b7-bc64cb7b5472",
+    "ok": true,
+    "result": {
+      "browserPageId": "3b0f88f3-1405-4f56-a285-48a8d4f38fc7"
+    },
+    "_meta": {
+      "runtimeId": "9e4df291-82eb-4dcc-94ff-fdb3490622cf"
+    }
+  },
+  {
+    "id": "d954b41b-4d7f-48af-b82b-ce8f57d5a903",
+    "ok": true,
+    "result": {
+      "browserPageId": "f1ee59c1-f59d-4b79-bdc1-3b412d8f1eeb"
+    },
+    "_meta": {
+      "runtimeId": "9e4df291-82eb-4dcc-94ff-fdb3490622cf"
+    }
+  }
+]

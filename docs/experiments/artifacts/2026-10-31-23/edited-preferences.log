@@ -1,0 +1,52 @@
+{
+  "use_cursorpos_editor_startupscreen": true,
+  "show_zones_on_all_monitors": true,
+  "overlapping_zones_algorithm": "largest",
+  "show_zone_number": true,
+  "zone_highlight_opacity": 72,
+  "zone_highlight_color": "#ff4400",
+  "zone_color": "#AACDFF",
+  "zone_border_color": "#FFFFFF",
+  "zone_number_color": "#000000",
+  "layout_name_label_enabled": true,
+  "layout_name_label_placement": "top_center",
+  "layout_name_label_text_color": "#FFFFFF",
+  "layout_name_label_background_color": "#262626",
+  "layout_name_label_font_size": 36,
+  "layout_name_label_padding": 12,
+  "layout_name_label_duration": 10000,
+  "make_dragged_window_transparent": true,
+  "move_windows_based_on_position": false,
+  "move_window_across_monitors": true,
+  "flash_zones_on_quick_switch": true,
+  "excluded_apps": ""
+}
+{
+  "custom-layouts": [
+    {
+      "uuid": "waytoys-grid:Virtual-1",
+      "name": "Virtual-1 grid",
+      "type": "grid",
+      "info": {
+        "rows": 1,
+        "columns": 2,
+        "rows-percentage": [
+          10000
+        ],
+        "columns-percentage": [
+          6666,
+          3334
+        ],
+        "cell-child-map": [
+          [
+            0,
+            1
+          ]
+        ],
+        "show-spacing": true,
+        "spacing": 16,
+        "sensitivity-radius": 20
+      }
+    }
+  ]
+}

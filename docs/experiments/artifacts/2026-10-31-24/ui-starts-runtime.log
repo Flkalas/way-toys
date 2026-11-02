@@ -1,0 +1,23 @@
+MainPID=55441
+ControlGroup=/user.slice/user-1000.slice/user@1000.service/app.slice/waytoys-runtime.service
+Id=waytoys-runtime.service
+
+MainPID=55427
+ControlGroup=/user.slice/user-1000.slice/user@1000.service/app.slice/waytoys-settings-24.service
+Id=waytoys-settings-24.service
+{"pointer": {"x": 650, "y": 230}, "windows": [{"id": "{bfc61e81-e2a0-426f-bf02-62fc37e09e4b}", "caption": "Waytoys", "app": "waytoys-settings", "geometry": [43, 15, 762, 409], "opacity": 1, "move": false, "resize": false}]}
+{
+  "paths": {
+    "app": "/home/debian/waytoys-test-results/settings-23/app",
+    "zones": "/home/debian/waytoys-test-results/settings-23/zones"
+  },
+  "settings": {
+    "run_at_login": true,
+    "enabled": {
+      "zones": true
+    }
+  },
+  "ready": true,
+  "blocked": false,
+  "error": null
+}

@@ -1,0 +1,160 @@
+    Updating crates.io index
+     Locking 48 packages to highest Rust 1.99.1 compatible versions
+      Adding bit-set v0.8.0
+      Adding bit-vec v0.8.0
+      Adding block-buffer v0.10.4
+      Adding byteorder-lite v0.1.0
+      Adding codespan-reporting v0.12.0
+      Adding cpufeatures v0.2.17
+      Adding cryoglyph v0.1.0
+      Adding crypto-common v0.1.7
+      Adding digest v0.10.7
+      Adding document-features v0.2.12
+      Adding etagere v0.2.15
+      Adding euclid v0.22.14
+      Adding fallible-iterator v0.3.0
+      Adding fallible-streaming-iterator v0.1.9
+      Adding foldhash v0.2.0
+      Adding generic-array v0.14.7 (available: v0.14.9)
+      Adding guillotiere v0.6.2
+      Adding hashbrown v0.16.1
+      Adding hashlink v0.10.0
+      Adding hexf-parse v0.2.1
+      Adding iced_wgpu v0.14.0
+      Adding image v0.25.10
+      Adding kamadak-exif v0.6.1
+      Adding libsqlite3-sys v0.35.0
+      Adding litrs v1.0.1
+      Adding lru v0.16.4
+      Adding moxcms v0.8.1
+      Adding mutate_once v0.1.2
+      Adding naga v27.0.3
+      Adding portable-atomic v1.15.0
+      Adding portable-atomic-util v0.2.8
+      Adding profiling v1.0.18
+      Adding pxfm v0.1.30
+      Adding renderdoc-sys v1.1.0
+      Adding rusqlite v0.37.0 (available: v0.41.1)
+      Adding sha2 v0.10.9 (available: v0.11.1)
+      Adding static_assertions v1.1.0
+      Adding svg_fmt v0.4.5
+      Adding typenum v1.20.1
+      Adding unicode-width v0.2.3
+      Adding vcpkg v0.2.15
+      Adding wgpu v27.0.1
+      Adding wgpu-core v27.0.3
+      Adding wgpu-core-deps-windows-linux-android v27.0.0
+      Adding wgpu-hal v27.0.4
+      Adding wgpu-types v27.0.1
+      Adding zune-core v0.5.3
+      Adding zune-jpeg v0.5.15
+ Downloading crates ...
+  Downloaded cpufeatures v0.2.17
+  Downloaded crypto-common v0.1.7
+  Downloaded byteorder-lite v0.1.0
+  Downloaded block-buffer v0.10.4
+  Downloaded generic-array v0.14.7
+  Downloaded digest v0.10.7
+  Downloaded fallible-iterator v0.3.0
+  Downloaded sha2 v0.10.9
+  Downloaded fallible-streaming-iterator v0.1.9
+  Downloaded mutate_once v0.1.2
+  Downloaded hashlink v0.10.0
+  Downloaded kamadak-exif v0.6.1
+  Downloaded typenum v1.20.1
+  Downloaded zune-core v0.5.3
+  Downloaded zune-jpeg v0.5.15
+  Downloaded moxcms v0.8.1
+  Downloaded rusqlite v0.37.0
+  Downloaded vcpkg v0.2.15
+  Downloaded image v0.25.10
+  Downloaded pxfm v0.1.30
+  Downloaded libsqlite3-sys v0.35.0
+   Compiling pxfm v0.1.30
+   Compiling zune-core v0.5.3
+   Compiling zune-jpeg v0.5.15
+   Compiling byteorder-lite v0.1.0
+   Compiling mutate_once v0.1.2
+   Compiling kamadak-exif v0.6.1
+   Compiling moxcms v0.8.1
+   Compiling waytoys-core v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-core)
+   Compiling generic-array v0.14.7
+   Compiling typenum v1.20.1
+   Compiling vcpkg v0.2.15
+   Compiling libsqlite3-sys v0.35.0
+   Compiling image v0.25.10
+   Compiling iced_graphics v0.14.0
+   Compiling iced_tiny_skia v0.14.1
+   Compiling iced_renderer v0.14.0
+   Compiling iced_program v0.14.0
+   Compiling iced_winit v0.14.1
+   Compiling iced_widget v0.14.2
+   Compiling iced v0.14.0
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.7
+   Compiling digest v0.10.7
+   Compiling hashlink v0.10.0
+   Compiling fallible-iterator v0.3.0
+   Compiling cpufeatures v0.2.17
+   Compiling fallible-streaming-iterator v0.1.9
+   Compiling sha2 v0.10.9
+   Compiling waytoys-zones-settings v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones-settings)
+   Compiling rusqlite v0.37.0
+   Compiling waytoys-paste v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-paste)
+   Compiling waytoys-runtime v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-runtime)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 44.33s
+     Running unittests src/main.rs (target/debug/deps/waytoys_capture-69e010763d927514)
+
+running 5 tests
+test image::tests::fractional_single_output_crop_preserves_original_pixels ... ok
+test image::tests::mixed_outputs_use_highest_density_and_keep_gaps_transparent ... ok
+test backend::tests::qimage_alpha_formats_are_converted_before_png_encoding ... ok
+test image::tests::selection_reverses_clips_and_rejects_empty_or_nonfinite_input ... ok
+test image::tests::painting_does_not_alter_source_and_png_has_straight_rgba ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (target/debug/deps/waytoys_core-093f4b3ae597d711)
+
+running 2 tests
+test settings::tests::application_flags_are_separate_and_disabled_by_default ... ok
+test settings::tests::application_store_preserves_corruption_and_other_writers ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/waytoys_overlay-bf850804872d85c4)
+
+running 4 tests
+test tests::normalizes_drag_in_any_direction ... ok
+test tests::integer_scale_and_overflow ... ok
+test tests::reused_shm_slot_keeps_padding_untouched_and_covers_each_edge ... ok
+test tests::zero_sized_selection ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/waytoys_paste-96318246bad56325)
+
+running 5 tests
+test monitor::tests::mime_precedence_ignores_sensitive_offers_and_primary_selection ... ok
+test store::tests::invalid_database_and_symlinks_are_preserved ... ok
+test store::tests::pin_quota_and_byte_eviction_do_not_drop_pins ... ok
+test store::tests::images_are_validated_and_deduplicated_by_pixels ... FAILED
+test store::tests::pins_survive_eviction_clear_and_restart_and_duplicates_keep_identity ... ok
+
+failures:
+
+---- store::tests::images_are_validated_and_deduplicated_by_pixels stdout ----
+
+thread 'store::tests::images_are_validated_and_deduplicated_by_pixels' (80651) panicked at crates/waytoys-paste/src/store.rs:435:9:
+assertion `left == right` failed
+  left: 32768
+ right: 2048
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    store::tests::images_are_validated_and_deduplicated_by_pixels
+
+test result: FAILED. 4 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+error: test failed, to rerun pass `-p waytoys-paste --lib`

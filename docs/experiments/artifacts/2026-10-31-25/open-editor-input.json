@@ -1,0 +1,24 @@
+[
+  {
+    "y": 167,
+    "type": "move",
+    "x": 398.5
+  },
+  {
+    "y": 167,
+    "type": "move",
+    "x": 398
+  },
+  {
+    "down": true,
+    "type": "button"
+  },
+  {
+    "down": false,
+    "type": "button"
+  },
+  {
+    "seconds": 0.7,
+    "type": "wait"
+  }
+]

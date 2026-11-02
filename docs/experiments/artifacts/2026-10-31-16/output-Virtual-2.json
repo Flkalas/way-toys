@@ -1,0 +1,40 @@
+{
+  "custom-layouts": [
+    {
+      "uuid": "waytoys-grid:Virtual-2",
+      "name": "Virtual-2 grid",
+      "type": "grid",
+      "info": {
+        "rows": 2,
+        "columns": 4,
+        "rows-percentage": [
+          4792,
+          5208
+        ],
+        "columns-percentage": [
+          1996,
+          1337,
+          3333,
+          3334
+        ],
+        "cell-child-map": [
+          [
+            0,
+            1,
+            2,
+            4
+          ],
+          [
+            0,
+            1,
+            3,
+            4
+          ]
+        ],
+        "show-spacing": true,
+        "spacing": 16,
+        "sensitivity-radius": 20
+      }
+    }
+  ]
+}

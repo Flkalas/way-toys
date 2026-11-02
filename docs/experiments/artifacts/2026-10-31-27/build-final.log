@@ -1,0 +1,265 @@
+   Compiling waytoys-core v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-core)
+   Compiling waytoys-zones-settings v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones-settings)
+   Compiling waytoys-paste v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-paste)
+   Compiling waytoys-runtime v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-runtime)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 5.53s
+     Running unittests src/main.rs (target/debug/deps/waytoys_capture-69e010763d927514)
+
+running 5 tests
+test backend::tests::qimage_alpha_formats_are_converted_before_png_encoding ... ok
+test image::tests::fractional_single_output_crop_preserves_original_pixels ... ok
+test image::tests::mixed_outputs_use_highest_density_and_keep_gaps_transparent ... ok
+test image::tests::painting_does_not_alter_source_and_png_has_straight_rgba ... ok
+test image::tests::selection_reverses_clips_and_rejects_empty_or_nonfinite_input ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/waytoys_core-093f4b3ae597d711)
+
+running 3 tests
+test settings::tests::application_flags_are_separate_and_disabled_by_default ... ok
+     Running unittests src/main.rs (target/debug/deps/waytoys_overlay-bf850804872d85c4)
+test settings::tests::older_settings_preserve_zones_and_development_history_is_isolated ... ok
+test settings::tests::application_store_preserves_corruption_and_other_writers ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 4 tests
+test tests::normalizes_drag_in_any_direction ... ok
+test tests::integer_scale_and_overflow ... ok
+test tests::reused_shm_slot_keeps_padding_untouched_and_covers_each_edge ... ok
+test tests::zero_sized_selection ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/waytoys_paste-96318246bad56325)
+
+running 5 tests
+test monitor::tests::mime_precedence_ignores_sensitive_offers_and_primary_selection ... ok
+test store::tests::invalid_database_and_symlinks_are_preserved ... ok
+test store::tests::images_are_validated_and_deduplicated_by_pixels ... ok
+test store::tests::pin_quota_and_byte_eviction_do_not_drop_pins ... ok
+test store::tests::pins_survive_eviction_clear_and_restart_and_duplicates_keep_identity ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/main.rs (target/debug/deps/waytoys_paste-1a2446a2438be920)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/waytoys-8af26e59d4c0f3fd)
+
+running 3 tests
+test autostart::tests::unit_escapes_paths_and_keeps_module_state_out_of_service ... ok
+test zones::tests::spans_locally_resets_on_output_and_rejects_stale_targets ... ok
+     Running unittests src/lib.rs (target/debug/deps/waytoys_zones-d8bff44c8ea91231)
+test zones::tests::stationary_shift_release_clears_overlay_and_selection ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 39 tests
+test canvas_editor::tests::drag_cancellation_and_session_snapshots_restore_geometry_and_placement ... ok
+test canvas_editor::tests::default_placement_wraps_at_touching_edge_and_avoids_last_origin ... ok
+test canvas_editor::tests::invalid_operations_preserve_data_history_and_drag_state ... ok
+test canvas_editor::tests::magnetic_resize_uses_source_curve_and_incremental_snapped_position ... ok
+test canvas_editor::tests::keyboard_matches_ctrl_shift_and_asymmetric_boundary_semantics ... ok
+test canvas_editor::tests::nonmagnetic_moves_and_all_resize_handles_obey_bounds_and_minimums ... ok
+test canvas_editor::tests::magnets_align_both_moving_edges_to_neighbors_and_work_area ... ok
+test geometry::tests::adjacent_rectangles_have_one_owner_at_the_shared_edge ... ok
+test canvas_editor::tests::scaling_roundtrips_exact_ratios_and_preserves_source_truncation ... ok
+test geometry::tests::invalid_geometry_is_rejected_without_integer_overflow ... ok
+test grid_editor::tests::closure_ignores_edge_contacts_and_fills_corner_selection ... ok
+test grid_editor::tests::invalid_shapes_and_coverage_are_rejected ... ok
+test grid_editor::tests::closure_recursively_includes_intersections_and_earlier_ids ... ok
+test grid_editor::tests::malformed_operations_are_atomic_and_do_not_panic ... ok
+test grid_editor::tests::separated_dividers_move_independently_and_coordinates_rejoin ... ok
+test grid_editor::tests::shared_divider_updates_all_adjoining_zones_and_honors_minima ... ok
+test grid_editor::tests::snapshot_cancels_a_sequence_and_restores_minimum_policy ... ok
+test grid_editor::tests::split_and_merge_restore_one_zone_and_preserve_metadata ... ok
+test grid_editor::tests::splitting_uses_global_coordinates_and_compacts_zone_order ... ok
+test grid_editor::tests::split_obeys_exact_minimum_and_zone_count_limit ... ok
+test layout::tests::canvas_is_scaled_locally_without_applying_global_output_offsets ... ok
+test layout::tests::columns_distribute_remainders_and_gaps_without_drift ... ok
+test layout::tests::merged_grid_has_only_external_edges_spaced ... ok
+test magnetic_snap::tests::close_points_and_bounds_shrink_the_magnet_radius ... ok
+test magnetic_snap::tests::invalid_numeric_input_is_rejected ... ok
+test magnetic_snap::tests::source_dead_zone_and_outer_attraction_curve ... ok
+test magnetic_snap::tests::source_ties_even_and_coordinate_roundtrip ... ok
+test model::tests::absent_optional_values_use_source_defaults ... ok
+test model::tests::invalid_canvas_and_duplicate_ids_reject ... ok
+test model::tests::malformed_grids_reject_shape_percentages_ids_and_nonrectangular_zones ... ok
+test model::tests::source_custom_layout_json_roundtrips ... ok
+test selection::tests::gutter_selects_both_adjacent_zones_but_far_outside_selects_none ... ok
+test selection::tests::overlapping_zone_algorithms_and_anchor_range_are_distinct ... ok
+test selection::tests::stationary_modifier_changes_toggle_snap_and_end_clears_toggles ... ok
+test settings::tests::defaults_preserve_source_values_and_hotkey_modifiers ... ok
+test settings::tests::excluded_apps_preserve_original_and_derive_source_style_entries ... ok
+test settings::tests::invalid_values_and_powertoys_wrappers_are_rejected ... ok
+test settings::tests::portable_json_supports_partial_defaults_and_roundtrip ... ok
+     Running unittests src/main.rs (target/debug/deps/waytoys_zones-b95ed59536ca08ce)
+test layout::tests::every_template_count_retains_rectangular_maps_and_zone_count ... ok
+
+test result: ok. 39 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cli.rs (target/debug/deps/cli-a8c2a8027a96516d)
+
+running 3 tests
+test invalid_cli_edits_fail_without_partial_json ... ok
+test editors_emit_importable_json_and_preserve_the_input_file ... ok
+test preview_and_settings_run_without_a_desktop_session ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (target/debug/deps/waytoys_zones_config-d38c2cf20e410833)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/preferences.rs (target/debug/deps/preferences-c747968cd05b7e3a)
+
+running 10 tests
+test compositor_only_options_do_not_invalidate_the_native_frame ... ok
+test atomic_replacement_keeps_layouts_and_other_writers_changes ... ok
+test debounces_valid_edits_flushes_on_close_and_recovers_on_restart ... ok
+test failed_save_is_retryable_and_does_not_drop_pending_edits ... ok
+test instance_lock_prevents_duplicates_and_releases_on_drop ... ok
+test missing_and_invalid_files_are_never_replaced_with_defaults ... ok
+test schema_is_exactly_the_approved_common_options_and_matches_source_defaults ... ok
+test validates_numbers_colors_and_app_ids_without_normalizing_valid_text ... ok
+test concurrent_readers_never_see_partial_json ... ok
+test watch_only_signals_effective_changes_and_keeps_last_valid_values ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running unittests src/lib.rs (target/debug/deps/waytoys_zones_editor-d80b18e825a43014)
+
+running 28 tests
+test controller::tests::cumulative_resize_has_no_drift_and_rejects_then_recovers ... ok
+test controller::tests::merge_drag_requires_confirmation_and_cancel_never_splits ... ok
+test controller::tests::pointer_loss_cancels_unreleased_body_selection_and_click ... ok
+test controller::tests::pointer_loss_preserves_released_merge_confirmation ... ok
+test controller::tests::escape_restores_resize_then_cancels_merge_and_switch_prompt ... ok
+test controller::tests::pointer_loss_restores_resize_and_requires_a_fresh_press ... ok
+test controller::tests::resizing_output_cancels_gesture_and_recomputes_logical_minimum ... ok
+test controller::tests::snapping_uses_global_cumulative_grid_boundaries ... ok
+test controller::tests::resize_reuses_original_index_after_boundaries_join ... ok
+test controller::tests::stationary_shift_rotates_hover_and_click_split ... ok
+test preview::tests::example_retains_overlaps_and_nested_zone ... ok
+test controller::tests::toolbar_and_prompt_block_underlying_grid_hits ... ok
+test preview::tests::grid_preview_uses_the_same_read_only_path ... ok
+test preview::tests::scene_uses_calculated_local_rectangles_and_only_navigation_controls ... ok
+test preview::tests::toolbar_fits_848_logical_pixels_and_labels_follow_it ... ok
+test preview::tests::invalid_surface_size_is_rejected ... ok
+test render::tests::clears_only_the_image_and_preserves_slot_padding ... ok
+test render::tests::clips_glyph_coverage_and_respects_independent_scale_axes ... ok
+test render::tests::clips_negative_enormous_and_nonfinite_rectangles ... ok
+test render::tests::maps_each_axis_using_the_actual_fractional_buffer_ratio ... ok
+test render::tests::premultiplied_source_over_uses_native_argb_order ... ok
+test render::tests::rejects_zero_short_and_overflowing_buffers_without_writing ... ok
+test store::tests::config_resolution_requires_absolute_paths ... ok
+test store::tests::failed_save_preserves_previous_file ... ok
+test store::tests::grid_json_roundtrip_preserves_metadata_and_settings ... ok
+test store::tests::missing_file_defaults_to_three_columns_without_writing ... ok
+test store::tests::output_names_cannot_escape_the_output_directory ... ok
+test store::tests::unsupported_or_malformed_files_are_refused_unchanged ... ok
+
+test result: ok. 28 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/main.rs (target/debug/deps/waytoys_zones_editor-798bb78b5491e35b)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/waytoys_zones_settings-12a224a6c0751da9)
+
+running 1 test
+test draft::tests::partial_inputs_keep_the_last_valid_model_and_other_drafts ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/waytoys-settings.rs (target/debug/deps/waytoys_settings-fc1fc01ed4a5b77b)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/waytoys_zones_settings-f0750f59ac6ae73a)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests waytoys_core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests waytoys_paste
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests waytoys_zones
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests waytoys_zones_config
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests waytoys_zones_editor
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests waytoys_zones_settings
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+    Checking waytoys-core v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-core)
+    Checking waytoys-zones-settings v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones-settings)
+    Checking waytoys-paste v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-paste)
+    Checking waytoys-runtime v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-runtime)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.81s
+   Compiling waytoys-runtime v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-runtime)
+   Compiling waytoys-paste v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-paste)
+   Compiling waytoys-zones-settings v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones-settings)
+rustc-LLVM ERROR: IO failure on output stream: No space left on device
+error: could not compile `waytoys-paste` (bin "waytoys-paste")
+
+Caused by:
+  No space left on device (os error 28)
+
+Caused by:
+  failed to parse process output: `/home/debian/.rustup/toolchains/1.99.1-x86_64-unknown-linux-gnu/bin/rustc --crate-name waytoys_paste --edition=2024 crates/waytoys-paste/src/main.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debuginfo=2 --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=4c2edb6bd8cc028d -C extra-filename=-11e1c5ed863a809c --out-dir /home/debian/projects/way-toys/target/debug/deps -C incremental=/home/debian/projects/way-toys/target/debug/incremental -L dependency=/home/debian/projects/way-toys/target/debug/deps --extern async_channel=/home/debian/projects/way-toys/target/debug/deps/libasync_channel-4626219a0570b868.rlib --extern futures_timer=/home/debian/projects/way-toys/target/debug/deps/libfutures_timer-3355332e3fec217f.rlib --extern iced=/home/debian/projects/way-toys/target/debug/deps/libiced-fce77ebb7aa752d2.rlib --extern image=/home/debian/projects/way-toys/target/debug/deps/libimage-f7e112ad2f87ad71.rlib --extern rusqlite=/home/debian/projects/way-toys/target/debug/deps/librusqlite-613a5bb6d1fa474e.rlib --extern rustix=/home/debian/projects/way-toys/target/debug/deps/librustix-0ca9c20c829e4a29.rlib --extern serde=/home/debian/projects/way-toys/target/debug/deps/libserde-e27ee846fa358ca6.rlib --extern serde_json=/home/debian/projects/way-toys/target/debug/deps/libserde_json-c18dbfe49b7199f5.rlib --extern sha2=/home/debian/projects/way-toys/target/debug/deps/libsha2-381948c786df0976.rlib --extern signal_hook=/home/debian/projects/way-toys/target/debug/deps/libsignal_hook-7ccb30965bf0d846.rlib --extern wayland_client=/home/debian/projects/way-toys/target/debug/deps/libwayland_client-d485f863b2e17967.rlib --extern wayland_protocols_wlr=/home/debian/projects/way-toys/target/debug/deps/libwayland_protocols_wlr-5d52436fbfa1eb5f.rlib --extern waytoys_core=/home/debian/projects/way-toys/target/debug/deps/libwaytoys_core-8f799303cf82511b.rlib --extern waytoys_paste=/home/debian/projects/way-toys/target/debug/deps/libwaytoys_paste-7b50ec2ee68484ad.rlib --extern zbus=/home/debian/projects/way-toys/target/debug/deps/libzbus-be3f48e35edeaf77.rlib -L native=/home/debian/projects/way-toys/target/debug/build/libsqlite3-sys-ba047ab691ed26d9/out -L native=/usr/lib/x86_64-linux-gnu` (exit status: 101)
+warning: build failed, waiting for other jobs to finish...
+error: linking with `cc` failed: exit status: 1
+  |
+  = note:  "cc" "-m64" "/home/debian/projects/way-toys/target/debug/deps/rustcbGHSfZ/symbols.o" "<6 object files omitted>" "-Wl,--as-needed" "-Wl,-Bstatic" "/home/debian/projects/way-toys/target/debug/deps/{libwaytoys_zones_settings-1b5bf3dc99540d7d,libfutures_timer-3355332e3fec217f,libwaytoys_core-8f799303cf82511b,libzbus-be3f48e35edeaf77,libblocking-d00a1d00a0b40cf7,libpiper-f227e55444f1e6df,libatomic_waker-4f401c5178abbacf,libhex-b0757a7bc7b6b2d3,libuuid-733fe89e5a1e395a,libasync_executor-121f64473f3e1c80,libasync_process-4828b2543d3f209a,libasync_signal-36d4e93e0c8bab07,libsignal_hook_registry-1449f61b6fabbdc1,liberrno-6a405010a76bf51b,libasync_lock-5c6c009d11d71a8a,libasync_task-54d7244347f6ca2d,libasync_channel-4626219a0570b868,libordered_stream-62f34ccfcfabadd6,libasync_broadcast-6059d62e29d3f645,libevent_listener_strategy-f02e1f92ebed0abf,libevent_listener-dde3b2c5511c229a,libasync_io-4761260468b841b6,libconcurrent_queue-04ce76c192a565d9,libcrossbeam_utils-ba3f3f577f521729,libfutures_lite-d0351bea0530eb47,libparking-46c3f7e393bb8170,libfastrand-ebce6c80e5ccf3b9,libzbus_names-bd2ddf5cc190ce8b,libzvariant-494f29e105f2650a,libenumflags2-8e42bc528da09c46,libendi-0dbb8e4ff25a0b22,libzcheapstr-2430f46d7ee4fece,libzvariant_utils-977a53f163cd2e32,libwinnow-55ceaf0ad2f6d880,libsyn-cc24e0b83f1d6958,libquote-cde40cfad216ea98,libproc_macro2-e66d142eba304655,libunicode_ident-7153540570f7e5ec}.rlib" "<sysroot>/lib/rustlib/x86_64-unknown-linux-gnu/lib/{libproc_macro-*,librustc_literal_escaper-*}.rlib" "/home/debian/projects/way-toys/target/debug/deps/{libiced-fce77ebb7aa752d2,libiced_winit-a4c2de7527d35808,libwindow_clipboard-c0bfbfda96c7a369,libclipboard_wayland-bf4c58ed4aa99bea,libsmithay_clipboard-afb881460b0f775c,libsmithay_client_toolkit-bd9bdf226b4d6443,libxkbcommon-4b88b8b3a7479489,libwayland_protocols_misc-94c70123ff7efced,libwayland_protocols_experimental-4710c81f6b91b0fa,libcalloop_wayland_source-63a31bc5cd66c871,libcalloop-b19542d7981730aa,libwinit-b9cabb30ca273470,libsctk_adwaita-26509b2a4f46be2d,libab_glyph-1fc8ea99b302b0f8,libowned_ttf_parser-b94a774431081ebf,libab_glyph_rasterizer-f326a76afac8cf2f,libwayland_protocols_plasma-3b5eb7e44ed1b189,libahash-173c024d5157524b,libgetrandom-6cb1f708ba9b8863,libsmithay_client_toolkit-c1f79ed75f93c2dc,libwayland_cursor-27337b8117ceff42,libxcursor-4fab3259d7afe6f6,libwayland_protocols_wlr-5d52436fbfa1eb5f,libwayland_protocols-2da94ead9986ee74,libwayland_csd_frame-5d887e00062e9c12,libcalloop_wayland_source-cdb1be8172d034d2,libcalloop-ca4ce28b2af9a929,libthiserror-3c5eafe129407309,librustix-c4d25cebd9927aca,liblinux_raw_sys-ec68d8603d3f51b5,libpolling-804f048e2c356f75,libxkbcommon_dl-5e0368c9089b6462,libxkeysym-9a85154876345c81,libtracing-08f397dd72293358,libtracing_core-5939259b70f8dcc6,libcursor_icon-37b7a98680e94316,libdpi-3891bb350ad88fd0,libiced_program-d9ad54da51f5414b,libiced_runtime-b8869d8c6504fa93,libiced_widget-7f8c2b902c626904,libiced_renderer-2dd1357e24d40f1b,libiced_tiny_skia-4daea0a6382a75ab,libkurbo-573d075d79704f9c,libtiny_skia-46487a243667ba0e,libarrayvec-b17a75581c4f1e36,libtiny_skia_path-c03fe1ddcbc4a7a7,libstrict_num-143c30f4cad8d253,libarrayref-f5453fdcce4bed07,libsoftbuffer-733a9f8481a2e9f6,libwayland_client-d485f863b2e17967,libwayland_backend-7835efa52973f67b,libdowncast_rs-67c8da15c0cdb363,librustix-0ca9c20c829e4a29,liblinux_raw_sys-d370518946e3cada,libscoped_tls-619aa67ed43e5968,libwayland_sys-423b288750422df8,libonce_cell-58dd468cb35436f8,libdlib-6f0064de744c3764,liblibloading-d357b8b61e02b2c0,libiced_debug-078ca685d75ac810,libiced_graphics-3d6ceea441e382d3,libexif-cccef2c42423ed84,libmutate_once-a2079c8bc2b9b6a1,libiced_futures-a93f1754ff3c4678,libfutures-ff20f311b5c43d61,libfutures_executor-15172d813bf98bce,libfutures_util-73d0c986df534565,libfutures_io-7027b38a831f0763,libslab-c21ddea89027f257,libfutures_channel-e0c9382b58b8af94,libpin_project_lite-d48789d525c49729,libfutures_sink-e7c20327347b5a87,libfutures_task-b3d9cb52b6b50815,libfutures_core-3b39bc7c8546ea11,libiced_core-bc07a7dcec2b20a0,libbytes-fa84c749ecf7f594,libglam-0dc99376fff8c11b,liblilt-8b6704f75841b01c,libweb_time-2d34f5fe9006f285,libcosmic_text-681d3de0723e5acc,librustc_hash-9e452d459747ffed,libunicode_linebreak-dcb86890cc5803a7,libsys_locale-73acd3284c984d6a,libswash-4fa31349622bf141,libyazi-f590f01d99b296cc,libskrifa-bff77d0e52e3c59a,libread_fonts-e5691b1c122c85e8,libfont_types-5346b18ee17f0dcf,libzeno-1b6e53642f738aee,libunicode_script-9bcf8d57ee3c0037,libself_cell-e4dd1e550a8ee25f,libskrifa-c6ba4f471f75708f,liblinebender_resource_handle-5ac2a5090ee92048,libharfrust-80b049755901b76d,libsmallvec-921ee2d4a37d4288,libread_fonts-7c62297d9b3e3b1d,libcore_maths-6caa6ded0f17d809,liblibm-e100722407abb443,libfont_types-8bb34e2869675bad,libunicode_segmentation-5b4303f104e15c27,libunicode_bidi-62899c89b4b01845,libfontdb-b93a0114e6ccde89,libfontconfig_parser-2ff0c57806a7c1a2,libroxmltree-1fa369c42784ddf0,libmemmap2-b3ad2c9641f5e507,liblibc-ca95d298963f410e,liblog-a96746b50577be04,libtinyvec-5afed8586f117ec7,libslotmap-6154322cad2f647b,libttf_parser-69b7bed3009f1e5b,libsmol_str-aff6153b5f3db859,librangemap-0fe2a7b81dc46db1,librustc_hash-8e05c43c65198e13,libimage-f7e112ad2f87ad71,libbyteorder_lite-c77461a487960ece,libmoxcms-3491688bde4b762e,libpxfm-3b633724f2520c54,libpng-27a7a25be52fc961,libflate2-298204e810267e60,libminiz_oxide-0409ed98228e5da8,libfdeflate-0a26eb33e6c76896,libsimd_adler32-d467d3b3552967f1,libcrc32fast-3c9265c6d75558bf,libzune_jpeg-ead66e9a05362d4c,libzune_core-9c89e71ae6b2df70,libnum_traits-986d23b2a8089b43,libbitflags-b21dfb7ab2d804c4,libhalf-a35ae78ede651e92,libcfg_if-0fbeb365b695d2ff,libzerocopy-5b6fbebe086bb43e,libthiserror-61e472191ed0aec1,libraw_window_handle-62cf9869fdce7fe8,libbytemuck-5cd4cb8fe13a0ee8,libwaytoys_zones_config-e42aaebf595a1dce,libwaytoys_zones-412f7d9b7b18a3b4,libserde_json-c18dbfe49b7199f5,libmemchr-d889e926a647c184,libitoa-b101c554dc96d6c2,libzmij-017fa04e9bfbd0ce,libserde-e27ee846fa358ca6,libserde_core-1e9d9efd87f47fd3}.rlib" "<sysroot>/lib/rustlib/x86_64-unknown-linux-gnu/lib/{libstd-*,libpanic_unwind-*,libobject-*,libmemchr-*,libaddr2line-*,libgimli-*,libcfg_if-*,librustc_demangle-*,libstd_detect-*,libhashbrown-*,librustc_std_workspace_alloc-*,libminiz_oxide-*,libadler2-*,libunwind-*,liblibc-*,librustc_std_workspace_core-*,liballoc-*,libcore-*,libcompiler_builtins-*}.rlib" "-Wl,-Bdynamic" "-lxkbcommon" "-lxkbcommon" "-ldl" "-lgcc_s" "-lutil" "-lrt" "-lpthread" "-lm" "-ldl" "-lc" "-L" "/home/debian/projects/way-toys/target/debug/deps/rustcbGHSfZ/raw-dylibs" "-B<sysroot>/lib/rustlib/x86_64-unknown-linux-gnu/bin/gcc-ld" "-fuse-ld=lld" "-Wl,--eh-frame-hdr" "-Wl,-z,noexecstack" "-L" "/usr/lib/x86_64-linux-gnu" "-L" "<sysroot>/lib/rustlib/x86_64-unknown-linux-gnu/lib" "-o" "/home/debian/projects/way-toys/target/debug/deps/waytoys_zones_settings-d40b87bc28829c71" "-Wl,--gc-sections" "-pie" "-Wl,-z,relro,-z,now" "-nodefaultlibs"
+  = note: some arguments are omitted. use `--verbose` to show all linker arguments
+  = note: PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace and instructions to reproduce the bug.
+          collect2: fatal error: ld terminated with signal 7 [Bus error]
+          compilation terminated.
+          
+
+error: could not compile `waytoys-zones-settings` (bin "waytoys-zones-settings") due to 1 previous error

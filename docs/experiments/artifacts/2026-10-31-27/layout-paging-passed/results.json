@@ -1,0 +1,48 @@
+[
+  {
+    "name": "lock_and_delivery",
+    "passed": true,
+    "detail": {
+      "lock_hides_and_refuses_copy": true,
+      "small_window": {
+        "id": "{5ac303f5-01de-44d3-8c2e-c488cfadd397}",
+        "caption": "Waytoys Clipboard",
+        "app": "waytoys-paste",
+        "geometry": [
+          100,
+          25,
+          464,
+          360
+        ],
+        "opacity": 1,
+        "move": false,
+        "resize": false,
+        "minimized": false
+      },
+      "page_copy": "SCROLL_FIXTURE_27_04",
+      "moved_window": {
+        "id": "{5ac303f5-01de-44d3-8c2e-c488cfadd397}",
+        "caption": "Waytoys Clipboard",
+        "app": "waytoys-paste",
+        "geometry": [
+          930,
+          15,
+          580,
+          590.4347826086956
+        ],
+        "opacity": 1,
+        "move": false,
+        "resize": false,
+        "minimized": false
+      }
+    }
+  },
+  {
+    "name": "clear_and_measure",
+    "passed": true,
+    "detail": {
+      "pins_survived_ui_clear": true,
+      "picker_pid_gone": 97938
+    }
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {"type":"move","x":1380,"y":78},
+  {"type":"wait","seconds":0.2},
+  {"type":"move","x":1380,"y":78},
+  {"type":"key","key":"shift","down":true},
+  {"type":"button","down":true},
+  {"type":"move","x":1300,"y":110},
+  {"type":"wait","seconds":0.2},
+  {"type":"move","x":1100,"y":180},
+  {"type":"wait","seconds":0.5},
+  {"type":"button","down":false},
+  {"type":"wait","seconds":0.3},
+  {"type":"key","key":"shift","down":false}
+]

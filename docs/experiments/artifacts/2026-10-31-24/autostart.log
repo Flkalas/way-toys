@@ -1,0 +1,20 @@
+MainPID=52642
+NRestarts=0
+ActiveState=active
+SubState=running
+{
+  "paths": {
+    "app": "/home/debian/waytoys-test-results/settings-23/app",
+    "zones": "/home/debian/waytoys-test-results/settings-23/zones"
+  },
+  "settings": {
+    "run_at_login": true,
+    "enabled": {
+      "zones": true
+    }
+  },
+  "ready": true,
+  "blocked": false,
+  "error": null
+}
+Running as unit: waytoys-probe-window.service; invocation ID: 00979378ed2c4df4911714ca41312c62

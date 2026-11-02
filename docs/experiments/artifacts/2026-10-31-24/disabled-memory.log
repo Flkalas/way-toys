@@ -1,0 +1,56 @@
+{
+  "paths": {
+    "app": "/home/debian/waytoys-test-results/settings-23/app",
+    "zones": "/home/debian/waytoys-test-results/settings-23/zones"
+  },
+  "settings": {
+    "run_at_login": false,
+    "enabled": {
+      "zones": false
+    }
+  },
+  "ready": false,
+  "blocked": false,
+  "error": null
+}
+{
+  "utc": "2026-10-31T08:01:45.898796+00:00",
+  "elapsed_seconds": 5.000127969993628,
+  "processes": [
+    {
+      "unit": "waytoys-runtime.service",
+      "pid": 56031,
+      "before": {
+        "rss_kib": 12292,
+        "peak_rss_kib": 12292,
+        "pss_kib": 10363,
+        "threads": 7,
+        "cpu_ticks": 173
+      },
+      "after": {
+        "rss_kib": 12292,
+        "peak_rss_kib": 12292,
+        "pss_kib": 10360,
+        "threads": 7,
+        "cpu_ticks": 174
+      },
+      "cpu_seconds": 0.01
+    }
+  ]
+}
+{
+  "paths": {
+    "app": "/home/debian/waytoys-test-results/settings-23/app",
+    "zones": "/home/debian/waytoys-test-results/settings-23/zones"
+  },
+  "settings": {
+    "run_at_login": false,
+    "enabled": {
+      "zones": true
+    }
+  },
+  "ready": true,
+  "blocked": false,
+  "error": null
+}
+{"pointer": {"x": 848, "y": 32}, "windows": [{"id": "{efb90c15-2606-4d84-947f-924b5eff6186}", "caption": "WaytoysProbe — Konsole", "app": "org.kde.konsole", "geometry": [100, 60, 500, 320], "opacity": 0.8, "move": false, "resize": false}]}

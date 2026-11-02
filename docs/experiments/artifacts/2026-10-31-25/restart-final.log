@@ -1,0 +1,8 @@
+Running as unit: waytoys-settings-25.service; invocation ID: 707285f9efdc4226b296927ec492a7c4
+{"pointer": {"x": 1300, "y": 400}, "windows": [{"id": "{d2efb0d1-717c-459c-a2b3-bee1015c5b13}", "caption": "Waytoys", "app": "waytoys-settings", "geometry": [43, 15, 762, 409], "opacity": 1, "move": false, "resize": false}]}
+{"pointer": {"x": 1300, "y": 400}, "windows": [{"id": "{d2efb0d1-717c-459c-a2b3-bee1015c5b13}", "caption": "Waytoys", "app": "waytoys-settings", "geometry": [43, 15, 762, 409], "opacity": 1, "move": false, "resize": false}]}
+MainPID=58276
+ActiveState=active
+
+MainPID=62152
+ActiveState=active

@@ -1,0 +1,60 @@
+[
+  {
+    "type": "move",
+    "x": 300.5,
+    "y": 74
+  },
+  {
+    "type": "move",
+    "x": 300,
+    "y": 74
+  },
+  {
+    "type": "button",
+    "button": "left",
+    "down": true
+  },
+  {
+    "type": "move",
+    "x": 330.5,
+    "y": 100
+  },
+  {
+    "type": "move",
+    "x": 330,
+    "y": 100
+  },
+  {
+    "type": "key",
+    "key": "shift",
+    "down": true
+  },
+  {
+    "type": "move",
+    "x": 700.5,
+    "y": 200
+  },
+  {
+    "type": "move",
+    "x": 700,
+    "y": 200
+  },
+  {
+    "type": "wait",
+    "seconds": 0.3
+  },
+  {
+    "type": "button",
+    "button": "left",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "shift",
+    "down": false
+  },
+  {
+    "type": "wait",
+    "seconds": 0.5
+  }
+]

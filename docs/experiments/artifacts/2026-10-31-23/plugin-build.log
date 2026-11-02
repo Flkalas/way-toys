@@ -1,0 +1,50 @@
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib/x86_64-linux-gnu/libxkbcommon.so (found suitable version "1.7.0", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Found Wayland_Server: /usr/lib/x86_64-linux-gnu/libwayland-server.so (found version "1.23.1")
+-- Found Wayland: /usr/lib/x86_64-linux-gnu/libwayland-server.so (found version "1.23.1") found components: Server
+-- Found epoxy: /usr/lib/x86_64-linux-gnu/libepoxy.so (found version "1.5.10")
+-- Configuring done (1.5s)
+CMake Error at /usr/lib/x86_64-linux-gnu/cmake/KWin/KWinTargets.cmake:71 (set_target_properties):
+  The link interface of target "KWin::kwin" contains:
+
+    Qt6::Widgets
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/KWin/KWinConfig.cmake:48 (include)
+  CMakeLists.txt:7 (find_package)
+
+
+-- Generating done (0.0s)
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+ninja: error: loading 'build.ninja': No such file or directory

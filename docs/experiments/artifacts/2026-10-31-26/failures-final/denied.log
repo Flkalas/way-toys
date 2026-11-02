@@ -1,0 +1,1 @@
+waytoys-capture: 화면을 가져오지 못했습니다: org.kde.KWin.ScreenShot2.Error.NoAuthorized: The process is not authorized to take a screenshot. scripts/install-capture.sh 설치와 화면 잠금을 확인하세요

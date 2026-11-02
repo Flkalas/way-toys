@@ -1,0 +1,75 @@
+[
+  {
+    "test": "excluded_case",
+    "passed": true,
+    "observed": {
+      "excluded": {
+        "id": "{9e0a57cd-eee8-4d1f-9a67-59801745522f}",
+        "caption": "WaytoysProbe — Konsole",
+        "app": "org.kde.konsole",
+        "geometry": [
+          638,
+          4,
+          206,
+          432
+        ],
+        "opacity": 0.8,
+        "move": false,
+        "resize": false
+      },
+      "different_case": {
+        "id": "{9e0a57cd-eee8-4d1f-9a67-59801745522f}",
+        "caption": "WaytoysProbe — Konsole",
+        "app": "org.kde.konsole",
+        "geometry": [
+          573,
+          16,
+          259,
+          448
+        ],
+        "opacity": 0.8,
+        "move": false,
+        "resize": false
+      }
+    }
+  },
+  {
+    "test": "corrupt_preferences",
+    "passed": true,
+    "observed": {
+      "paths": {
+        "app": "/home/debian/waytoys-test-results/settings-23/app",
+        "zones": "/home/debian/waytoys-test-results/settings-23/zones"
+      },
+      "settings": {
+        "run_at_login": false,
+        "enabled": {
+          "zones": true
+        }
+      },
+      "ready": false,
+      "blocked": false,
+      "error": "Zones 설정 읽기 실패 · 원본 보존: JSON error: expected value at line 1 column 1"
+    }
+  },
+  {
+    "test": "screen_lock",
+    "passed": true,
+    "observed": [
+      {
+        "id": "{9e0a57cd-eee8-4d1f-9a67-59801745522f}",
+        "caption": "WaytoysProbe — Konsole",
+        "app": "org.kde.konsole",
+        "geometry": [
+          449.973388671875,
+          216.0032958984375,
+          500,
+          320
+        ],
+        "opacity": 0.8,
+        "move": false,
+        "resize": false
+      }
+    ]
+  }
+]

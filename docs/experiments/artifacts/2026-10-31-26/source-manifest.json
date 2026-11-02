@@ -1,0 +1,26 @@
+{
+  "head": "c02799b7bfb7f86a04fa85da0d5ad142f1000b9b",
+  "utc": "2026-10-31T10:45:17.950292+00:00",
+  "files": {
+    "Cargo.toml": "ad0938172683f9547d829606d4a37c5671f917f4dc722f568fd2148ad59308d4",
+    "Cargo.lock": "5eee1b0b303498490396721e76cc2bff54fb696244acedb5303eae0c6ea19f3d",
+    "README.md": "d4cc1e32d91a466c6832facb663bcb0d38b657c1f5741e4c0f914d285d22ebe5",
+    "crates/waytoys-runtime/src/main.rs": "28a3ea48f19c914b1bba1b2c7f88103496e0419411cfff44e1629a39208010c8",
+    "crates/waytoys-zones-settings/src/lib.rs": "108d273fc86064a6e3983e6d4f57a15c8be8472981f0e3aaa6d12b8a98502e62",
+    "crates/waytoys-zones-settings/src/view.rs": "3688f3a40794ba50b1fc590f8c9e5b1d5161a433cdbcc5d474e25d21a4387bee",
+    "scripts/install-capture.py": "d97e9b6d99cce9c498f29886406b9c0be02e226393026501cfd749bb79db6cd6",
+    "scripts/install-capture.sh": "76d3fe99b016a5c3720791aac5c6ad460ecb39e209e27ff27a18d27f8c3af9bd",
+    "scripts/test-capture-vm.py": "30b789adf6a7346c5265f46f24600dfccc1b5d4d41ff6348dea94364c3d1b9ac",
+    "scripts/capture-paste-probe.cpp": "4b77fd48fd66778246d678738b480aca8a0fd20641b7b3d1da1d0011dc57df28",
+    "scripts/kwin-window-probe.py": "479b66fb8766381aa9ce71f96d7082d44c6c2767506322525533d187751aedf8",
+    "docs/capture.ko.md": "c81082a17469ac283fbe965b0cf7147e5008d4cafd40b7815a44b13f29c639f4",
+    "docs/zones-settings.ko.md": "aa7b135b4053d7339a35c9c1aa17811a40d053eaec64a44cb54a68e674b05369",
+    "docs/zones-runtime.ko.md": "68f947f259cb2cd74575d453a8853e1a086d2a4c723595dc3863cf853eb6080a",
+    "docs/experiments/2026-10-31-26.md": "850a4a1e1b1172c133b8fa833b21ee65705462da22a8d86f52a1e3fbd426bcc0",
+    "crates/waytoys-capture/src/backend.rs": "207b25e1cf35761883fc5851b8f3fde0e06610c2f4eef7bc4f0d61d1c0a3ede0",
+    "crates/waytoys-capture/src/image.rs": "95a6ea38d94c73e45d2edd92fd2dfca3ec8074093079f48940f2ca155f132d39",
+    "crates/waytoys-capture/src/main.rs": "d2bac80c6aa3cd29709553ea225c9311f045d8e9318eba9be0eb00ea33968162",
+    "crates/waytoys-capture/src/overlay.rs": "6c50296d0a3ede2778f563000dcf09fd74c4f8938cbd743783dc0cd6700d0aa8",
+    "crates/waytoys-capture/Cargo.toml": "a2a29ac73c43b09080f6ee31feccf3a3199e86edd896e08706f531342dc52735"
+  }
+}

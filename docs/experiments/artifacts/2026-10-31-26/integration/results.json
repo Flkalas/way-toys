@@ -1,0 +1,7 @@
+[
+  {
+    "name": "single_and_paste",
+    "passed": false,
+    "error": "{'width': 321, 'height': 141, 'sha256': 'a672edac5e0036759319b92c1cf884ff137d51989849fcb4665b729ecb0bfbf6', 'rgba_sha256': 'd53b699143eb50d4019c35329d5b867a2bf3578f62cb44b146b5ff0a03a2010f'}"
+  }
+]

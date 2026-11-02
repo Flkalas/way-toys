@@ -1,0 +1,366 @@
+[
+  {
+    "x": 1400.5,
+    "type": "move",
+    "y": 350
+  },
+  {
+    "x": 1400,
+    "type": "move",
+    "y": 350
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-up",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "type": "wait",
+    "seconds": 0.5
+  }
+]

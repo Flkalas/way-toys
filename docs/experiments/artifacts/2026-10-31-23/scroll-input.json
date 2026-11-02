@@ -1,0 +1,147 @@
+[
+  {
+    "x": 1360,
+    "y": 418,
+    "type": "move"
+  },
+  {
+    "down": true,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": false,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": true,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": false,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": true,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": false,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": true,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": false,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": true,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": false,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": true,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": false,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": true,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": false,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": true,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": false,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": true,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": false,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": true,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": false,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": true,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": false,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": true,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": false,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": true,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": false,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": true,
+    "button": "wheel-down",
+    "type": "button"
+  },
+  {
+    "down": false,
+    "button": "wheel-down",
+    "type": "button"
+  }
+]

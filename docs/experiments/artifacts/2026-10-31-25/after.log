@@ -1,0 +1,26 @@
+{"pointer": {"x": 1400, "y": 350}, "windows": [{"id": "{d2efb0d1-717c-459c-a2b3-bee1015c5b13}", "caption": "Waytoys", "app": "waytoys-settings", "geometry": [910, 10, 990.4347826086956, 600], "opacity": 1, "move": false, "resize": false}]}
+{
+  "paths": {
+    "app": "/home/debian/waytoys-test-results/settings-23/app",
+    "zones": "/home/debian/waytoys-test-results/settings-23/zones"
+  },
+  "settings": {
+    "run_at_login": false,
+    "enabled": {
+      "zones": true
+    }
+  },
+  "ready": true,
+  "blocked": false,
+  "error": null
+}
+MainPID=58276
+ActiveState=active
+
+MainPID=62152
+ActiveState=active
+a7d97084bd3a58c187fe558228cee040c02dd0cb7230cd5576ab4940ab7e2133  /home/debian/waytoys-test-results/settings-23/app/settings.json
+df980a28e234cd0c96d34d12b2bba003ff4284dfecc2a43567a4be14e76b02cd  /home/debian/waytoys-test-results/settings-23/zones/preferences.json
+fd2469c01e3719989c1835d7020d649497c99db3bfe0ce9e364c5c128cf3af1d  /home/debian/waytoys-test-results/settings-23/zones/outputs/output-Virtual-1.json
+317cce4fb914f530fda6378767dc2fc0af11ada820cd6c9f9066e15d2626cde6  /home/debian/waytoys-test-results/settings-23/zones/outputs/output-Virtual-2.json
+84881c725cd6589c8808638b8ee879dad69d2af85be6f0cfa6410ad3c085fc7c  /home/debian/.config/kwinrc

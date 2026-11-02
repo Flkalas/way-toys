@@ -1,0 +1,56 @@
+{
+  "tests": 95,
+  "vm_scenarios": [
+    "single_and_paste",
+    "fractional",
+    "crossing",
+    "cancellation",
+    "cleanup_and_resume",
+    "failures_and_lifetime",
+    "settings_button",
+    "preview_and_memory"
+  ],
+  "manifest_files": 20,
+  "added_since_before25": [
+    [
+      "adler2",
+      "2.0.1"
+    ],
+    [
+      "crc32fast",
+      "1.5.3"
+    ],
+    [
+      "fdeflate",
+      "0.3.7"
+    ],
+    [
+      "flate2",
+      "1.1.10"
+    ],
+    [
+      "miniz_oxide",
+      "0.8.9"
+    ],
+    [
+      "miniz_oxide",
+      "0.9.1"
+    ],
+    [
+      "png",
+      "0.18.1"
+    ],
+    [
+      "simd-adler32",
+      "0.3.10"
+    ],
+    [
+      "waytoys-capture",
+      "0.1.0"
+    ],
+    [
+      "zlib-rs",
+      "0.6.8"
+    ]
+  ]
+}

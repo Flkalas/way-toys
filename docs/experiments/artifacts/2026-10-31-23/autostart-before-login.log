@@ -1,0 +1,40 @@
+{
+  "run_at_login": true,
+  "enabled": {
+    "zones": true
+  }
+}
+enabled
+# /home/debian/.config/systemd/user/waytoys.service
+# Managed by Waytoys
+[Unit]
+Description=Waytoys desktop tools
+PartOf=graphical-session.target
+After=graphical-session-pre.target plasma-kwin_wayland.service
+
+[Service]
+Type=simple
+ExecStart="/home/debian/projects/way-toys/target/debug/waytoys" --background --app-config-dir "/home/debian/waytoys-test-results/settings-23/app" --config-dir "/home/debian/waytoys-test-results/settings-23/zones"
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target
+active
+pgrep: pattern that searches for process name longer than 15 characters will result in zero matches
+Try `pgrep -f' option to match against the complete command line.
+{
+  "paths": {
+    "app": "/home/debian/waytoys-test-results/settings-23/app",
+    "zones": "/home/debian/waytoys-test-results/settings-23/zones"
+  },
+  "settings": {
+    "run_at_login": true,
+    "enabled": {
+      "zones": true
+    }
+  },
+  "ready": true,
+  "blocked": false,
+  "error": null
+}

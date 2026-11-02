@@ -1,0 +1,30 @@
+{
+  "custom-layouts": [
+    {
+      "uuid": "{00000000-0000-0000-0000-000000000001}",
+      "name": "Three columns",
+      "type": "grid",
+      "info": {
+        "rows": 1,
+        "columns": 3,
+        "rows-percentage": [10000],
+        "columns-percentage": [2500, 5000, 2500],
+        "cell-child-map": [[0, 1, 2]],
+        "show-spacing": true,
+        "spacing": 16,
+        "sensitivity-radius": 20
+      }
+    },
+    {
+      "uuid": "{00000000-0000-0000-0000-000000000002}",
+      "name": "Free canvas",
+      "type": "canvas",
+      "info": {
+        "ref-width": 1280,
+        "ref-height": 720,
+        "zones": [{"X": 100, "Y": 100, "width": 512, "height": 288}],
+        "sensitivity-radius": 20
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+duplicate_exit=1
+  31269     725 102292 /home/debian/projects/way-toys/target/debug/waytoys-zones-settings --config-dir /home/debian/waytoys-test-results/settings-21/config
+  31418   31269 327352 /home/debian/projects/way-toys/target/debug/waytoys-zones-editor --config-dir /home/debian/waytoys-test-results/settings-21/config --output Virtual-1
+  31568   31567  3224 bash -c export XDG_RUNTIME_DIR=/run/user/1000 WAYLAND_DISPLAY=wayland-0; ~/projects/way-toys/target/debug/waytoys-zones-editor --config-dir ~/waytoys-test-results/settings-21/config --output Virtual-1; code=$?; echo duplicate_exit=$code; test "$code" = 1; ps -eo pid,ppid,rss,args | grep "[t]arget/debug/waytoys-zones-"

@@ -1,0 +1,77 @@
+[
+  {
+    "y": 400,
+    "x": 1400,
+    "type": "move"
+  },
+  {
+    "button": "wheel-down",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-down",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-down",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-down",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-down",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-down",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-down",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-down",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-down",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-down",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-down",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-down",
+    "down": false,
+    "type": "button"
+  },
+  {
+    "button": "wheel-down",
+    "down": true,
+    "type": "button"
+  },
+  {
+    "button": "wheel-down",
+    "down": false,
+    "type": "button"
+  }
+]

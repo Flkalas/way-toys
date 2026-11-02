@@ -1,0 +1,76 @@
+[
+  {
+    "type": "move",
+    "x": 300.5,
+    "y": 225
+  },
+  {
+    "type": "move",
+    "x": 300,
+    "y": 225
+  },
+  {
+    "type": "button",
+    "button": "wheel-down",
+    "down": true
+  },
+  {
+    "type": "button",
+    "button": "wheel-down",
+    "down": false
+  },
+  {
+    "type": "button",
+    "button": "wheel-down",
+    "down": true
+  },
+  {
+    "type": "button",
+    "button": "wheel-down",
+    "down": false
+  },
+  {
+    "type": "button",
+    "button": "wheel-down",
+    "down": true
+  },
+  {
+    "type": "button",
+    "button": "wheel-down",
+    "down": false
+  },
+  {
+    "type": "button",
+    "button": "wheel-down",
+    "down": true
+  },
+  {
+    "type": "button",
+    "button": "wheel-down",
+    "down": false
+  },
+  {
+    "type": "button",
+    "button": "wheel-down",
+    "down": true
+  },
+  {
+    "type": "button",
+    "button": "wheel-down",
+    "down": false
+  },
+  {
+    "type": "button",
+    "button": "wheel-down",
+    "down": true
+  },
+  {
+    "type": "button",
+    "button": "wheel-down",
+    "down": false
+  },
+  {
+    "type": "wait",
+    "seconds": 0.4
+  }
+]

@@ -1,0 +1,7 @@
+   Compiling waytoys-capture v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-capture)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.40s
+kbuildsycoca6 running...
+"applications.menu"  not found in  QList("/etc/xdg/menus")
+Meta+Shift+S already assigned to Waytoys Capture
+Installed /home/debian/.local/share/applications/org.waytoys.Capture.desktop -> /home/debian/projects/way-toys/target/debug/waytoys-capture
+true

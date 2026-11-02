@@ -1,0 +1,34 @@
+{
+  "blocked": {
+    "paths": {
+      "app": "/home/debian/waytoys-test-results/settings-23/app",
+      "zones": "/home/debian/waytoys-test-results/settings-23/zones"
+    },
+    "settings": {
+      "run_at_login": false,
+      "enabled": {
+        "zones": false
+      }
+    },
+    "ready": false,
+    "blocked": true,
+    "error": "일반 설정을 복구한 뒤 다시 읽어 주세요"
+  },
+  "mutation_rejected": true,
+  "original_preserved": true,
+  "restored": {
+    "paths": {
+      "app": "/home/debian/waytoys-test-results/settings-23/app",
+      "zones": "/home/debian/waytoys-test-results/settings-23/zones"
+    },
+    "settings": {
+      "run_at_login": false,
+      "enabled": {
+        "zones": true
+      }
+    },
+    "ready": true,
+    "blocked": false,
+    "error": null
+  }
+}

@@ -59,6 +59,30 @@ fn buffer_dimensions(size: (u32, u32), scale: i32) -> Option<(i32, i32, i32)> {
         i32::try_from(stride).ok()?,
     ))
 }
+
+fn paint_overlay(canvas: &mut [u8], size: (u32, u32), scale: u32, index: usize) {
+    // A reused SHM slot may be larger than the current image.
+    let (width, height) = (size.0 as usize, size.1 as usize);
+    let colors = [0x70301040u32, 0x70104030u32, 0x70403010u32];
+    let border_colors = [0xffd68cffu32, 0xff70e0b0u32, 0xffffbc70u32];
+    let color = colors[index % colors.len()].to_ne_bytes();
+    let border_color = border_colors[index % border_colors.len()].to_ne_bytes();
+    let border = (2 * scale) as usize;
+    for (idx, px) in canvas
+        .as_chunks_mut::<4>()
+        .0
+        .iter_mut()
+        .take(width * height)
+        .enumerate()
+    {
+        let x = idx % width;
+        let y = idx / width;
+        let on_border =
+            x < border || y < border || width - 1 - x < border || height - 1 - y < border;
+        px.copy_from_slice(if on_border { &border_color } else { &color });
+    }
+}
+
 struct Overlay {
     output: wl_output::WlOutput,
     layer: LayerSurface,
@@ -227,23 +251,7 @@ impl App {
             }
         };
         // ARGB premultiplied alpha; byte order follows native endianness.
-        let colors = [0x70301040u32, 0x70104030u32, 0x70403010u32];
-        let color = colors[s.index % colors.len()];
-        let background = 0x20080808u32.to_ne_bytes();
-        let color_bytes = color.to_ne_bytes();
-        for (idx, px) in canvas.as_chunks_mut::<4>().0.iter_mut().enumerate() {
-            let x = idx % pw as usize;
-            let y = idx / pw as usize;
-            let in_demo_rectangle = x >= pw as usize / 5
-                && x < pw as usize * 4 / 5
-                && y >= ph as usize / 5
-                && y < ph as usize * 4 / 5;
-            px.copy_from_slice(if in_demo_rectangle {
-                &color_bytes
-            } else {
-                &background
-            });
-        }
+        paint_overlay(canvas, (pw, ph), scale, s.index);
         if let Some(r) = selection {
             let x0 = (r.x * f64::from(scale)).max(0.0).min(f64::from(pw)) as u32;
             let y0 = (r.y * f64::from(scale)).max(0.0).min(f64::from(ph)) as u32;
@@ -645,5 +653,25 @@ mod tests {
     #[test]
     fn zero_sized_selection() {
         assert_eq!(rectangle((1., 2.), (1., 2.)).width, 0.);
+    }
+    #[test]
+    fn reused_shm_slot_keeps_padding_untouched_and_covers_each_edge() {
+        let (width, height) = (12usize, 10usize);
+        let image_bytes = width * height * 4;
+        let mut canvas = vec![0xa5; image_bytes + 64];
+        paint_overlay(&mut canvas, (width as u32, height as u32), 1, 0);
+        let border = 0xffd68cffu32.to_ne_bytes();
+        for (x, y) in [
+            (0, 0),
+            (width - 1, 0),
+            (0, height - 1),
+            (width - 1, height - 1),
+        ] {
+            let offset = (y * width + x) * 4;
+            assert_eq!(&canvas[offset..offset + 4], &border);
+        }
+        let center = ((height / 2) * width + width / 2) * 4;
+        assert_eq!(&canvas[center..center + 4], &0x70301040u32.to_ne_bytes());
+        assert!(canvas[image_bytes..].iter().all(|byte| *byte == 0xa5));
     }
 }

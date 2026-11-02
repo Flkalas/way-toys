@@ -1,0 +1,21 @@
+Oct 31 03:22:49 waytoys-kde systemd[725]: Started waytoys-canvas-preview-17-check.service - [systemd-run] /home/debian/projects/way-toys/target/debug/waytoys-zones-editor --output Virtual-2 --preview /home/debian/projects/way-toys/crates/waytoys-zones-editor/examples/canvas-overlap.json --config-dir /home/debian/waytoys-test-results/canvas-preview-17/no-write.
+Oct 31 03:22:50 waytoys-kde waytoys-zones-editor[23595]: preview opened output=Virtual-2 layout=Overlapping Canvas
+Oct 31 03:22:50 waytoys-kde waytoys-zones-editor[23595]: fractional scale output=Virtual-2 scale=138/120
+Oct 31 03:22:50 waytoys-kde waytoys-zones-editor[23595]: fractional scale output=Virtual-2 scale=120/120
+Oct 31 03:22:50 waytoys-kde waytoys-zones-editor[23595]: fractional scale output=Virtual-2 scale=138/120
+Oct 31 03:22:50 waytoys-kde waytoys-zones-editor[23595]: configured output=Virtual-2 logical=1113x626 integer_scale=2
+Oct 31 03:22:50 waytoys-kde waytoys-zones-editor[23595]: buffer output=Virtual-2 logical=1113x626 physical=1280x720 scale=1.15
+Oct 31 03:23:12 waytoys-kde waytoys-zones-editor[23595]: preview opened output=Virtual-1 layout=Overlapping Canvas
+Oct 31 03:23:12 waytoys-kde waytoys-zones-editor[23595]: configured output=Virtual-1 logical=848x480 integer_scale=1
+Oct 31 03:23:12 waytoys-kde waytoys-zones-editor[23595]: buffer output=Virtual-1 logical=848x480 physical=848x480 scale=1
+Oct 31 03:23:34 waytoys-kde systemd[725]: waytoys-canvas-preview-17-check.service: Consumed 2.149s CPU time, 28.5M memory peak.
+Oct 31 03:23:35 waytoys-kde systemd[725]: Started waytoys-canvas-preview-dev.service - [systemd-run] /home/debian/projects/way-toys/target/debug/waytoys-zones-editor --output Virtual-2 --preview /home/debian/projects/way-toys/crates/waytoys-zones-editor/examples/canvas-overlap.json --config-dir /home/debian/waytoys-test-results/canvas-preview-17/no-write.
+Oct 31 03:23:35 waytoys-kde waytoys-zones-editor[23769]: preview opened output=Virtual-2 layout=Overlapping Canvas
+Oct 31 03:23:35 waytoys-kde waytoys-zones-editor[23769]: fractional scale output=Virtual-2 scale=138/120
+Oct 31 03:23:35 waytoys-kde waytoys-zones-editor[23769]: fractional scale output=Virtual-2 scale=120/120
+Oct 31 03:23:35 waytoys-kde waytoys-zones-editor[23769]: fractional scale output=Virtual-2 scale=138/120
+Oct 31 03:23:35 waytoys-kde waytoys-zones-editor[23769]: configured output=Virtual-2 logical=1113x626 integer_scale=2
+Oct 31 03:23:35 waytoys-kde waytoys-zones-editor[23769]: buffer output=Virtual-2 logical=1113x626 physical=1280x720 scale=1.15
+active
+no-config-created
+1667a205d9e0d0c8ca548ac3518a9d4678716754eb742c87b00b8dac2b3ce3c3  /home/debian/projects/way-toys/crates/waytoys-zones-editor/examples/canvas-overlap.json

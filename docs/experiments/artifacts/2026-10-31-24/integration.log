@@ -1,0 +1,23 @@
+RUN mid_shift
+PASS mid_shift {"id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [573, 16, 259, 448], "opacity": 0.8, "move": false, "resize": false}
+RUN ctrl_span
+PASS ctrl_span {"id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [16, 16, 816, 448], "opacity": 0.8, "move": false, "resize": false}
+RUN cross_output
+PASS cross_output {"id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [864, 16, 199.13043478260872, 593.9130434782609], "opacity": 0.8, "move": false, "resize": false}
+RUN shift_release
+PASS shift_release {"during": [{"id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [449.973388671875, 216.0032958984375, 500, 320], "opacity": 0.8, "move": true, "resize": false}], "after": {"id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [449.973388671875, 216.0032958984375, 500, 320], "opacity": 0.8, "move": false, "resize": false}}
+RUN escape
+PASS escape {"id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [100, 60, 500, 320], "opacity": 0.8, "move": false, "resize": false}
+RUN disable
+PASS disable [{"id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [449.973388671875, 216.0032958984375, 500, 320], "opacity": 0.4, "move": true, "resize": false}, {"paths": {"app": "/home/debian/waytoys-test-results/settings-23/app", "zones": "/home/debian/waytoys-test-results/settings-23/zones"}, "settings": {"run_at_login": true, "enabled": {"zones": false}}, "ready": false, "blocked": false, "error": null}, {"id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [449.973388671875, 216.0032958984375, 500, 320], "opacity": 0.8, "move": true, "resize": false}]
+RUN lease_timeout
+PASS lease_timeout [{"id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [449.973388671875, 216.0032958984375, 500, 320], "opacity": 0.8, "move": true, "resize": false}, {"id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [638, 4, 206, 432], "opacity": 0.8, "move": false, "resize": false}]
+RUN host_killed
+PASS host_killed [{"id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [449.973388671875, 216.0032958984375, 500, 320], "opacity": 0.8, "move": true, "resize": false}, {"id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [638, 4, 206, 432], "opacity": 0.8, "move": false, "resize": false}]
+RUN excluded_case
+PASS excluded_case {"excluded": {"id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [638, 4, 206, 432], "opacity": 0.8, "move": false, "resize": false}, "different_case": {"id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [573, 16, 259, 448], "opacity": 0.8, "move": false, "resize": false}}
+RUN corrupt_preferences
+PASS corrupt_preferences {"paths": {"app": "/home/debian/waytoys-test-results/settings-23/app", "zones": "/home/debian/waytoys-test-results/settings-23/zones"}, "settings": {"run_at_login": true, "enabled": {"zones": true}}, "ready": false, "blocked": false, "error": "Zones \uc124\uc815 \uc77d\uae30 \uc2e4\ud328 \u00b7 \uc6d0\ubcf8 \ubcf4\uc874: JSON error: expected value at line 1 column 1"}
+RUN screen_lock
+PASS screen_lock [{"id": "{487e3e50-ba26-417c-ba02-3b40d8bdc71e}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [449.973388671875, 216.0032958984375, 500, 320], "opacity": 0.8, "move": false, "resize": false}]
+PASS layout files unchanged

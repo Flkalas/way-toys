@@ -1,0 +1,13 @@
+Removing only regenerable Cargo incremental cache: /home/debian/projects/way-toys/target/debug/incremental
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        20G   17G  2.2G  89% /
+   Compiling waytoys-zones v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones)
+   Compiling waytoys-core v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-core)
+   Compiling waytoys-paste v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-paste)
+   Compiling waytoys-zones-config v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones-config)
+   Compiling waytoys-zones-editor v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones-editor)
+   Compiling waytoys-zones-settings v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones-settings)
+   Compiling waytoys-runtime v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-runtime)
+   Compiling waytoys-capture v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-capture)
+   Compiling waytoys-overlay v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-overlay)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 24.44s

@@ -1,0 +1,7 @@
+[
+  {
+    "name": "clear_and_measure",
+    "passed": false,
+    "error": "confirmed clear did not remove recent entries"
+  }
+]

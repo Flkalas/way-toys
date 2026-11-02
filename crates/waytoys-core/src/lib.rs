@@ -1,3 +1,5 @@
-//! Common foundations for Waytoys.
-//!
-//! The shared API will be designed after the overlay proof of concept.
+//! UI-independent application settings and the session runtime contract.
+pub mod client;
+pub mod settings;
+pub mod storage;
+pub use settings::{Paths, RuntimeStatus, WaytoysSettings};

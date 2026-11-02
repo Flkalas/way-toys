@@ -1,0 +1,25 @@
+kbuildsycoca6 running...
+Meta+V assigned to Waytoys Clipboard; previous keys saved in /home/debian/.local/state/waytoys/paste-shortcut.json
+Installed /home/debian/.local/share/applications/org.waytoys.Paste.desktop -> /home/debian/projects/way-toys/target/debug/waytoys-paste
+{"paths":{"app":"/home/debian/waytoys-test-results/settings-23/app","zones":"/home/debian/waytoys-test-results/settings-23/zones"},"settings":{"run_at_login":false,"enabled":{"zones":true}},"ready":true,"blocked":false,"error":null}
+Running as unit: waytoys-settings-27.service; invocation ID: 1d98f1a8b1e44c4bb566024310dd450e
+{
+  "paths": {
+    "app": "/home/debian/waytoys-test-results/settings-23/app",
+    "zones": "/home/debian/waytoys-test-results/settings-23/zones",
+    "paste": "/home/debian/waytoys-test-results/settings-23/app/paste"
+  },
+  "settings": {
+    "run_at_login": false,
+    "enabled": {
+      "zones": true,
+      "paste": false
+    }
+  },
+  "ready": true,
+  "blocked": false,
+  "error": null,
+  "paste_ready": true,
+  "paste_error": null
+}
+{"listing":{"entries":[],"total":0,"recent":0,"pinned":0,"revision":1},"enabled":false,"locked":false,"ready":true,"error":null,"directory":"/home/debian/waytoys-test-results/settings-23/app/paste"}

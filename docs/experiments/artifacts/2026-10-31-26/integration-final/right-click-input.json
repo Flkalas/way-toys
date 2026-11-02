@@ -1,0 +1,16 @@
+[
+  {
+    "type": "button",
+    "button": "right",
+    "down": true
+  },
+  {
+    "type": "button",
+    "button": "right",
+    "down": false
+  },
+  {
+    "type": "wait",
+    "seconds": 0.3
+  }
+]

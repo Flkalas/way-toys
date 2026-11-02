@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "D:\Github\utils\way-toys\scripts\test-paste-vm.py", line 194, in <module>
+    try:detail=fn()
+               ~~^^
+  File "D:\Github\utils\way-toys\scripts\test-paste-vm.py", line 151, in pause_and_capture
+    guest("printf 'PAUSED_FIXTURE_27' | wl-copy --type 'text/plain;charset=utf-8'")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Github\utils\way-toys\scripts\test-paste-vm.py", line 25, in guest
+    proc=subprocess.run(['ssh','debian@192.168.50.125','bash -s'],input=(prefix+script+'\n').encode(),capture_output=True,timeout=30)
+  File "C:\Users\Lesenic\AppData\Roaming\uv\python\cpython-3.13-windows-x86_64-none\Lib\subprocess.py", line 556, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lesenic\AppData\Roaming\uv\python\cpython-3.13-windows-x86_64-none\Lib\subprocess.py", line 1222, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lesenic\AppData\Roaming\uv\python\cpython-3.13-windows-x86_64-none\Lib\subprocess.py", line 1665, in _communicate
+    raise TimeoutExpired(self.args, orig_timeout)
+subprocess.TimeoutExpired: Command '['ssh', 'debian@192.168.50.125', 'bash -s']' timed out after 30 seconds

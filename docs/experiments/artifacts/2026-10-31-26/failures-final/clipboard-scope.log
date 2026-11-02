@@ -1,0 +1,2 @@
+waytoys-clipboard-74545.scope loaded active running [systemd-run] /usr/bin/wl-copy --type image/png
+74568 /usr/bin/wl-copy --type image/png

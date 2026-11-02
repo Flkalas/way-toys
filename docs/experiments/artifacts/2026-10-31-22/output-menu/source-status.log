@@ -1,0 +1,42 @@
+ M .gitignore
+ M Cargo.lock
+ M Cargo.toml
+ M README.md
+ M crates/waytoys-overlay/src/main.rs
+ M docs/overlay-poc.ko.md
+?? LICENSE-MIT-PowerToys
+?? THIRD_PARTY_NOTICES.md
+?? crates/waytoys-zones-config/
+?? crates/waytoys-zones-editor/
+?? crates/waytoys-zones-settings/
+?? crates/waytoys-zones/
+?? docs/experiments/2026-10-31-02.md
+?? docs/experiments/2026-10-31-03.md
+?? docs/experiments/2026-10-31-04.md
+?? docs/experiments/2026-10-31-05.md
+?? docs/experiments/2026-10-31-06.md
+?? docs/experiments/2026-10-31-07.md
+?? docs/experiments/2026-10-31-08.md
+?? docs/experiments/2026-10-31-09.md
+?? docs/experiments/2026-10-31-10.md
+?? docs/experiments/2026-10-31-11.md
+?? docs/experiments/2026-10-31-12.md
+?? docs/experiments/2026-10-31-13.md
+?? docs/experiments/2026-10-31-14.md
+?? docs/experiments/2026-10-31-15.md
+?? docs/experiments/2026-10-31-16.md
+?? docs/experiments/2026-10-31-17.md
+?? docs/experiments/2026-10-31-18.md
+?? docs/experiments/2026-10-31-19.md
+?? docs/experiments/2026-10-31-20.md
+?? docs/experiments/artifacts/
+?? docs/fancyzones-settings-inventory.ko.md
+?? docs/fancyzones-source-analysis.ko.md
+?? docs/vm-capture.ko.md
+?? docs/zones-grid-editor.ko.md
+?? scripts/capture-vm.ps1
+?? scripts/measure-zones-processes.py
+?? scripts/qemu-ppm-to-png.py
+?? scripts/reproduce-nested-overlay-headless.sh
+?? scripts/vm-input.py
+?? scripts/zones-settings-vm.ps1

@@ -1,0 +1,3 @@
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        20G   18G  1.5G  93% /
+{"listing":{"entries":[],"total":0,"recent":0,"pinned":0,"revision":0},"enabled":false,"locked":true,"ready":true,"error":null,"directory":"/home/debian/waytoys-test-results/settings-23/app/paste"}

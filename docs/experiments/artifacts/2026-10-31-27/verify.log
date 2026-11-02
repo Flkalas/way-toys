@@ -1,0 +1,39 @@
+/home/debian/waytoys-test-results/settings-23/zones/preferences.json: OK
+/home/debian/waytoys-test-results/settings-23/zones/outputs/output-Virtual-1.json: OK
+/home/debian/waytoys-test-results/settings-23/zones/outputs/output-Virtual-2.json: OK
+/home/debian/.config/kwinrc: OK
+{
+  "runtime": {
+    "paths": {
+      "app": "/home/debian/waytoys-test-results/settings-23/app",
+      "zones": "/home/debian/waytoys-test-results/settings-23/zones",
+      "paste": "/home/debian/waytoys-test-results/settings-23/app/paste"
+    },
+    "settings": {
+      "run_at_login": false,
+      "enabled": {
+        "zones": true,
+        "paste": true
+      }
+    },
+    "ready": true,
+    "blocked": false,
+    "error": null,
+    "paste_ready": true,
+    "paste_error": null
+  },
+  "history_permissions": "0700/0600",
+  "quick_check": "ok",
+  "pins": 2,
+  "only_app_change": "enabled.paste=true"
+}
+XDG without HOME: OK
+Compiled dependencies: tiny-skia; no wgpu
+false
+0f340563d2f17ec314268de7d6301cd78f151249878b7775b97b10ecc7c5ced0  target/debug/waytoys
+6819d630ad7532b3c64395a9b5dab7f712ead1232cbeadfe415f3483e42820e6  target/debug/waytoys-settings
+0ae9f16c4392bf9607e1f1c2b80ad7b4ed3a23fb42f8251de88af9ee81b401f7  target/debug/waytoys-paste
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        20G   18G  1.1G  95% /
+  97551     725   824 /usr/bin/wl-copy --type text/plain;charset=utf-8
+  98481   98473 16344 /home/debian/projects/way-toys/target/debug/waytoys-paste --daemon --data-dir /home/debian/waytoys-test-results/settings-23/app/paste

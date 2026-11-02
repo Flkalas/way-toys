@@ -1,0 +1,3 @@
+MainPID=0
+ActiveState=inactive
+  36243     725 103512 /home/debian/projects/way-toys/target/debug/waytoys-zones-settings --config-dir /home/debian/waytoys-test-results/settings-22/config

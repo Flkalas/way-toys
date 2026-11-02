@@ -1,0 +1,7 @@
+[
+  {
+    "name": "lock_and_delivery",
+    "passed": false,
+    "error": "{'id': '{113bccd0-216c-48d7-8e50-849c9c703814}', 'caption': 'Waytoys Clipboard', 'app': 'waytoys-paste', 'geometry': [100, 25, 560, 400], 'opacity': 1, 'move': False, 'resize': False, 'minimized': False}"
+  }
+]

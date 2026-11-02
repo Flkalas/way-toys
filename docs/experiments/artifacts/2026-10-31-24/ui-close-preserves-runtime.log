@@ -1,0 +1,27 @@
+MainPID=55441
+ActiveState=active
+
+MainPID=0
+ActiveState=inactive
+disabled
+{
+  "run_at_login": false,
+  "enabled": {
+    "zones": true
+  }
+}
+{
+  "paths": {
+    "app": "/home/debian/waytoys-test-results/settings-23/app",
+    "zones": "/home/debian/waytoys-test-results/settings-23/zones"
+  },
+  "settings": {
+    "run_at_login": false,
+    "enabled": {
+      "zones": true
+    }
+  },
+  "ready": true,
+  "blocked": false,
+  "error": null
+}

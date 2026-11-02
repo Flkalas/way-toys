@@ -1,0 +1,38 @@
+[Argument: a(ssssssaiai) {[Argument: (ssssssaiai) "_launch", "Launch Spectacle", "org.kde.spectacle.desktop", "Spectacle", "default", "Default Context", [Argument: ai {16777225, 301989971}], [Argument: ai {16777225, 301989971}]]}]
+kbuildsycoca6 running...
+"applications.menu"  not found in  QList("/etc/xdg/menus")
+Meta+Shift+S assigned to Waytoys Capture; previous keys saved in /home/debian/.local/state/waytoys/capture-shortcut.json
+Installed /home/debian/.local/share/applications/org.waytoys.Capture.desktop -> /home/debian/projects/way-toys/target/debug/waytoys-capture
+{
+  "paths": {
+    "app": "/home/debian/waytoys-test-results/settings-23/app",
+    "zones": "/home/debian/waytoys-test-results/settings-23/zones"
+  },
+  "settings": {
+    "run_at_login": false,
+    "enabled": {
+      "zones": true
+    }
+  },
+  "ready": true,
+  "blocked": false,
+  "error": null
+}
+Running as unit: waytoys-settings-26.service; invocation ID: df5f374c2bcf463a92958b1b44142650
+captured output=Virtual-1 logical=0,0,848,480 pixels=848x480
+captured output=Virtual-2 logical=848,0,1113,626 pixels=1280x720
+{
+  "paths": {
+    "app": "/home/debian/waytoys-test-results/settings-23/app",
+    "zones": "/home/debian/waytoys-test-results/settings-23/zones"
+  },
+  "settings": {
+    "run_at_login": false,
+    "enabled": {
+      "zones": true
+    }
+  },
+  "ready": true,
+  "blocked": false,
+  "error": null
+}

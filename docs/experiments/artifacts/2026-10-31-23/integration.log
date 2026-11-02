@@ -1,0 +1,15 @@
+RUN mid_shift
+PASS mid_shift {"id": "{9e0a57cd-eee8-4d1f-9a67-59801745522f}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [573, 16, 259, 448], "opacity": 0.8, "move": false, "resize": false}
+RUN ctrl_span
+PASS ctrl_span {"id": "{9e0a57cd-eee8-4d1f-9a67-59801745522f}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [16, 16, 816, 448], "opacity": 0.8, "move": false, "resize": false}
+RUN cross_output
+Traceback (most recent call last):
+  File "D:\Github\utils\way-toys\scripts\test-zones-runtime.py", line 186, in <module>
+    test(name,fn)
+    ~~~~^^^^^^^^^
+  File "D:\Github\utils\way-toys\scripts\test-zones-runtime.py", line 95, in test
+    data = fn()
+  File "D:\Github\utils\way-toys\scripts\test-zones-runtime.py", line 111, in crossing
+    w=observe();x,y,width,height=w['geometry'];assert x>=848 and x+width<=1961 and width<300 and height>590,w
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'id': '{9e0a57cd-eee8-4d1f-9a67-59801745522f}', 'caption': 'WaytoysProbe \u2014 Konsole', 'app': 'org.kde.konsole', 'geometry': [649.94677734375, 216.0032958984375, 500.00000000000006, 320.00000000000006], 'opacity': 0.8, 'move': False, 'resize': False}

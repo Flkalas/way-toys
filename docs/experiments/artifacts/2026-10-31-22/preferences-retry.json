@@ -1,0 +1,23 @@
+{
+  "use_cursorpos_editor_startupscreen": true,
+  "show_zones_on_all_monitors": true,
+  "overlapping_zones_algorithm": "largest",
+  "show_zone_number": false,
+  "zone_highlight_opacity": 72,
+  "zone_highlight_color": "#ff4400",
+  "zone_color": "#35bb88",
+  "zone_border_color": "#FFFFFF",
+  "zone_number_color": "#000000",
+  "layout_name_label_enabled": true,
+  "layout_name_label_placement": "top_center",
+  "layout_name_label_text_color": "#FFFFFF",
+  "layout_name_label_background_color": "#262626",
+  "layout_name_label_font_size": 36,
+  "layout_name_label_padding": 12,
+  "layout_name_label_duration": 1500,
+  "make_dragged_window_transparent": false,
+  "move_windows_based_on_position": false,
+  "move_window_across_monitors": true,
+  "flash_zones_on_quick_switch": true,
+  "excluded_apps": "org.kde.konsole\norg.example.TestApp"
+}

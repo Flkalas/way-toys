@@ -1,0 +1,12 @@
+[
+  {
+    "type": "key",
+    "key": "r",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "r",
+    "down": false
+  }
+]

@@ -1,0 +1,27 @@
+activities: c5e58432-2fd7-437e-87a5-44a231009498
+caption: Zones
+clientMachine: 
+desktopFile: 
+desktops: 2696895a-2312-43c3-8cab-eb2016862fae
+fullscreen: false
+height: 329
+keepAbove: false
+keepBelow: false
+layer: 2
+localhost: true
+maximizeHorizontal: 0
+maximizeVertical: 0
+minimized: false
+noBorder: false
+resourceClass: waytoys-zones-settings
+resourceName: waytoys-zones-settings
+role: 
+shaded: false
+skipPager: false
+skipSwitcher: false
+skipTaskbar: false
+type: 0
+uuid: {24111941-240b-4ef2-aa15-917ae1eb6b6a}
+width: 562
+x: 45.04522705078131
+y: 0

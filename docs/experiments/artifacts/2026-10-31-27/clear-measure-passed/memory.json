@@ -1,0 +1,63 @@
+{
+  "utc": "2026-10-31T11:41:02.205759+00:00",
+  "elapsed_seconds": 3.000147601000208,
+  "processes": [
+    {
+      "name": "org.waytoys.Runtime1",
+      "pid": 87543,
+      "before": {
+        "rss_kib": 12528,
+        "peak_rss_kib": 12528,
+        "pss_kib": 10684,
+        "threads": 7,
+        "cpu_ticks": 1115
+      },
+      "after": {
+        "rss_kib": 12528,
+        "peak_rss_kib": 12528,
+        "pss_kib": 10684,
+        "threads": 7,
+        "cpu_ticks": 1117
+      },
+      "cpu_seconds": 0.02
+    },
+    {
+      "name": "org.waytoys.Paste1",
+      "pid": 87554,
+      "before": {
+        "rss_kib": 17032,
+        "peak_rss_kib": 17120,
+        "pss_kib": 14903,
+        "threads": 6,
+        "cpu_ticks": 471
+      },
+      "after": {
+        "rss_kib": 17032,
+        "peak_rss_kib": 17120,
+        "pss_kib": 14903,
+        "threads": 6,
+        "cpu_ticks": 471
+      },
+      "cpu_seconds": 0.0
+    },
+    {
+      "name": "org.waytoys.PastePicker1",
+      "pid": 96545,
+      "before": {
+        "rss_kib": 109248,
+        "peak_rss_kib": 109248,
+        "pss_kib": 102965,
+        "threads": 9,
+        "cpu_ticks": 54
+      },
+      "after": {
+        "rss_kib": 109260,
+        "peak_rss_kib": 109260,
+        "pss_kib": 102977,
+        "threads": 9,
+        "cpu_ticks": 61
+      },
+      "cpu_seconds": 0.07
+    }
+  ]
+}

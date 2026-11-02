@@ -1,0 +1,16 @@
+[package]
+name = "waytoys-zones-settings"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+publish = false
+
+[dependencies]
+iced = { version = "=0.14.0", default-features = false, features = ["tiny-skia", "wayland", "thread-pool"] }
+futures-timer = "3"
+waytoys-zones = { path = "../waytoys-zones" }
+waytoys-zones-config = { path = "../waytoys-zones-config" }
+serde_json = "1"
+waytoys-core = { path = "../waytoys-core" }
+zbus = { version = "5", default-features = false, features = ["async-io", "blocking-api"] }
+async-channel = "2"

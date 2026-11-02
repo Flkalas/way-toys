@@ -1,0 +1,10 @@
+{
+  "KPlugin": {
+    "Id": "waytoys_zones_bridge",
+    "Name": "Waytoys Zones bridge",
+    "Description": "Owned Shift window drags for Waytoys",
+    "Version": "0.1.0",
+    "License": "GPL-2.0-or-later",
+    "EnabledByDefault": false
+  }
+}

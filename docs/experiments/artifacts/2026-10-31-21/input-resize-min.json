@@ -1,0 +1,51 @@
+[
+  {
+    "y": 60,
+    "x": 420,
+    "type": "move"
+  },
+  {
+    "type": "button",
+    "down": true
+  },
+  {
+    "y": 22,
+    "x": 420,
+    "type": "move"
+  },
+  {
+    "type": "button",
+    "down": false
+  },
+  {
+    "type": "wait",
+    "seconds": 0.3
+  },
+  {
+    "y": 405,
+    "x": 806,
+    "type": "move"
+  },
+  {
+    "type": "button",
+    "down": true
+  },
+  {
+    "y": 365,
+    "x": 707,
+    "type": "move"
+  },
+  {
+    "y": 325,
+    "x": 606,
+    "type": "move"
+  },
+  {
+    "type": "button",
+    "down": false
+  },
+  {
+    "type": "wait",
+    "seconds": 0.3
+  }
+]

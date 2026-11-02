@@ -1,0 +1,26 @@
+[
+  {
+    "type": "key",
+    "key": "meta_l",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "v",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "v",
+    "down": false
+  },
+  {
+    "type": "key",
+    "key": "meta_l",
+    "down": false
+  },
+  {
+    "type": "wait",
+    "seconds": 0.5
+  }
+]

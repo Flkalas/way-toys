@@ -1,0 +1,9 @@
+true
+Running as unit: waytoys-settings-25.service; invocation ID: 6d98b98fc86947cba49cfa6a3d10cadd
+{"pointer": {"x": 1300, "y": 400}, "windows": []}
+{"pointer": {"x": 1300, "y": 400}, "windows": []}
+MainPID=58276
+ActiveState=active
+
+MainPID=0
+ActiveState=inactive

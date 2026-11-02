@@ -1,0 +1,22 @@
+    Checking iced_graphics v0.14.0
+    Checking waytoys-core v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-core)
+    Checking waytoys-runtime v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-runtime)
+    Checking iced_tiny_skia v0.14.1
+    Checking iced_renderer v0.14.0
+    Checking iced_program v0.14.0
+    Checking iced_widget v0.14.2
+    Checking iced_winit v0.14.1
+    Checking waytoys-zones-editor v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones-editor)
+    Checking iced v0.14.0
+    Checking waytoys-zones-settings v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones-settings)
+    Checking waytoys-paste v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-paste)
+    Checking waytoys-zones-config v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones-config)
+    Checking waytoys-capture v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-capture)
+    Checking waytoys-zones v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones)
+    Checking waytoys-overlay v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-overlay)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 6.50s
+   Compiling waytoys-core v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-core)
+   Compiling waytoys-zones-settings v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-zones-settings)
+   Compiling waytoys-paste v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-paste)
+   Compiling waytoys-runtime v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-runtime)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 17.07s

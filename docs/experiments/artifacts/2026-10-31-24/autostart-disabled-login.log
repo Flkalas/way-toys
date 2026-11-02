@@ -1,0 +1,12 @@
+MainPID=0
+ActiveState=inactive
+
+MainPID=0
+ActiveState=inactive
+{
+  "run_at_login": false,
+  "enabled": {
+    "zones": true
+  }
+}
+Running as unit: waytoys-settings-24.service; invocation ID: 9764a14e2fa445778c65cb2647afc69d

@@ -1,0 +1,45 @@
+[
+  {
+    "name": "lock_and_delivery",
+    "passed": true,
+    "detail": {
+      "lock_hides_and_refuses_copy": true,
+      "small_window": {
+        "id": "{47f92eee-f99d-4e87-962a-90e8acbb97ac}",
+        "caption": "Waytoys Clipboard",
+        "app": "waytoys-paste",
+        "geometry": [
+          100,
+          25,
+          464,
+          360
+        ],
+        "opacity": 1,
+        "move": false,
+        "resize": false,
+        "minimized": false
+      },
+      "page_copy": "SCROLL_FIXTURE_27_14",
+      "moved_window": {
+        "id": "{47f92eee-f99d-4e87-962a-90e8acbb97ac}",
+        "caption": "Waytoys Clipboard",
+        "app": "waytoys-paste",
+        "geometry": [
+          930,
+          15,
+          580,
+          590.4347826086956
+        ],
+        "opacity": 1,
+        "move": false,
+        "resize": false,
+        "minimized": false
+      }
+    }
+  },
+  {
+    "name": "clear_and_measure",
+    "passed": false,
+    "error": "confirmed clear did not remove recent entries"
+  }
+]

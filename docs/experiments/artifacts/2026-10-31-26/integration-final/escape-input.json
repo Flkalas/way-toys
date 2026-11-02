@@ -1,0 +1,46 @@
+[
+  {
+    "type": "move",
+    "x": 300.5,
+    "y": 180
+  },
+  {
+    "type": "move",
+    "x": 300,
+    "y": 180
+  },
+  {
+    "type": "button",
+    "button": "left",
+    "down": true
+  },
+  {
+    "type": "move",
+    "x": 500.5,
+    "y": 300
+  },
+  {
+    "type": "move",
+    "x": 500,
+    "y": 300
+  },
+  {
+    "type": "key",
+    "key": "esc",
+    "down": true
+  },
+  {
+    "type": "key",
+    "key": "esc",
+    "down": false
+  },
+  {
+    "type": "button",
+    "button": "left",
+    "down": false
+  },
+  {
+    "type": "wait",
+    "seconds": 0.3
+  }
+]

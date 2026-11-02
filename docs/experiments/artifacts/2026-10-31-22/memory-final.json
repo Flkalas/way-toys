@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-31T05:19:00.558249+00:00",
+  "elapsed_seconds": 10.00015436099784,
+  "processes": [
+    {
+      "unit": "waytoys-zones-settings-dev",
+      "pid": 37213,
+      "before": {
+        "rss_kib": 103540,
+        "peak_rss_kib": 103540,
+        "pss_kib": 98647,
+        "threads": 5,
+        "cpu_ticks": 198
+      },
+      "after": {
+        "rss_kib": 103540,
+        "peak_rss_kib": 103540,
+        "pss_kib": 98647,
+        "threads": 5,
+        "cpu_ticks": 198
+      },
+      "cpu_seconds": 0.0
+    }
+  ]
+}

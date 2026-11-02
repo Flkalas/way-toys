@@ -1,0 +1,7 @@
+84881c725cd6589c8808638b8ee879dad69d2af85be6f0cfa6410ad3c085fc7c  /home/debian/.config/kwinrc
+-- Install configuration: "Debug"
+-- Installing: /usr/lib/x86_64-linux-gnu/qt6/plugins/kwin/plugins/waytoys_zones_bridge.so
+true
+{"attached":false,"outputs":[{"geometry":[0,0,848,480],"name":"Virtual-1"},{"geometry":[848,0,1113,626],"name":"Virtual-2"}],"protocol":1}
+Running as unit: waytoys-bridge-probe.service; invocation ID: a237146c00f54243b67a00423f2dab29
+Failed to find executable konsole: No such file or directory

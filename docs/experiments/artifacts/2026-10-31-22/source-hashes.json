@@ -1,0 +1,236 @@
+[
+  {
+    "path": "Cargo.toml",
+    "local_sha256": "0644fdb21767e8b7c01b26b09ed00f8143e9869345a82e8bb9a2fe829b5f4d5e",
+    "guest_sha256": "0644fdb21767e8b7c01b26b09ed00f8143e9869345a82e8bb9a2fe829b5f4d5e",
+    "equal": true
+  },
+  {
+    "path": "Cargo.lock",
+    "local_sha256": "f9ad1efe00f8e7c99bda3c71dbb6d3efe581cf5f15fe103fe77e0786f556089f",
+    "guest_sha256": "f9ad1efe00f8e7c99bda3c71dbb6d3efe581cf5f15fe103fe77e0786f556089f",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones-settings/src/view.rs",
+    "local_sha256": "4533cafa4d6683dd5f6ffe6b749c56dc3e5b3ecf448caa7d88111b85e08c2862",
+    "guest_sha256": "4533cafa4d6683dd5f6ffe6b749c56dc3e5b3ecf448caa7d88111b85e08c2862",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones-settings/src/preview.rs",
+    "local_sha256": "43ba41fbb6b14e62a3f2f86534181acf23ed9ca693c6830e76f2c4277607e93f",
+    "guest_sha256": "43ba41fbb6b14e62a3f2f86534181acf23ed9ca693c6830e76f2c4277607e93f",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones-settings/src/main.rs",
+    "local_sha256": "910f41b6772f3495c1c80c09ef7615f88589a1c95dc190f0a14d099ecaee6422",
+    "guest_sha256": "910f41b6772f3495c1c80c09ef7615f88589a1c95dc190f0a14d099ecaee6422",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones-settings/src/draft.rs",
+    "local_sha256": "cfbaef673db1a7c8e611c26e3f2088bc95c62948aa1b7a6a9f9a755896d64bf6",
+    "guest_sha256": "cfbaef673db1a7c8e611c26e3f2088bc95c62948aa1b7a6a9f9a755896d64bf6",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones-settings/Cargo.toml",
+    "local_sha256": "7b19bf691e740e4f23d5f8e95834e5951ffdf8eef39fa1e774891183f6d2ef76",
+    "guest_sha256": "7b19bf691e740e4f23d5f8e95834e5951ffdf8eef39fa1e774891183f6d2ef76",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones-editor/src/wayland.rs",
+    "local_sha256": "e201563ce1e4f6d5e93cb97ecd285fab917c2604374153a17c81020091d78a0c",
+    "guest_sha256": "e201563ce1e4f6d5e93cb97ecd285fab917c2604374153a17c81020091d78a0c",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones-editor/src/ui.rs",
+    "local_sha256": "12f359383138e93721585b234484252d3aff94689623e087196188afb6e1fda6",
+    "guest_sha256": "12f359383138e93721585b234484252d3aff94689623e087196188afb6e1fda6",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones-editor/src/store.rs",
+    "local_sha256": "898be6bab1c6bc0e539644817c2499b7eab6ed481820e2b12e035fbe6a7a90cd",
+    "guest_sha256": "898be6bab1c6bc0e539644817c2499b7eab6ed481820e2b12e035fbe6a7a90cd",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones-editor/src/render.rs",
+    "local_sha256": "706a3549f4ffca61cda45442e505d0d5d0df6fe4486cba19297686adaae2a3c8",
+    "guest_sha256": "706a3549f4ffca61cda45442e505d0d5d0df6fe4486cba19297686adaae2a3c8",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones-editor/src/preview.rs",
+    "local_sha256": "1484b49b008f7241724958ebe7b4e7bfe7f3bfaab4a985a980b782019ae4fbc1",
+    "guest_sha256": "1484b49b008f7241724958ebe7b4e7bfe7f3bfaab4a985a980b782019ae4fbc1",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones-editor/src/main.rs",
+    "local_sha256": "058005a773e70b5ab069ea79c850a40c48fdc95f6fc01b589c90755a33fb2af0",
+    "guest_sha256": "058005a773e70b5ab069ea79c850a40c48fdc95f6fc01b589c90755a33fb2af0",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones-editor/src/lib.rs",
+    "local_sha256": "373e971796543da8cf50c11a101e69566c51dd18f9dc8fa13b84823159562967",
+    "guest_sha256": "373e971796543da8cf50c11a101e69566c51dd18f9dc8fa13b84823159562967",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones-editor/src/controller.rs",
+    "local_sha256": "fa88c83f4093b43461802598a007312558e2a5d5af36e7d107df1df6c04ec825",
+    "guest_sha256": "fa88c83f4093b43461802598a007312558e2a5d5af36e7d107df1df6c04ec825",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones-editor/Cargo.toml",
+    "local_sha256": "4bf8625cbfbdb37849aa1227129cde36c59535f99a351751231bfbf19d0f64aa",
+    "guest_sha256": "4bf8625cbfbdb37849aa1227129cde36c59535f99a351751231bfbf19d0f64aa",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones-config/tests/preferences.rs",
+    "local_sha256": "8a56b3ea28948b6760b4c0c074c26c43c2bb2293ac9ff985c733e0f62f9b5eef",
+    "guest_sha256": "8a56b3ea28948b6760b4c0c074c26c43c2bb2293ac9ff985c733e0f62f9b5eef",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones-config/src/store.rs",
+    "local_sha256": "fddee9d5377929f3e52346e8aa238f4ea1f5f03140beeada60afa18f96a5175c",
+    "guest_sha256": "fddee9d5377929f3e52346e8aa238f4ea1f5f03140beeada60afa18f96a5175c",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones-config/src/model.rs",
+    "local_sha256": "53e32f174ba3055c811a56301bc1d594060f93fe607bfec59d54ffba3a4ebc3d",
+    "guest_sha256": "53e32f174ba3055c811a56301bc1d594060f93fe607bfec59d54ffba3a4ebc3d",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones-config/src/lib.rs",
+    "local_sha256": "0395185b724661dc2b5446ad9033ef361708c17832298de2def49a522647c50c",
+    "guest_sha256": "0395185b724661dc2b5446ad9033ef361708c17832298de2def49a522647c50c",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones-config/Cargo.toml",
+    "local_sha256": "da271700d5056ecadf34db5c97f3584f4ad06306c64df876730acf769788da1f",
+    "guest_sha256": "da271700d5056ecadf34db5c97f3584f4ad06306c64df876730acf769788da1f",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones/tests/cli.rs",
+    "local_sha256": "c16972010517e77f76e95d42a5770556701b36032c32fbd254c543fc3fab36a1",
+    "guest_sha256": "c16972010517e77f76e95d42a5770556701b36032c32fbd254c543fc3fab36a1",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones/src/settings.rs",
+    "local_sha256": "29abfc36a6805451ee9bfab92c4789a0f917aacc162fd378ad80623fdb85b8a9",
+    "guest_sha256": "29abfc36a6805451ee9bfab92c4789a0f917aacc162fd378ad80623fdb85b8a9",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones/src/selection.rs",
+    "local_sha256": "a0b591e337457afd2b15868c223f2e6d66f62565ed974ae1f1e0d9141a99ee11",
+    "guest_sha256": "a0b591e337457afd2b15868c223f2e6d66f62565ed974ae1f1e0d9141a99ee11",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones/src/model.rs",
+    "local_sha256": "09176c0ca739f164e04fdab77f699209fc70baaa4792f7bd3171c09714907c0d",
+    "guest_sha256": "09176c0ca739f164e04fdab77f699209fc70baaa4792f7bd3171c09714907c0d",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones/src/main.rs",
+    "local_sha256": "4b4f157965f2aeadb08829094f2885c3a4b68e895c8798e16870bd60cf069acb",
+    "guest_sha256": "4b4f157965f2aeadb08829094f2885c3a4b68e895c8798e16870bd60cf069acb",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones/src/magnetic_snap.rs",
+    "local_sha256": "633f3cc10b35fd7d3fb1fcad57cc69c3f7c0f373c0532abd9cbcde736c8a0c85",
+    "guest_sha256": "633f3cc10b35fd7d3fb1fcad57cc69c3f7c0f373c0532abd9cbcde736c8a0c85",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones/src/lib.rs",
+    "local_sha256": "214d9b99637decfc09d0c784e1ef284dbd023b4d9eafeb5b9ad17f085a59ce1c",
+    "guest_sha256": "214d9b99637decfc09d0c784e1ef284dbd023b4d9eafeb5b9ad17f085a59ce1c",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones/src/layout.rs",
+    "local_sha256": "6b7ded12af266e2d1158728438f88d6e230036289f4d246be8315a8553352ad5",
+    "guest_sha256": "6b7ded12af266e2d1158728438f88d6e230036289f4d246be8315a8553352ad5",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones/src/grid_editor.rs",
+    "local_sha256": "b1dc5b1e5e4856016b86edf3ae9bc49e90caff5788609043ce8e99834a7c0e2f",
+    "guest_sha256": "b1dc5b1e5e4856016b86edf3ae9bc49e90caff5788609043ce8e99834a7c0e2f",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones/src/geometry.rs",
+    "local_sha256": "39fab653bd888c440cc2459698d30ac1788f5fc44612021f62af4a04c4c40beb",
+    "guest_sha256": "39fab653bd888c440cc2459698d30ac1788f5fc44612021f62af4a04c4c40beb",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones/src/canvas_editor.rs",
+    "local_sha256": "40e7f0d78e37e1f65e5e82c653444ee744d9bfefc28419ca46eefde7317eb5b6",
+    "guest_sha256": "40e7f0d78e37e1f65e5e82c653444ee744d9bfefc28419ca46eefde7317eb5b6",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-zones/Cargo.toml",
+    "local_sha256": "cd110e6b8ca574048450e845ec2d19d4a1990f7fe74aff7fa9f1ce5a7f7f5cf4",
+    "guest_sha256": "cd110e6b8ca574048450e845ec2d19d4a1990f7fe74aff7fa9f1ce5a7f7f5cf4",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-overlay/src/main.rs",
+    "local_sha256": "c6fd24478f69ce0caa757d598e4199d5ba88a9293a78f4a41ca8591069cec3b8",
+    "guest_sha256": "c6fd24478f69ce0caa757d598e4199d5ba88a9293a78f4a41ca8591069cec3b8",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-overlay/Cargo.toml",
+    "local_sha256": "88482fb747727f4a58d91222677796bad301f4d08aa890b01251978295cca8a6",
+    "guest_sha256": "88482fb747727f4a58d91222677796bad301f4d08aa890b01251978295cca8a6",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-core/Cargo.toml",
+    "local_sha256": "3ee707249114e3b7b19139719b2c194809681267e3a3496ad345588d4b96229e",
+    "guest_sha256": "3ee707249114e3b7b19139719b2c194809681267e3a3496ad345588d4b96229e",
+    "equal": true
+  },
+  {
+    "path": "crates/waytoys-core/src/lib.rs",
+    "local_sha256": "0cf5e19c8a2f92e00332548e86c03ca54e06ba8e99c913067a25a8951a15b982",
+    "guest_sha256": "0cf5e19c8a2f92e00332548e86c03ca54e06ba8e99c913067a25a8951a15b982",
+    "equal": true
+  },
+  {
+    "path": "scripts/zones-settings-vm.ps1",
+    "local_sha256": "38446cf39ea6b1e7ff1fb5d83bb97195638fdd6e21873d14038f8f596dcf340a",
+    "guest_sha256": "38446cf39ea6b1e7ff1fb5d83bb97195638fdd6e21873d14038f8f596dcf340a",
+    "equal": true
+  },
+  {
+    "path": "scripts/measure-zones-processes.py",
+    "local_sha256": "f532c941555aee6e06577241110e538de7582256926072a1283bc31c9d681cea",
+    "guest_sha256": "f532c941555aee6e06577241110e538de7582256926072a1283bc31c9d681cea",
+    "equal": true
+  }
+]

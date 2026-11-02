@@ -1,0 +1,26 @@
+{"pointer": {"x": 650, "y": 230}, "windows": [{"id": "{efb90c15-2606-4d84-947f-924b5eff6186}", "caption": "WaytoysProbe — Konsole", "app": "org.kde.konsole", "geometry": [449.973388671875, 216.0032958984375, 500, 320], "opacity": 0.4, "move": true, "resize": false}]}
+{
+  "utc": "2026-10-31T08:03:02.333737+00:00",
+  "elapsed_seconds": 5.0001511849986855,
+  "processes": [
+    {
+      "unit": "waytoys-runtime.service",
+      "pid": 56031,
+      "before": {
+        "rss_kib": 37096,
+        "peak_rss_kib": 37096,
+        "pss_kib": 32572,
+        "threads": 8,
+        "cpu_ticks": 315
+      },
+      "after": {
+        "rss_kib": 37096,
+        "peak_rss_kib": 37096,
+        "pss_kib": 32572,
+        "threads": 8,
+        "cpu_ticks": 317
+      },
+      "cpu_seconds": 0.02
+    }
+  ]
+}

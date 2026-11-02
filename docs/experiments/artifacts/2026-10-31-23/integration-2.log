@@ -1,0 +1,47 @@
+RUN mid_shift
+PASS mid_shift {"id": "{9e0a57cd-eee8-4d1f-9a67-59801745522f}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [573, 16, 259, 448], "opacity": 0.8, "move": false, "resize": false}
+RUN ctrl_span
+PASS ctrl_span {"id": "{9e0a57cd-eee8-4d1f-9a67-59801745522f}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [16, 16, 816, 448], "opacity": 0.8, "move": false, "resize": false}
+RUN cross_output
+PASS cross_output {"id": "{9e0a57cd-eee8-4d1f-9a67-59801745522f}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [864, 16, 199.13043478260872, 593.9130434782609], "opacity": 0.8, "move": false, "resize": false}
+RUN shift_release
+PASS shift_release {"during": [{"id": "{9e0a57cd-eee8-4d1f-9a67-59801745522f}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [449.973388671875, 216.0032958984375, 500, 320], "opacity": 0.8, "move": true, "resize": false}], "after": {"id": "{9e0a57cd-eee8-4d1f-9a67-59801745522f}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [449.973388671875, 216.0032958984375, 500, 320], "opacity": 0.8, "move": false, "resize": false}}
+RUN escape
+PASS escape {"id": "{9e0a57cd-eee8-4d1f-9a67-59801745522f}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [100, 60, 500, 320], "opacity": 0.8, "move": false, "resize": false}
+RUN disable
+PASS disable [{"id": "{9e0a57cd-eee8-4d1f-9a67-59801745522f}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [449.973388671875, 216.0032958984375, 500, 320], "opacity": 0.4, "move": true, "resize": false}, {"paths": {"app": "/home/debian/waytoys-test-results/settings-23/app", "zones": "/home/debian/waytoys-test-results/settings-23/zones"}, "settings": {"run_at_login": false, "enabled": {"zones": false}}, "ready": false, "blocked": false, "error": null}, {"id": "{9e0a57cd-eee8-4d1f-9a67-59801745522f}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [449.973388671875, 216.0032958984375, 500, 320], "opacity": 0.8, "move": true, "resize": false}]
+RUN lease_timeout
+PASS lease_timeout [{"id": "{9e0a57cd-eee8-4d1f-9a67-59801745522f}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [449.973388671875, 216.0032958984375, 500, 320], "opacity": 0.8, "move": true, "resize": false}, {"id": "{9e0a57cd-eee8-4d1f-9a67-59801745522f}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [638, 4, 206, 432], "opacity": 0.8, "move": false, "resize": false}]
+RUN host_killed
+PASS host_killed [{"id": "{9e0a57cd-eee8-4d1f-9a67-59801745522f}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [449.973388671875, 216.0032958984375, 500, 320], "opacity": 0.8, "move": true, "resize": false}, {"id": "{9e0a57cd-eee8-4d1f-9a67-59801745522f}", "caption": "WaytoysProbe \u2014 Konsole", "app": "org.kde.konsole", "geometry": [638, 4, 206, 432], "opacity": 0.8, "move": false, "resize": false}]
+RUN excluded_case
+Traceback (most recent call last):
+  File "D:\Github\utils\way-toys\scripts\test-zones-runtime.py", line 188, in <module>
+    test(name,fn)
+    ~~~~^^^^^^^^^
+  File "D:\Github\utils\way-toys\scripts\test-zones-runtime.py", line 97, in test
+    data = fn()
+  File "D:\Github\utils\way-toys\scripts\test-zones-runtime.py", line 158, in excluded
+    pref(excluded_apps='org.kde.konsole')
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Github\utils\way-toys\scripts\test-zones-runtime.py", line 80, in pref
+        guest(f'''python3 - <<'PY'
+        ~~~~~^^^^^^^^^^^^^^^^^^^^^
+    import json, os
+    ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    t=p.with_suffix('.test-tmp'); t.write_text(json.dumps(v)); os.replace(t,p)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    PY''')
+    ^^^^^^
+  File "D:\Github\utils\way-toys\scripts\test-zones-runtime.py", line 31, in guest
+    raise RuntimeError(r.stderr or r.stdout)
+RuntimeError: bash: line 2: set: -
+: invalid option
+set: usage: set [-abefhkmnptuvxBCEHPT] [-o option-name] [--] [-] [arg ...]
+bash: line 9: warning: here-document at line 3 delimited by end-of-file (wanted `PY
+')
+Traceback (most recent call last):
+  File "<stdin>", line 6, in <module>
+NameError: name 'PY' is not defined
+

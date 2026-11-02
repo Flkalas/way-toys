@@ -1,0 +1,20 @@
+[
+  {
+    "test": "x11",
+    "passed": true,
+    "observed": {
+      "id": "{a68c9e9e-2151-413e-9fde-39c5f501de27}",
+      "caption": "WaytoysProbe",
+      "app": "XTerm",
+      "geometry": [
+        573.0434782608696,
+        15.65217391304348,
+        259.1304347826087,
+        447.82608695652175
+      ],
+      "opacity": 0.8,
+      "move": false,
+      "resize": false
+    }
+  }
+]

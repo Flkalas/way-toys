@@ -1,0 +1,6 @@
+[
+ {"type":"move","x":272,"y":279}, {"type":"button","down":true}, {"type":"button","down":false}, {"type":"wait","seconds":0.6},
+ {"type":"move","x":1348,"y":300}, {"type":"button","down":true}, {"type":"button","down":false},
+ {"type":"key","key":"shift","down":true}, {"type":"move","x":1033,"y":300}, {"type":"button","down":true}, {"type":"button","down":false}, {"type":"key","key":"shift","down":false},
+ {"type":"move","x":1033,"y":450}, {"type":"button","down":true}, {"type":"move","x":1050,"y":450}, {"type":"move","x":1070,"y":450}, {"type":"button","down":false}
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "sha256": "2d8940b0ffca733f69ace51ec04a0e735c4dfe2ff62b056f89562c6d4d9d1913",
+    "path": "Cargo.toml"
+  },
+  {
+    "sha256": "ade33a9f25b6f02f70594c15685cd449ceace14a53c3b75eb385314ab9689023",
+    "path": "Cargo.lock"
+  },
+  {
+    "sha256": "4f25a5df0bc74c5811fc2cc632de42d4520ee7a41dba90a3502e3f1349e3d28b",
+    "path": "crates\\waytoys-zones-editor\\Cargo.toml"
+  },
+  {
+    "sha256": "fa88c83f4093b43461802598a007312558e2a5d5af36e7d107df1df6c04ec825",
+    "path": "crates\\waytoys-zones-editor\\src\\controller.rs"
+  },
+  {
+    "sha256": "3482e1a5ce1bd3dbf4c390beca4f5e3d11b0838d2aca5f0f467bf3f8b993ecd7",
+    "path": "crates\\waytoys-zones-editor\\src\\lib.rs"
+  },
+  {
+    "sha256": "98eeb64f26151aab49fa84436335054d60dd80d4402ed184dca9aa9ae52938ee",
+    "path": "crates\\waytoys-zones-editor\\src\\main.rs"
+  },
+  {
+    "sha256": "cd729e340126c6b606c1e4230d410a786f2cefdada80efe68c3367fe4271b0fc",
+    "path": "crates\\waytoys-zones-editor\\src\\render.rs"
+  },
+  {
+    "sha256": "8e6ffe1dc9abc8346e5d9f87c4294906221a1f10db16cd6508dfde8836a7a01e",
+    "path": "crates\\waytoys-zones-editor\\src\\store.rs"
+  },
+  {
+    "sha256": "f84da61c8703ae14d2fc79c5dbf660b95bf2bfebacee28a66b90c5da1aabf0a8",
+    "path": "crates\\waytoys-zones-editor\\src\\ui.rs"
+  },
+  {
+    "sha256": "a2492b58463f78011c9293c2cc559a51458648515432794da66a0362d6d1a077",
+    "path": "crates\\waytoys-zones-editor\\src\\wayland.rs"
+  }
+]

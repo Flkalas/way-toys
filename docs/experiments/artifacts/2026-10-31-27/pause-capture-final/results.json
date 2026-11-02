@@ -1,0 +1,20 @@
+[
+  {
+    "name": "pause_and_capture",
+    "passed": true,
+    "detail": {
+      "paused_skipped": true,
+      "invalid_image_rejected": true,
+      "capture": {
+        "id": 10,
+        "mime": "image/png",
+        "preview": "이미지 321 × 141",
+        "width": 321,
+        "height": 141,
+        "size": 4708,
+        "pinned": false,
+        "created": 1793446223
+      }
+    }
+  }
+]

@@ -1,0 +1,207 @@
+   Compiling waytoys-runtime v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-runtime)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.30s
+     Running unittests src/lib.rs (target/debug/deps/waytoys_core-093f4b3ae597d711)
+
+running 2 tests
+test settings::tests::application_flags_are_separate_and_disabled_by_default ... ok
+     Running unittests src/main.rs (target/debug/deps/waytoys_overlay-bf850804872d85c4)
+test settings::tests::application_store_preserves_corruption_and_other_writers ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 4 tests
+test tests::normalizes_drag_in_any_direction ... ok
+test tests::integer_scale_and_overflow ... ok
+test tests::reused_shm_slot_keeps_padding_untouched_and_covers_each_edge ... ok
+test tests::zero_sized_selection ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/waytoys-8af26e59d4c0f3fd)
+
+running 3 tests
+test autostart::tests::unit_escapes_paths_and_keeps_module_state_out_of_service ... ok
+test zones::tests::spans_locally_resets_on_output_and_rejects_stale_targets ... ok
+test zones::tests::stationary_shift_release_clears_overlay_and_selection ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/waytoys_zones-d8bff44c8ea91231)
+
+running 39 tests
+test canvas_editor::tests::drag_cancellation_and_session_snapshots_restore_geometry_and_placement ... ok
+test canvas_editor::tests::default_placement_wraps_at_touching_edge_and_avoids_last_origin ... ok
+test canvas_editor::tests::invalid_operations_preserve_data_history_and_drag_state ... ok
+test canvas_editor::tests::keyboard_matches_ctrl_shift_and_asymmetric_boundary_semantics ... ok
+test canvas_editor::tests::magnetic_resize_uses_source_curve_and_incremental_snapped_position ... ok
+test canvas_editor::tests::magnets_align_both_moving_edges_to_neighbors_and_work_area ... ok
+test canvas_editor::tests::nonmagnetic_moves_and_all_resize_handles_obey_bounds_and_minimums ... ok
+test canvas_editor::tests::scaling_roundtrips_exact_ratios_and_preserves_source_truncation ... ok
+test geometry::tests::adjacent_rectangles_have_one_owner_at_the_shared_edge ... ok
+test geometry::tests::invalid_geometry_is_rejected_without_integer_overflow ... ok
+test grid_editor::tests::closure_ignores_edge_contacts_and_fills_corner_selection ... ok
+test grid_editor::tests::closure_recursively_includes_intersections_and_earlier_ids ... ok
+test grid_editor::tests::invalid_shapes_and_coverage_are_rejected ... ok
+test grid_editor::tests::malformed_operations_are_atomic_and_do_not_panic ... ok
+test grid_editor::tests::separated_dividers_move_independently_and_coordinates_rejoin ... ok
+test grid_editor::tests::shared_divider_updates_all_adjoining_zones_and_honors_minima ... ok
+test grid_editor::tests::snapshot_cancels_a_sequence_and_restores_minimum_policy ... ok
+test grid_editor::tests::split_and_merge_restore_one_zone_and_preserve_metadata ... ok
+test grid_editor::tests::split_obeys_exact_minimum_and_zone_count_limit ... ok
+test grid_editor::tests::splitting_uses_global_coordinates_and_compacts_zone_order ... ok
+test layout::tests::canvas_is_scaled_locally_without_applying_global_output_offsets ... ok
+test layout::tests::columns_distribute_remainders_and_gaps_without_drift ... ok
+test layout::tests::merged_grid_has_only_external_edges_spaced ... ok
+test magnetic_snap::tests::close_points_and_bounds_shrink_the_magnet_radius ... ok
+test magnetic_snap::tests::invalid_numeric_input_is_rejected ... ok
+test magnetic_snap::tests::source_dead_zone_and_outer_attraction_curve ... ok
+test magnetic_snap::tests::source_ties_even_and_coordinate_roundtrip ... ok
+test model::tests::absent_optional_values_use_source_defaults ... ok
+test model::tests::invalid_canvas_and_duplicate_ids_reject ... ok
+test model::tests::malformed_grids_reject_shape_percentages_ids_and_nonrectangular_zones ... ok
+test model::tests::source_custom_layout_json_roundtrips ... ok
+test selection::tests::gutter_selects_both_adjacent_zones_but_far_outside_selects_none ... ok
+test selection::tests::overlapping_zone_algorithms_and_anchor_range_are_distinct ... ok
+test selection::tests::stationary_modifier_changes_toggle_snap_and_end_clears_toggles ... ok
+test settings::tests::defaults_preserve_source_values_and_hotkey_modifiers ... ok
+test settings::tests::excluded_apps_preserve_original_and_derive_source_style_entries ... ok
+test settings::tests::invalid_values_and_powertoys_wrappers_are_rejected ... ok
+test settings::tests::portable_json_supports_partial_defaults_and_roundtrip ... ok
+test layout::tests::every_template_count_retains_rectangular_maps_and_zone_count ... ok
+
+test result: ok. 39 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running unittests src/main.rs (target/debug/deps/waytoys_zones-b95ed59536ca08ce)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cli.rs (target/debug/deps/cli-a8c2a8027a96516d)
+
+running 3 tests
+test invalid_cli_edits_fail_without_partial_json ... ok
+test editors_emit_importable_json_and_preserve_the_input_file ... ok
+test preview_and_settings_run_without_a_desktop_session ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/waytoys_zones_config-d38c2cf20e410833)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/preferences.rs (target/debug/deps/preferences-c747968cd05b7e3a)
+
+running 10 tests
+test atomic_replacement_keeps_layouts_and_other_writers_changes ... ok
+test compositor_only_options_do_not_invalidate_the_native_frame ... ok
+test debounces_valid_edits_flushes_on_close_and_recovers_on_restart ... ok
+test failed_save_is_retryable_and_does_not_drop_pending_edits ... ok
+test instance_lock_prevents_duplicates_and_releases_on_drop ... ok
+test missing_and_invalid_files_are_never_replaced_with_defaults ... ok
+test schema_is_exactly_the_approved_common_options_and_matches_source_defaults ... ok
+test validates_numbers_colors_and_app_ids_without_normalizing_valid_text ... ok
+test watch_only_signals_effective_changes_and_keeps_last_valid_values ... ok
+test concurrent_readers_never_see_partial_json ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (target/debug/deps/waytoys_zones_editor-d80b18e825a43014)
+
+running 28 tests
+test controller::tests::escape_restores_resize_then_cancels_merge_and_switch_prompt ... ok
+test controller::tests::cumulative_resize_has_no_drift_and_rejects_then_recovers ... ok
+test controller::tests::pointer_loss_cancels_unreleased_body_selection_and_click ... ok
+test controller::tests::pointer_loss_preserves_released_merge_confirmation ... ok
+test controller::tests::merge_drag_requires_confirmation_and_cancel_never_splits ... ok
+test controller::tests::pointer_loss_restores_resize_and_requires_a_fresh_press ... ok
+test controller::tests::resize_reuses_original_index_after_boundaries_join ... ok
+test controller::tests::snapping_uses_global_cumulative_grid_boundaries ... ok
+test controller::tests::resizing_output_cancels_gesture_and_recomputes_logical_minimum ... ok
+test controller::tests::stationary_shift_rotates_hover_and_click_split ... ok
+test controller::tests::toolbar_and_prompt_block_underlying_grid_hits ... ok
+test preview::tests::example_retains_overlaps_and_nested_zone ... ok
+test preview::tests::grid_preview_uses_the_same_read_only_path ... ok
+test preview::tests::invalid_surface_size_is_rejected ... ok
+test preview::tests::scene_uses_calculated_local_rectangles_and_only_navigation_controls ... ok
+test preview::tests::toolbar_fits_848_logical_pixels_and_labels_follow_it ... ok
+test render::tests::clears_only_the_image_and_preserves_slot_padding ... ok
+test render::tests::clips_glyph_coverage_and_respects_independent_scale_axes ... ok
+test render::tests::clips_negative_enormous_and_nonfinite_rectangles ... ok
+test render::tests::maps_each_axis_using_the_actual_fractional_buffer_ratio ... ok
+test render::tests::premultiplied_source_over_uses_native_argb_order ... ok
+test render::tests::rejects_zero_short_and_overflowing_buffers_without_writing ... ok
+test store::tests::config_resolution_requires_absolute_paths ... ok
+test store::tests::failed_save_preserves_previous_file ... ok
+test store::tests::grid_json_roundtrip_preserves_metadata_and_settings ... ok
+test store::tests::missing_file_defaults_to_three_columns_without_writing ... ok
+test store::tests::output_names_cannot_escape_the_output_directory ... ok
+test store::tests::unsupported_or_malformed_files_are_refused_unchanged ... ok
+
+test result: ok. 28 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/main.rs (target/debug/deps/waytoys_zones_editor-798bb78b5491e35b)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/waytoys_zones_settings-52082b75bf0555b6)
+
+running 1 test
+test draft::tests::partial_inputs_keep_the_last_valid_model_and_other_drafts ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/waytoys-settings.rs (target/debug/deps/waytoys_settings-10638b3fd1f1a837)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/waytoys_zones_settings-1d6bf53ed3dbc4cd)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests waytoys_core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests waytoys_zones
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests waytoys_zones_config
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests waytoys_zones_editor
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests waytoys_zones_settings
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+    Checking waytoys-runtime v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-runtime)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.57s
+   Compiling waytoys-runtime v0.1.0 (/home/debian/projects/way-toys/crates/waytoys-runtime)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.50s
+[1/4] Automatic MOC for target waytoys_zones_bridge
+[2/3] Building CXX object CMakeFiles/waytoys_zones_bridge.dir/bridge.cpp.o
+[3/3] Linking CXX shared module waytoys_zones_bridge.so

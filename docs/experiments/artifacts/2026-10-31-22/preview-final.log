@@ -1,0 +1,8 @@
+Oct 31 05:07:50 waytoys-kde systemd[725]: Started waytoys-preview-22.service - [systemd-run] /home/debian/projects/way-toys/target/debug/waytoys-zones-editor --output Virtual-1 --preview /home/debian/projects/way-toys/crates/waytoys-zones-editor/examples/canvas-overlap.json --config-dir /home/debian/waytoys-test-results/settings-22/config.
+Oct 31 05:07:50 waytoys-kde waytoys-zones-editor[36455]: preview opened output=Virtual-1 layout=Overlapping Canvas
+Oct 31 05:07:50 waytoys-kde waytoys-zones-editor[36455]: configured output=Virtual-1 logical=848x480 integer_scale=1
+Oct 31 05:07:50 waytoys-kde waytoys-zones-editor[36455]: buffer output=Virtual-1 logical=848x480 physical=848x480 scale=1
+Oct 31 05:08:32 waytoys-kde waytoys-zones-editor[36455]: common preferences reloaded
+Oct 31 05:08:33 waytoys-kde waytoys-zones-editor[36455]: common preferences reloaded
+fd2469c01e3719989c1835d7020d649497c99db3bfe0ce9e364c5c128cf3af1d  /home/debian/waytoys-test-results/settings-22/config/outputs/output-Virtual-1.json
+317cce4fb914f530fda6378767dc2fc0af11ada820cd6c9f9066e15d2626cde6  /home/debian/waytoys-test-results/settings-22/config/outputs/output-Virtual-2.json

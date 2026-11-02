@@ -1,0 +1,17 @@
+-- Configuring done (0.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/debian/projects/way-toys/target/kwin-zones
+[1/4] Automatic MOC for target waytoys_zones_bridge
+[2/4] Building CXX object CMakeFiles/waytoys_zones_bridge.dir/waytoys_zones_bridge_autogen/mocs_compilation.cpp.o
+[3/4] Building CXX object CMakeFiles/waytoys_zones_bridge.dir/bridge.cpp.o
+FAILED: CMakeFiles/waytoys_zones_bridge.dir/bridge.cpp.o 
+/usr/bin/c++ -DKCOREADDONS_LIB -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DQT_WIDGETS_LIB -Dwaytoys_zones_bridge_EXPORTS -I/home/debian/projects/way-toys/target/kwin-zones/waytoys_zones_bridge_autogen/include -isystem /usr/include/kwin -isystem /usr/include/x86_64-linux-gnu/qt6/QtDBus -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtQuick -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtQml -isystem /usr/include/x86_64-linux-gnu/qt6/QtQmlIntegration -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtQmlMeta -isystem /usr/include/x86_64-linux-gnu/qt6/QtQmlModels -isystem /usr/include/x86_64-linux-gnu/qt6/QtQmlWorkerScript -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/KF6/KConfig -isystem /usr/include/KF6/KConfigCore -isystem /usr/include/KF6/KCoreAddons -isystem /usr/include/KF6/KWindowSystem -g -std=gnu++20 -fPIC -Wall -Wextra -Werror -I/usr/include -MD -MT CMakeFiles/waytoys_zones_bridge.dir/bridge.cpp.o -MF CMakeFiles/waytoys_zones_bridge.dir/bridge.cpp.o.d -o CMakeFiles/waytoys_zones_bridge.dir/bridge.cpp.o -c /home/debian/projects/way-toys/kwin/zones/bridge.cpp
+/home/debian/projects/way-toys/kwin/zones/bridge.cpp: In member function ‘bool Bridge::Target(const QString&)’:
+/home/debian/projects/way-toys/kwin/zones/bridge.cpp:132:66: error: ‘bool KWin::Window::isInteractiveMoveResize() const’ is protected within this context
+  132 |         if (!target.isEmpty() && !window->isInteractiveMoveResize() && allowed(window)) {
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /home/debian/projects/way-toys/kwin/zones/bridge.cpp:6:
+/usr/include/kwin/window.h:1614:10: note: declared protected here
+ 1614 |     bool isInteractiveMoveResize() const
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.

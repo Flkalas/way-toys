@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-31T10:41:18.766308+00:00",
+  "pid": 77016,
+  "elapsed_seconds": 3.0014824859972578,
+  "before": {
+    "rss_kib": 31104,
+    "peak_rss_kib": 31104,
+    "pss_kib": 24000,
+    "threads": 5,
+    "cpu_ticks": 10
+  },
+  "after": {
+    "rss_kib": 31104,
+    "peak_rss_kib": 31104,
+    "pss_kib": 24000,
+    "threads": 5,
+    "cpu_ticks": 10
+  },
+  "cpu_seconds": 0.0
+}

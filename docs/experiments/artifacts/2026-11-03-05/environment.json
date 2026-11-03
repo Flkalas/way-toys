@@ -1,0 +1,15 @@
+{
+  "command": [
+    "scripts/test-x11.py",
+    "--xvfb",
+    "/home/mark/Sources/way-toys/.artifacts/x11-tools/usr/bin/Xvfb",
+    "--output",
+    "docs/experiments/artifacts/2026-11-03-05"
+  ],
+  "cwd": "/home/mark/Sources/way-toys",
+  "head": "47bd992703d6c1b14134721ccdc9769281f734c9",
+  "os": "PRETTY_NAME=\"Debian GNU/Linux 13 (trixie)\"\nNAME=\"Debian GNU/Linux\"\nVERSION_ID=\"13\"\nVERSION=\"13 (trixie)\"\nVERSION_CODENAME=trixie\nDEBIAN_VERSION_FULL=13.7\nID=debian\nHOME_URL=\"https://www.debian.org/\"\nSUPPORT_URL=\"https://www.debian.org/support\"\nBUG_REPORT_URL=\"https://bugs.debian.org/\"\n",
+  "kernel": "6.12.113+deb13-amd64",
+  "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]"
+}

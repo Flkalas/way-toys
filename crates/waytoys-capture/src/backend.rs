@@ -96,7 +96,20 @@ pub fn clipboard(png: &[u8]) -> Result<(), String> {
     let mut child = Command::new("systemd-run")
         .args(["--user", "--scope", "--quiet", "--collect", "--unit"])
         .arg(format!("waytoys-clipboard-{}", std::process::id()))
-        .args(["wl-copy", "--type", "image/png"])
+        .args(
+            if waytoys_desktop::Session::current()? == waytoys_desktop::Session::X11 {
+                vec![
+                    "xclip",
+                    "-selection",
+                    "clipboard",
+                    "-in",
+                    "-target",
+                    "image/png",
+                ]
+            } else {
+                vec!["wl-copy", "--type", "image/png"]
+            },
+        )
         .stdin(Stdio::piped())
         .stdout(Stdio::null())
         .stderr(Stdio::piped())

@@ -1,0 +1,60 @@
+{
+  "runtime_ready": true,
+  "outputs": [
+    {
+      "name": "screen",
+      "logical_size": [
+        1280,
+        720
+      ],
+      "logical_position": [
+        0,
+        0
+      ],
+      "integer_scale": 1
+    }
+  ],
+  "saved_layout": {
+    "custom-layouts": [
+      {
+        "uuid": "waytoys-grid:screen",
+        "name": "screen grid",
+        "type": "grid",
+        "info": {
+          "rows": 2,
+          "columns": 3,
+          "rows-percentage": [
+            3472,
+            6528
+          ],
+          "columns-percentage": [
+            3333,
+            3333,
+            3334
+          ],
+          "cell-child-map": [
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "show-spacing": true,
+          "spacing": 16,
+          "sensitivity-radius": 20
+        }
+      }
+    ]
+  },
+  "zones_snap": [
+    861,
+    16,
+    403,
+    688
+  ]
+}

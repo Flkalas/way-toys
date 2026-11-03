@@ -1,0 +1,2 @@
+# Preserve final blank lines in command output and experiment source snapshots.
+docs/experiments/artifacts/** whitespace=-blank-at-eof

@@ -4,7 +4,7 @@
 
 ## 실행
 
-로그인한 KDE Plasma Wayland 세션의 저장소 루트에서 실행한다.
+로그인한 KDE Plasma Wayland 또는 X11 세션의 저장소 루트에서 실행한다. X11에서는 XRandR 1.5와 KWin 합성이 필요하다. `--list-outputs`에 나온 이름을 그대로 `--output`에 전달한다. [X11 안내](x11.ko.md).
 
 ```bash
 cargo build -p waytoys-zones-editor --locked
@@ -40,7 +40,9 @@ ssh debian@192.168.50.125 'systemd-run --user --unit=waytoys-zones-editor-dev --
 
 파일 하나는 기존 `CustomLayouts` JSON 형식의 Grid 하나를 담는다. 잘못된 파일·Canvas·복수 레이아웃은 오류로 중단하며 자동으로 초기화하지 않는다. 저장 전 유효성 검사와 직렬화를 수행한 뒤 같은 디렉터리의 임시 파일을 동기화하고 rename으로 교체한다. rename 이전 실패는 기존 파일을 유지한다. Linux의 원자적 파일 교체를 대상으로 하며 저장 장치 고장까지 복구를 보장하지 않는다.
 
-클릭·레이아웃은 surface 로컬 논리 좌표이고 Grid 내부는 전체 길이 10000의 비율이다. 버퍼의 물리 크기와 배율은 Wayland 프런트엔드에서만 처리한다. fractional-scale과 viewporter가 있으면 선호 분수 배율을, 없으면 정수 배율을 사용한다. 선택 출력의 제거는 자동 저장 없이 종료하고, 크기 변경과 포인터 상실은 진행 중 제스처를 취소한다.
+클릭·레이아웃은 surface 로컬 논리 좌표이고 Grid 내부는 전체 길이 10000의 비율이다. Wayland에서는 버퍼의 물리 크기와 배율을 프런트엔드에서만 처리한다. fractional-scale과 viewporter가 있으면 선호 분수 배율을, 없으면 정수 배율을 사용한다. 선택 출력의 제거는 자동 저장 없이 종료하고, 크기 변경과 포인터 상실은 진행 중 제스처를 취소한다.
+
+X11에서는 XRandR 모니터 좌표와 루트 픽셀이 편집 좌표이며 `integer_scale=1`을 반환한다. 모니터 구성 변경 시 저장하지 않고 종료한다. Wayland와 X11의 출력 이름이 다르면 해당 이름의 레이아웃 파일을 각각 사용한다.
 
 기존 모델·설정 CLI는 GUI 의존성 없이 유지된다. Wayland 프로토타입에서 재사용한 표시·입력 코드는 편집기 내부에 있으며 아직 공통 UI 프레임워크로 추출하지 않았다.
 

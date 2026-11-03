@@ -1,0 +1,161 @@
+{
+  "runtime_ready": true,
+  "outputs": [
+    {
+      "name": "screen",
+      "logical_size": [
+        1280,
+        720
+      ],
+      "logical_position": [
+        0,
+        0
+      ],
+      "integer_scale": 1
+    }
+  ],
+  "saved_layout": {
+    "custom-layouts": [
+      {
+        "uuid": "waytoys-grid:screen",
+        "name": "screen grid",
+        "type": "grid",
+        "info": {
+          "rows": 2,
+          "columns": 3,
+          "rows-percentage": [
+            3472,
+            6528
+          ],
+          "columns-percentage": [
+            3333,
+            3333,
+            3334
+          ],
+          "cell-child-map": [
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "show-spacing": true,
+          "spacing": 16,
+          "sensitivity-radius": 20
+        }
+      }
+    ]
+  },
+  "zones_snap": [
+    861,
+    16,
+    403,
+    688
+  ],
+  "zones_escape_frames": {
+    "before": [
+      300,
+      150,
+      500,
+      320
+    ],
+    "after": [
+      300,
+      150,
+      500,
+      320
+    ]
+  },
+  "zones_escape": true,
+  "text_history": {
+    "entries": [
+      {
+        "id": 1,
+        "mime": "text/plain;charset=utf-8",
+        "preview": "Waytoys clipboard 한글 확인\n두 번째 줄 · 27",
+        "width": 0,
+        "height": 0,
+        "size": 52,
+        "pinned": false,
+        "created": 1793701356
+      }
+    ],
+    "total": 1,
+    "recent": 1,
+    "pinned": 0,
+    "revision": 2
+  },
+  "sensitive_excluded": true,
+  "capture_size": [
+    300,
+    200
+  ],
+  "qt_image_paste": {
+    "height": 200,
+    "kind": "image",
+    "sha256": "f5a00880461bdda75b5b5262b4bb38e71a5dcf94a534ad008e32a8413ac7bb87",
+    "width": 300
+  },
+  "capture_cancel_preserves_clipboard": true,
+  "picker_text_paste": {
+    "bytes": 52,
+    "kind": "text",
+    "sha256": "2f6aeeb1c5eadfc5cbefc37f33c6d97b581ae4c07b5af3231c49a0c1220dadcf"
+  },
+  "history_image_copy": true,
+  "lock_state_fixture": true,
+  "clipboard_survives_runtime_exit": true,
+  "pinned_after_restart": true,
+  "split_outputs": [
+    {
+      "name": "X11-left",
+      "logical_size": [
+        640,
+        720
+      ],
+      "logical_position": [
+        0,
+        0
+      ],
+      "integer_scale": 1
+    },
+    {
+      "name": "X11-right",
+      "logical_size": [
+        640,
+        720
+      ],
+      "logical_position": [
+        640,
+        0
+      ],
+      "integer_scale": 1
+    }
+  ],
+  "cross_monitor_capture": true,
+  "final_runtime": {
+    "paths": {
+      "app": "/tmp/waytoys-x11-spzlky6c/app",
+      "zones": "/tmp/waytoys-x11-spzlky6c/zones",
+      "paste": "/tmp/waytoys-x11-spzlky6c/app/paste"
+    },
+    "settings": {
+      "run_at_login": false,
+      "enabled": {
+        "zones": true,
+        "paste": true
+      }
+    },
+    "ready": true,
+    "blocked": false,
+    "error": null,
+    "paste_ready": true,
+    "paste_error": null
+  },
+  "passed": true
+}

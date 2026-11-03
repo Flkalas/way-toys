@@ -1,0 +1,235 @@
+   Compiling proc-macro2 v1.0.107
+    Checking once_cell v1.21.4
+   Compiling quote v1.0.47
+   Compiling rustix v1.1.6
+    Checking linux-raw-sys v0.12.1
+    Checking libloading v0.8.9
+   Compiling wayland-sys v0.31.11
+   Compiling wayland-backend v0.3.17
+    Checking futures-core v0.3.34
+    Checking slab v0.4.12
+    Checking dlib v0.5.3
+    Checking scoped-tls v1.0.1
+   Compiling autocfg v1.5.1
+    Checking futures-io v0.3.34
+   Compiling version_check v0.9.5
+   Compiling serde_core v1.0.229
+   Compiling libm v0.2.16
+    Checking tracing-core v0.1.36
+   Compiling serde v1.0.229
+    Checking fastrand v2.5.0
+    Checking memchr v2.8.3
+   Compiling num-traits v0.2.19
+    Checking parking v2.2.1
+    Checking simd-adler32 v0.3.10
+    Checking futures-sink v0.3.34
+   Compiling syn v3.0.9
+   Compiling syn v2.0.119
+    Checking as-raw-xcb-connection v1.0.1
+    Checking futures-channel v0.3.34
+   Compiling wayland-scanner v0.31.11
+   Compiling crc32fast v1.5.3
+    Checking futures-task v0.3.34
+    Checking x11rb-protocol v0.13.2
+    Checking core_maths v0.1.1
+    Checking adler2 v2.0.1
+    Checking ttf-parser v0.25.1
+   Compiling winnow v1.0.4
+    Checking smol_str v0.2.2
+   Compiling zerocopy v0.8.63
+   Compiling crossbeam-utils v0.8.23
+   Compiling equivalent v1.0.3
+    Checking web-time v1.1.0
+   Compiling hashbrown v0.17.1
+    Checking lilt v0.8.2
+   Compiling toml_parser v1.1.5+spec-1.1.0
+    Checking miniz_oxide v0.9.1
+   Compiling indexmap v2.14.2
+   Compiling slotmap v1.1.1
+    Checking glam v0.25.0
+    Checking rustc-hash v2.1.3
+   Compiling toml_datetime v1.1.2+spec-1.1.0
+    Checking raw-window-handle v0.6.2
+    Checking bytes v1.12.1
+   Compiling toml_edit v0.25.17+spec-1.1.0
+    Checking flate2 v1.1.10
+    Checking polling v3.11.0
+    Checking gethostname v1.1.0
+    Checking miniz_oxide v0.8.9
+    Checking fdeflate v0.3.7
+    Checking roxmltree v0.20.0
+    Checking concurrent-queue v2.5.0
+    Checking png v0.18.1
+   Compiling proc-macro-crate v3.5.0
+    Checking wayland-client v0.31.15
+   Compiling tracing-attributes v0.1.31
+   Compiling zerocopy-derive v0.8.63
+   Compiling bytemuck_derive v1.12.1
+   Compiling thiserror-impl v2.0.21
+   Compiling serde_derive v1.0.229
+   Compiling futures-macro v0.3.34
+    Checking wayland-protocols v0.32.13
+    Checking tracing v0.1.44
+    Checking bytemuck v1.25.2
+    Checking futures-util v0.3.34
+    Checking thiserror v2.0.21
+    Checking wayland-cursor v0.31.14
+    Checking iced_core v0.14.0
+   Compiling enumflags2_derive v0.7.12
+    Checking xkeysym v0.2.1
+    Checking font-types v0.12.7
+    Checking font-types v0.10.1
+    Checking read-fonts v0.35.0
+    Checking read-fonts v0.41.0
+    Checking wayland-csd-frame v0.3.0
+    Checking fontconfig-parser v0.5.8
+    Checking event-listener v5.4.2
+    Checking unicode-ident v1.0.27
+   Compiling thiserror v1.0.69
+    Checking futures-executor v0.3.34
+    Checking strict-num v0.1.1
+    Checking futures v0.3.34
+    Checking iced_futures v0.14.0
+    Checking zeno v0.3.3
+    Checking yazi v0.2.1
+   Compiling zvariant_utils v4.2.0
+    Checking zune-core v0.5.3
+    Checking tinyvec v1.13.3
+    Checking arrayvec v0.7.8
+   Compiling rustix v0.38.44
+    Checking pxfm v0.1.30
+    Checking arrayref v0.3.9
+    Checking x11rb v0.13.2
+    Checking tiny-skia-path v0.11.4
+    Checking fontdb v0.23.0
+   Compiling zvariant_derive v5.15.1
+    Checking zune-jpeg v0.5.15
+    Checking wayland-protocols-wlr v0.3.12
+    Checking event-listener-strategy v0.5.4
+    Checking calloop v0.14.5
+   Compiling thiserror-impl v1.0.69
+    Checking futures-lite v2.6.1
+    Checking unicode-script v0.5.8
+    Checking unicode-bidi v0.3.18
+    Checking self_cell v1.3.0
+    Checking rangemap v1.8.0
+    Checking unicode-segmentation v1.13.3
+    Checking moxcms v0.8.1
+    Checking skrifa v0.37.0
+    Checking harfrust v0.3.2
+    Checking sys-locale v0.3.2
+    Checking unicode-linebreak v0.1.5
+    Checking rustc-hash v1.1.0
+    Checking mutate_once v0.1.2
+    Checking linebender_resource_handle v0.1.1
+    Checking linux-raw-sys v0.4.15
+    Checking byteorder-lite v0.1.0
+    Checking kamadak-exif v0.6.1
+    Checking calloop-wayland-source v0.4.1
+    Checking half v2.7.1
+    Checking wayland-protocols-misc v0.3.12
+    Checking skrifa v0.44.0
+    Checking wayland-protocols-experimental v20250721.0.1
+    Checking tiny-skia v0.11.4
+    Checking xkbcommon v0.8.0
+   Compiling async-io v2.6.0
+    Checking errno v0.3.14
+   Compiling tiny-xlib v0.2.5
+    Checking signal-hook-registry v1.4.8
+    Checking smithay-client-toolkit v0.20.0
+   Compiling zcheapstr v1.2.0
+   Compiling enumflags2 v0.7.12
+   Compiling generic-array v0.14.7
+   Compiling getrandom v0.3.4
+   Compiling endi v1.1.1
+   Compiling smithay-client-toolkit v0.19.2
+    Checking async-task v4.7.1
+    Checking ctor v0.10.1
+   Compiling zvariant v5.15.1
+    Checking async-channel v2.5.0
+    Checking swash v0.2.10
+    Checking iced_debug v0.14.0
+    Checking owned_ttf_parser v0.25.1
+   Compiling ahash v0.8.12
+   Compiling x11-dl v2.21.0
+    Checking image v0.25.10
+    Checking typenum v1.20.1
+    Checking atomic-waker v1.1.2
+   Compiling cfg_aliases v0.2.2
+    Checking ab_glyph_rasterizer v0.1.10
+   Compiling winit v0.30.13
+    Checking ab_glyph v0.2.32
+    Checking piper v0.2.5
+    Checking async-signal v0.2.14
+    Checking smithay-clipboard v0.7.3
+    Checking calloop v0.13.0
+    Checking softbuffer v0.4.8
+    Checking async-lock v3.4.2
+    Checking calloop-wayland-source v0.3.0
+    Checking kurbo v0.10.4
+   Compiling vcpkg v0.2.15
+   Compiling zmij v1.0.23
+    Checking async-process v2.5.0
+    Checking clipboard_wayland v0.2.2
+    Checking blocking v1.7.0
+   Compiling libsqlite3-sys v0.35.0
+   Compiling zbus_names v4.3.5
+    Checking async-executor v1.14.0
+    Checking sctk-adwaita v0.10.1
+    Checking clipboard_x11 v0.4.3
+    Checking cosmic-text v0.15.0
+    Checking async-broadcast v0.7.2
+    Checking wayland-protocols-plasma v0.3.12
+    Checking iced_runtime v0.14.0
+    Checking xkbcommon-dl v0.4.2
+   Compiling serde_repr v0.1.21
+   Compiling async-recursion v1.2.0
+   Compiling async-trait v0.1.92
+   Compiling zbus_macros v5.19.0
+    Checking uuid v1.29.0
+    Checking ordered-stream v0.2.0
+    Checking hex v0.4.3
+    Checking iced_graphics v0.14.0
+   Compiling signal-hook v0.3.18
+    Checking percent-encoding v2.3.2
+    Checking foldhash v0.1.5
+   Compiling serde_json v1.0.154
+    Checking dpi v0.1.2
+    Checking hashbrown v0.15.5
+    Checking window_clipboard v0.5.1
+    Checking iced_tiny_skia v0.14.1
+    Checking iced_program v0.14.0
+    Checking iced_renderer v0.14.0
+    Checking crypto-common v0.1.7
+    Checking block-buffer v0.10.4
+    Checking waytoys-desktop v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-desktop)
+    Checking itoa v1.0.18
+    Checking hashlink v0.10.0
+    Checking digest v0.10.7
+error[E0308]: mismatched types
+   --> crates/waytoys-desktop/src/x11.rs:134:117
+    |
+134 | ...et image = Image::new(self.output.width,self.output.height,ScanlinePad::Pad32,self.depth,BitsPerPixel::B32,order,Cow::Borrowed(p...
+    |               ---------- arguments to this function are incorrect                                             ^^^^^ expected `x11rb::image::ImageOrder`, found `x11rb::protocol::xproto::ImageOrder`
+    |
+    = note: `x11rb::protocol::xproto::ImageOrder` and `x11rb::image::ImageOrder` have similar names, but are actually distinct types
+note: `x11rb::protocol::xproto::ImageOrder` is defined in crate `x11rb_protocol`
+   --> /home/mark/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/x11rb-protocol-0.13.2/src/protocol/xproto.rs:919:1
+    |
+919 | pub struct ImageOrder(u8);
+    | ^^^^^^^^^^^^^^^^^^^^^
+note: `x11rb::image::ImageOrder` is defined in crate `x11rb`
+   --> /home/mark/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/x11rb-0.13.2/src/image.rs:461:1
+    |
+461 | pub enum ImageOrder {
+    | ^^^^^^^^^^^^^^^^^^^
+note: associated function defined here
+   --> /home/mark/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/x11rb-0.13.2/src/image.rs:571:12
+    |
+571 |     pub fn new(
+    |            ^^^
+
+    Checking iced_widget v0.14.2
+For more information about this error, try `rustc --explain E0308`.
+error: could not compile `waytoys-desktop` (lib) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...

@@ -1,6 +1,6 @@
 # Waytoys
 
-KDE Plasma Wayland를 우선 대상으로 검토하는 데스크톱 도구 모음입니다.
+KDE Plasma의 Wayland와 X11에서 사용하는 데스크톱 도구 모음입니다.
 
 - **Zones**: FancyZones 형태의 영역 기반 창 배치
 - **Capture**: 선택 영역을 이미지로 클립보드에 복사
@@ -9,6 +9,8 @@ KDE Plasma Wayland를 우선 대상으로 검토하는 데스크톱 도구 모�
 - **Waytoys 공통 UI 호스트**: 모니터별 오버레이와 기능 간 화면·입력 전환
 
 각 부가기능은 자기 데이터·설정·실행 진입점을 소유합니다. 현재 Zones의 Rust 모델·전체 화면 Grid 에디터, 한국어 통합 설정 창, 트레이 실행기와 KWin 6.3.6용 Shift 드래그 창 배치 연결이 있습니다. Capture는 Meta+Shift+S로 영역을 선택해 PNG 이미지를 클립보드에 복사합니다. 기존 오버레이 편집기는 그대로 사용합니다.
+
+실행 세션을 자동으로 선택합니다. X11 설치·지원 범위와 검증 절차는 [X11 사용 안내](docs/x11.ko.md)에 있습니다. X11 Zones는 KWin 스크립트를 사용하므로 네이티브 플러그인 설치가 필요하지 않습니다.
 
 전체 대화 요약, 조사 출처, 설계 방향과 검증 계획은 [조사 및 계획 문서](docs/research-and-plan.ko.md)에 정리되어 있습니다.
 
@@ -39,7 +41,7 @@ cargo run -p waytoys-zones --locked -- preview crates/waytoys-zones/examples/cus
 
 [통합 설정 창](docs/zones-settings.ko.md)은 `waytoys-settings`로 실행합니다. `waytoys-zones-settings`도 호환 진입점으로 유지합니다. Iced 0.14.0의 소프트웨어 렌더러와 Noto Sans CJK KR을 사용하며, 유효한 변경을 자동 저장합니다. `waytoys-zones-config`는 GUI 의존성이 없는 공통 모델·저장 라이브러리입니다.
 
-실제 창을 Shift 드래그로 배치하려면 [KWin 연결 설치·실행 방법](docs/zones-runtime.ko.md)을 따라 플러그인을 설치하고 설정 창에서 **Zones 사용**을 켭니다. 기본값은 꺼짐입니다. 설정 창을 닫아도 트레이 실행기는 계속 동작합니다.
+실제 창을 Shift 드래그로 배치하려면 [KWin 연결 설치·실행 방법](docs/zones-runtime.ko.md)에 따라 Wayland에서는 플러그인을 설치하고, X11에서는 바로 설정 창에서 **Zones 사용**을 켭니다. 기본값은 꺼짐입니다. 설정 창을 닫아도 트레이 실행기는 계속 동작합니다.
 
 [영역 캡처 설치·사용법](docs/capture.ko.md)에 따라 `sh scripts/install-capture.sh --shortcut`을 실행하면 **Meta(Windows 키)+Shift+S → 드래그 → 마우스 놓기 → Ctrl+V**로 사용할 수 있습니다. Esc 또는 오른쪽 클릭으로 취소합니다. 트레이의 ‘영역 캡처’와 설정의 ‘캡처’ 페이지에서도 시작할 수 있습니다.
 

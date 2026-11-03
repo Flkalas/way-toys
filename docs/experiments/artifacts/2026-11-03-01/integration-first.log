@@ -1,0 +1,16 @@
+Authorization required, but no authorization protocol specified
+
+Traceback (most recent call last):
+  File "/home/mark/Sources/way-toys/scripts/test-x11.py", line 191, in <module>
+    main()
+    ~~~~^^
+  File "/home/mark/Sources/way-toys/scripts/test-x11.py", line 121, in main
+    screenshot('editor')
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/home/mark/Sources/way-toys/scripts/test-x11.py", line 92, in screenshot
+    ImageGrab.grab(xdisplay=env['DISPLAY']).save(out/(name+'.png'))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/PIL/ImageGrab.py", line 78, in grab
+    size, data = Image.core.grabscreen_x11(display_name)
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+OSError: X connection failed: error 1

@@ -1,0 +1,21 @@
+    Checking futures-executor v0.3.34
+    Checking waytoys-desktop v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-desktop)
+    Checking ksni v0.3.7
+    Checking futures v0.3.34
+    Checking waytoys-core v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-core)
+    Checking waytoys-zones-editor v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-zones-editor)
+    Checking waytoys-capture v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-capture)
+    Checking iced_futures v0.14.0
+    Checking iced_graphics v0.14.0
+    Checking iced_debug v0.14.0
+    Checking iced_runtime v0.14.0
+    Checking iced_tiny_skia v0.14.1
+    Checking iced_program v0.14.0
+    Checking iced_winit v0.14.1
+    Checking iced_renderer v0.14.0
+    Checking iced_widget v0.14.2
+    Checking waytoys-runtime v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-runtime)
+    Checking iced v0.14.0
+    Checking waytoys-zones-settings v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-zones-settings)
+    Checking waytoys-paste v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-paste)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.11s

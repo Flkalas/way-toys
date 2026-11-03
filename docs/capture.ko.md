@@ -6,14 +6,16 @@
 
 ## 설치
 
-현재 검증 환경은 Debian 13.7의 KDE Plasma Wayland / KWin 6.3.6이다. 로그인한 데스크톱 사용자의 터미널에서 저장소 루트를 작업 디렉터리로 사용한다. 기존 Rust/Wayland 빌드 의존성에 더해 실행 시 `wl-clipboard`, 설치 시 Python D-Bus와 KDE의 `kbuildsycoca6`가 필요하다.
+Debian 13.7 / KWin 6.3.6의 Wayland와 격리된 X11 세션에서 검증했다. 로그인한 데스크톱 사용자의 터미널에서 저장소 루트를 작업 디렉터리로 사용한다. 기존 Rust/Wayland 빌드 의존성에 더해 실행 시 Wayland는 `wl-clipboard`, X11은 `xclip`, 설치 시 Python D-Bus와 KDE의 `kbuildsycoca6`가 필요하다.
 
 ```bash
-sudo apt-get install wl-clipboard python3-dbus
+sudo apt-get install wl-clipboard xclip python3-dbus
 cargo build --workspace --locked
 sh scripts/install-capture.sh --shortcut
 ./target/debug/waytoys-capture --check
 ```
+
+X11에서는 XRandR 화면의 루트 픽셀을 직접 가져온다. 직접 실행에는 KWin 화면 획득 권한 등록이 필요하지 않으며, 단축키를 사용하려면 아래 설치를 수행한다. [X11 좌표와 지원 범위](x11.ko.md)를 참고한다.
 
 설치는 사용자 경로 `~/.local/share/applications/org.waytoys.Capture.desktop`에 실행 파일과 KWin 화면 획득 인터페이스 권한을 등록한다. `sudo`로 설치 스크립트를 실행하지 않는다. 실행 파일 경로를 바꾸거나 release 빌드를 사용하면 다시 등록한다.
 
@@ -22,7 +24,7 @@ cargo build --workspace --release --locked
 sh scripts/install-capture.sh --binary "$PWD/target/release/waytoys-capture" --shortcut
 ```
 
-설정·실행기의 캡처 버튼은 자신의 실행 파일과 같은 디렉터리에 있는 `waytoys-capture`를 실행하므로, release 실행 시 설정·실행기도 같은 빌드를 사용한다. KWin의 화면 획득 권한 검사를 우회하지 않는다. 등록하지 않은 다른 경로의 실행 파일은 화면 획득이 거부된다.
+설정·실행기의 캡처 버튼은 자신의 실행 파일과 같은 디렉터리에 있는 `waytoys-capture`를 실행하므로, release 실행 시 설정·실행기도 같은 빌드를 사용한다. Wayland에서는 KWin의 화면 획득 권한 검사를 따르며 등록하지 않은 다른 경로의 실행 파일은 화면 획득이 거부된다.
 
 `--shortcut`은 Spectacle이 사용하던 **Meta+Shift+S만** Waytoys로 옮기고 PrintScreen은 보존한다. 다른 앱과 충돌하면 변경하지 않고 오류를 낸다. 기존 할당은 `$XDG_STATE_HOME/waytoys/capture-shortcut.json`(기본 `~/.local/state/waytoys/`)에 기록한다. KDE 시스템 설정의 단축키에서 이후 변경할 수 있다. 이전 할당으로 복구하려면 다음을 실행한다.
 
@@ -44,8 +46,10 @@ sh scripts/install-capture.sh --restore-shortcut
 
 잠긴 화면에서는 캡처를 시작하지 않는다. 선택 중 잠금·화면 구성 변경·포커스 상실·종료 신호가 발생하면 취소한다. 중복 호출은 새 선택 창을 만들지 않는다. Waytoys가 실행 중이면 캡처하는 동안 Zones 드래그 처리를 멈추고 종료 후 복구한다.
 
-영역 선택 프로그램은 복사 후 종료한다. Wayland에서 클립보드 데이터를 제공하는 `wl-copy`는 별도의 사용자 scope에 남아 Waytoys 종료 후에도 붙여넣을 수 있게 한다. 새 클립보드 소유자가 생기면 이전 소유자는 종료한다. 이는 선택 오버레이가 계속 실행되는 것과 구분된다.
+영역 선택 프로그램은 복사 후 종료한다. 클립보드 데이터를 제공하는 Wayland의 `wl-copy` 또는 X11의 `xclip`은 별도의 사용자 scope에 남아 Waytoys 종료 후에도 붙여넣을 수 있게 한다. 새 클립보드 소유자가 생기면 이전 소유자는 종료한다. 이는 선택 오버레이가 계속 실행되는 것과 구분된다.
 
 Windows의 PVE 웹 콘솔에서는 호스트가 같은 Windows+Shift+S 조합을 먼저 처리할 수 있다. 그런 경우 VM의 설정 버튼이나 트레이에서 캡처를 시작한다. VM에 키를 직접 전달하는 QMP 테스트는 통과했지만 Windows 브라우저를 통한 이 단축키 전달은 이번에 검증하지 않았다.
 
 구현·실제 입력·붙여넣기·배율·수명 검증과 실행 기록은 [26회차](experiments/2026-10-31-26.md)에 있다.
+
+X11 구현·실제 선택·Qt 붙여넣기·두 모니터 합성 검증은 [2026-11-03-08](experiments/2026-11-03-08.md)에 기록한다.

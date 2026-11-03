@@ -1,0 +1,17 @@
+{
+  "runtime_ready": true,
+  "outputs": [
+    {
+      "name": "screen",
+      "logical_size": [
+        1280,
+        720
+      ],
+      "logical_position": [
+        0,
+        0
+      ],
+      "integer_scale": 1
+    }
+  ]
+}

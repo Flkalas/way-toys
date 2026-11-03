@@ -6,3 +6,5 @@ pub type Result<T> = std::result::Result<T, Box<dyn std::error::Error + Send + S
 pub const BUS: &str = "org.waytoys.Paste1";
 pub const PATH: &str = "/Paste";
 pub const PICKER: &str = "org.waytoys.PastePicker1";
+
+mod x11;

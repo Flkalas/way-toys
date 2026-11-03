@@ -77,7 +77,7 @@ pub fn configure(paths: &Paths, enabled: bool) -> Result<(), String> {
 fn unit(executable: &Path, paths: &Paths) -> Result<String, String> {
     let q = |p: &Path| quote(p.to_str().ok_or("자동 실행 경로는 UTF-8이어야 합니다")?);
     Ok(format!(
-        "# Managed by Waytoys\n[Unit]\nDescription=Waytoys desktop tools\nPartOf=graphical-session.target\nAfter=graphical-session-pre.target plasma-kwin_wayland.service\n\n[Service]\nType=simple\nExecStart={} --background --app-config-dir {} --config-dir {}\nRestart=on-failure\nRestartSec=2\n\n[Install]\nWantedBy=graphical-session.target\n",
+        "# Managed by Waytoys\n[Unit]\nDescription=Waytoys desktop tools\nPartOf=graphical-session.target\nAfter=graphical-session-pre.target plasma-kwin_wayland.service plasma-kwin_x11.service\n\n[Service]\nType=simple\nExecStart={} --background --app-config-dir {} --config-dir {}\nRestart=on-failure\nRestartSec=2\n\n[Install]\nWantedBy=graphical-session.target\n",
         q(executable)?,
         q(&paths.app)?,
         q(&paths.zones)?

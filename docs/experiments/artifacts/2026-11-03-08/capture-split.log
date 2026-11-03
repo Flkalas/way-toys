@@ -1,0 +1,3 @@
+captured output=X11-left x11=0,0 640x720
+captured output=X11-right x11=640,0 640x720
+copied image/png 200x150 bytes=491

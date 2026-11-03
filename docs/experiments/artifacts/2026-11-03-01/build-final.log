@@ -1,0 +1,6 @@
+   Compiling waytoys-zones-settings v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-zones-settings)
+   Compiling waytoys-zones-editor v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-zones-editor)
+   Compiling waytoys-capture v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-capture)
+   Compiling waytoys-runtime v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-runtime)
+   Compiling waytoys-paste v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-paste)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.27s

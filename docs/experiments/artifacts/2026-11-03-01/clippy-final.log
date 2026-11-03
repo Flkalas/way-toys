@@ -1,0 +1,11 @@
+    Checking waytoys-zones v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-zones)
+    Checking waytoys-desktop v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-desktop)
+    Checking waytoys-core v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-core)
+    Checking waytoys-overlay v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-overlay)
+    Checking waytoys-capture v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-capture)
+    Checking waytoys-paste v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-paste)
+    Checking waytoys-zones-config v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-zones-config)
+    Checking waytoys-zones-settings v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-zones-settings)
+    Checking waytoys-zones-editor v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-zones-editor)
+    Checking waytoys-runtime v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-runtime)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.81s

@@ -6,10 +6,10 @@
 
 ## 설치와 시작
 
-검증 환경은 Debian 13.7 / KDE Plasma Wayland / KWin 6.3.6이다. 로그인한 데스크톱 사용자의 터미널에서 저장소 루트를 작업 디렉터리로 사용한다. Rust 빌드 의존성에 더해 실행 시 `wl-clipboard`, Noto CJK·fontconfig, 설치 시 Python D-Bus와 `kbuildsycoca6`가 필요하다.
+검증 환경은 Debian 13.7 / KWin 6.3.6의 Wayland 및 격리된 X11 세션이다. 로그인한 데스크톱 사용자의 터미널에서 저장소 루트를 작업 디렉터리로 사용한다. Rust 빌드 의존성에 더해 실행 시 Wayland는 `wl-clipboard`, X11은 `xclip`, Noto CJK·fontconfig, 설치 시 Python D-Bus와 `kbuildsycoca6`가 필요하다.
 
 ```bash
-sudo apt-get install wl-clipboard python3-dbus fonts-noto-cjk
+sudo apt-get install wl-clipboard xclip python3-dbus fonts-noto-cjk
 cargo build --workspace --locked
 sh scripts/install-paste.sh --shortcut
 ./target/debug/waytoys-settings --page paste
@@ -69,6 +69,10 @@ HTML 서식, 파일 목록, primary selection은 기록하지 않는다. 암호 
 
 수집을 켜 둔 상태에서 Meta+Shift+S로 캡처하면 PNG가 기록에 들어온다. 캡처 선택 중에는 기록 창을 열지 않아 포커스를 유지한다. 기록 창 표시 중에는 Zones 드래그를 잠시 멈추고 닫힌 뒤 다시 연결한다.
 
-기록 창은 Iced 0.14.0·tiny-skia 소프트웨어 렌더링을 사용한다. 한 페이지에 최대 12개를 표시하며 화면에 필요한 축소 이미지만 가져온다. 창을 닫으면 해당 UI 프로세스와 캐시가 종료되고 수집기만 남는다. 실행기를 종료하면 수집기도 종료한다. 마지막으로 선택한 클립보드 데이터를 제공하는 `wl-copy`는 별도 사용자 scope에서 다음 복사까지 남아 붙여넣기를 유지한다.
+X11 수집기는 XFixes 소유권 변경 알림을 받고, `xclip`의 TARGETS/INCR 전송으로 내용을 읽는다. 수집 중 소유권이 바뀌면 이전 요청의 결과를 버린다. 텍스트 재복사는 X11의 `UTF8_STRING`으로 제공한다.
+
+기록 창은 Iced 0.14.0·tiny-skia 소프트웨어 렌더링을 사용한다. 한 페이지에 최대 12개를 표시하며 화면에 필요한 축소 이미지만 가져온다. 창을 닫으면 해당 UI 프로세스와 캐시가 종료되고 수집기만 남는다. 실행기를 종료하면 수집기도 종료한다. 마지막으로 선택한 클립보드 데이터를 제공하는 Wayland의 `wl-copy` 또는 X11의 `xclip`은 별도 사용자 scope에서 다음 복사까지 남아 붙여넣기를 유지한다.
 
 구현·실제 입력·복원·측정 및 검증 한계는 [27회차 실험일지](experiments/2026-10-31-27.md)에 기록한다.
+
+X11 기록 창·한글/이미지 재복사·고정 복원 검증은 [2026-11-03-08](experiments/2026-11-03-08.md)에 있다. 설치와 세션 선택은 [X11 안내](x11.ko.md)를 참고한다.

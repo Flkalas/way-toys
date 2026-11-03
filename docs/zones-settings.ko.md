@@ -8,7 +8,7 @@
 
 ## 실행
 
-Linux의 로그인된 Plasma Wayland 세션에서 저장소 루트를 작업 디렉터리로 사용한다. Rust/Cargo 1.99.1, fontconfig, Noto CJK가 필요하다. Debian 개발 VM에는 `sudo apt-get install fonts-noto-cjk`로 글꼴을 설치했다. 기존 에디터가 사용하는 Wayland·xkbcommon 개발 의존성도 필요하다.
+Linux의 로그인된 Plasma Wayland 또는 X11 세션에서 저장소 루트를 작업 디렉터리로 사용한다. Rust/Cargo 1.99.1, fontconfig, Noto CJK가 필요하다. Debian 개발 VM에는 `sudo apt-get install fonts-noto-cjk`로 글꼴을 설치했다. 기존 에디터가 사용하는 Wayland·xkbcommon 개발 의존성도 필요하다.
 
 ```bash
 cargo build --workspace --locked
@@ -24,7 +24,7 @@ cargo build --workspace --locked
 ./target/debug/waytoys-zones-editor --list-outputs --json
 ```
 
-Iced는 `=0.14.0`, `default-features = false`, `tiny-skia`, `wayland`, `thread-pool`만 활성화한다. [Iced 기능 문서](https://docs.rs/crate/iced/0.14.0/features). 글꼴 파일을 프로그램 안에 복제하지 않고 fontconfig에서 찾은 Noto 폰트를 로드한다. 창 관리자 제목은 `Waytoys`이며 본문은 한국어다.
+Iced는 `=0.14.0`, `default-features = false`, `tiny-skia`, `wayland`, `x11`, `thread-pool`을 활성화한다. [Iced 기능 문서](https://docs.rs/crate/iced/0.14.0/features). 글꼴 파일을 프로그램 안에 복제하지 않고 fontconfig에서 찾은 Noto 폰트를 로드한다. 창 관리자 제목은 `Waytoys`이며 본문은 한국어다.
 
 Windows PowerShell의 작업 폴더 `D:\Github\utils\way-toys`에서 개발 VM으로 전송하고 실행하는 경로:
 
@@ -43,6 +43,8 @@ ssh debian@192.168.50.125 '. ~/.cargo/env; cd ~/projects/way-toys; cargo build -
 ```
 
 창의 닫기 또는 창 관리자 닫기는 마지막 유효값을 즉시 저장한다. 저장 실패 시 창을 유지하고 재시도/파일 다시 읽기/저장하지 않고 닫기를 제공한다. 설정 창에서 시작한 편집기가 열려 있으면 편집기를 먼저 닫도록 안내한다. 비정상 종료 시 소유한 자식 프로세스는 Drop 경로에서 정리하며, SIGKILL 같은 강제 종료는 이 경로를 보장하지 않는다. 개발 unit을 강제로 정리하려면 `ssh debian@192.168.50.125 'systemctl --user stop waytoys-settings-demo'`를 사용한다.
+
+X11에서는 드래그 창 투명화 체크박스를 비활성화하고 Wayland 적용 안내를 표시한다. 저장된 옵션 값은 유지하며 다른 설정은 같은 모델을 사용한다. 세션별 의존성과 실제 검증 범위는 [X11 안내](x11.ko.md)에 있다.
 
 ## 옵션과 적용 범위
 

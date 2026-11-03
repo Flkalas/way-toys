@@ -1,6 +1,7 @@
 mod backend;
 mod image;
 mod overlay;
+mod x11;
 use std::{
     error::Error,
     sync::{
@@ -101,7 +102,11 @@ fn run() -> Result<(), Box<dyn Error>> {
     }
     // Let the invoking tray menu or settings-window minimize animation finish.
     std::thread::sleep(Duration::from_millis(200));
-    if let Some(image) = overlay::run(&bus, check, stop.clone())? {
+    let image = match waytoys_desktop::Session::current()? {
+        waytoys_desktop::Session::X11 => x11::run(check, stop.clone())?,
+        waytoys_desktop::Session::Wayland => overlay::run(&bus, check, stop.clone())?,
+    };
+    if let Some(image) = image {
         if stop.load(Ordering::Relaxed) {
             return Ok(());
         }

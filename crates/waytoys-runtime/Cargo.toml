@@ -10,6 +10,8 @@ name = "waytoys"
 path = "src/main.rs"
 
 [dependencies]
+tempfile = "3"
+waytoys-desktop = { path = "../waytoys-desktop" }
 waytoys-core = { path = "../waytoys-core" }
 waytoys-zones = { path = "../waytoys-zones" }
 waytoys-zones-config = { path = "../waytoys-zones-config" }

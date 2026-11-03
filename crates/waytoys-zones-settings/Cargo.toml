@@ -6,7 +6,8 @@ rust-version.workspace = true
 publish = false
 
 [dependencies]
-iced = { version = "=0.14.0", default-features = false, features = ["tiny-skia", "wayland", "thread-pool"] }
+waytoys-desktop = { path = "../waytoys-desktop" }
+iced = { version = "=0.14.0", default-features = false, features = ["tiny-skia", "wayland", "x11", "thread-pool"] }
 futures-timer = "3"
 waytoys-zones = { path = "../waytoys-zones" }
 waytoys-zones-config = { path = "../waytoys-zones-config" }

@@ -41,6 +41,9 @@ pub fn ensure_running(paths: &Paths) -> Result<RuntimeStatus, String> {
     ]);
     for name in [
         "WAYLAND_DISPLAY",
+        "DISPLAY",
+        "XAUTHORITY",
+        "XDG_SESSION_TYPE",
         "XDG_CONFIG_HOME",
         "XDG_RUNTIME_DIR",
         "DBUS_SESSION_BUS_ADDRESS",

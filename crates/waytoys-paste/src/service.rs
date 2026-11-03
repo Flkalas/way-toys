@@ -227,17 +227,25 @@ pub fn copy(mime: &str, bytes: &[u8]) -> Result<()> {
         COPY_SEQUENCE.fetch_add(1, Ordering::Relaxed)
     );
     let mut child = Command::new("systemd-run")
-        .args([
-            "--user",
-            "--scope",
-            "--quiet",
-            "--collect",
-            "--unit",
-            &unit,
-            "wl-copy",
-            "--type",
-            mime,
-        ])
+        .args(["--user", "--scope", "--quiet", "--collect", "--unit", &unit])
+        .args(
+            if waytoys_desktop::Session::current()? == waytoys_desktop::Session::X11 {
+                vec![
+                    "xclip",
+                    "-selection",
+                    "clipboard",
+                    "-in",
+                    "-target",
+                    if mime.starts_with("text/plain") {
+                        "UTF8_STRING"
+                    } else {
+                        mime
+                    },
+                ]
+            } else {
+                vec!["wl-copy", "--type", mime]
+            },
+        )
         .stdin(Stdio::piped())
         .stdout(Stdio::null())
         .stderr(Stdio::piped())

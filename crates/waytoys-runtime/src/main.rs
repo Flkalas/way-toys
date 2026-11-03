@@ -1,5 +1,7 @@
 mod autostart;
 mod overlay;
+mod wayland_overlay;
+mod x11;
 mod zones;
 use ksni::blocking::TrayMethods;
 use std::{
@@ -23,6 +25,7 @@ use zbus::blocking::{Connection, Proxy};
 type Reply = async_channel::Sender<Result<String, String>>;
 enum Command {
     Event(String),
+    X11Event(String, String, Reply),
     Change(String, String, Reply),
     Open(String),
     Capture,
@@ -35,6 +38,25 @@ struct Api {
 }
 #[zbus::interface(name = "org.waytoys.Runtime1")]
 impl Api {
+    async fn x11_event(
+        &self,
+        value: &str,
+        #[zbus(header)] header: zbus::message::Header<'_>,
+    ) -> zbus::fdo::Result<String> {
+        let (tx, rx) = async_channel::bounded(1);
+        let sender = header
+            .sender()
+            .map(|s| s.as_str())
+            .unwrap_or_default()
+            .to_string();
+        self.tx
+            .send(Command::X11Event(value.into(), sender, tx))
+            .map_err(|e| zbus::fdo::Error::Failed(e.to_string()))?;
+        rx.recv()
+            .await
+            .map_err(|e| zbus::fdo::Error::Failed(e.to_string()))?
+            .map_err(zbus::fdo::Error::Failed)
+    }
     fn status(&self) -> String {
         serde_json::to_string(&*self.status.lock().unwrap()).unwrap()
     }
@@ -168,6 +190,7 @@ struct Runtime {
     layouts: BTreeMap<String, zones::Layout>,
     drag: zones::Drag,
     overlay: Option<overlay::Overlay>,
+    x11_bridge: Option<x11::Bridge>,
     settings_window: Option<Child>,
     capture: Option<Child>,
     paste_daemon: Option<Child>,
@@ -318,7 +341,9 @@ impl Runtime {
         Ok(())
     }
     fn stop_zones(&mut self, connection: &Connection) {
-        disable(connection);
+        if self.x11_bridge.take().is_none() {
+            disable(connection);
+        }
         self.drag.clear();
         self.overlay.take();
         self.active = false;
@@ -368,6 +393,9 @@ impl Runtime {
         self.preferences.refresh();
         if let Some(e) = &self.preferences.error {
             return Err(format!("Zones 설정 읽기 실패 · 원본 보존: {e}"));
+        }
+        if waytoys_desktop::Session::current()? == waytoys_desktop::Session::X11 {
+            return self.refresh_x11(connection, previous);
         }
         let snapshot: Result<String, _> = bridge(connection)?.call("Snapshot", &());
         let snapshot = match snapshot {
@@ -425,6 +453,115 @@ impl Runtime {
         }
         self.status(None, true);
         Ok(())
+    }
+    fn refresh_x11(
+        &mut self,
+        connection: &Connection,
+        previous: waytoys_zones_config::ZonesPreferences,
+    ) -> Result<(), String> {
+        let saver = Proxy::new(
+            connection,
+            "org.freedesktop.ScreenSaver",
+            "/ScreenSaver",
+            "org.freedesktop.ScreenSaver",
+        )
+        .map_err(|e| e.to_string())?;
+        let locked: bool = saver.call("GetActive", &()).map_err(|e| e.to_string())?;
+        if locked {
+            self.stop_zones(connection);
+            self.status(None, false);
+            return Ok(());
+        }
+        if let Some(bridge) = &self.x11_bridge
+            && !bridge.healthy()?
+        {
+            self.stop_zones(connection);
+        }
+        if self.x11_bridge.is_none() {
+            self.x11_bridge = Some(x11::Bridge::start(connection)?);
+            self.bridge_epoch = self.x11_bridge.as_ref().unwrap().epoch.clone();
+            self.drag = zones::Drag::default();
+        }
+        // Drain the selected XI2 events during idle periods as well as moves,
+        // so an enabled runtime never accumulates a session's input backlog.
+        self.x11_bridge.as_mut().unwrap().input(false)?;
+        let outputs = self.x11_bridge.as_ref().unwrap().outputs()?;
+        let layouts = zones::load_layouts(&self.paths.zones, &outputs)?;
+        let changed = self.layouts != layouts || previous != self.preferences.preferences;
+        self.layouts = layouts;
+        if self.overlay.is_none() {
+            self.overlay = Some(overlay::Overlay::start()?);
+        }
+        if let Some(e) = self.overlay.as_ref().and_then(overlay::Overlay::error) {
+            return Err(e);
+        }
+        self.active = true;
+        if changed {
+            self.drag
+                .refresh(&self.layouts, &self.preferences.preferences)?;
+            self.show();
+        }
+        self.status(None, true);
+        Ok(())
+    }
+    fn x11_event(&mut self, value: &str, sender: &str) -> Result<String, String> {
+        let Some(bridge) = &mut self.x11_bridge else {
+            return Ok("{}".into());
+        };
+        if !self.active || sender != bridge.owner {
+            return Ok("{}".into());
+        }
+        let input: x11::Input = serde_json::from_str(value).map_err(|e| e.to_string())?;
+        let mut event = input.event;
+        if event.epoch != bridge.epoch {
+            return Ok("{}".into());
+        }
+        let excluded = self
+            .preferences
+            .preferences
+            .excluded_apps
+            .lines()
+            .any(|a| !a.is_empty() && (a == input.app || a == input.desktop_file));
+        let (shift, ctrl, cancelled) = bridge.input(event.kind == "drop")?;
+        (event.shift, event.ctrl) = (shift, ctrl);
+        if cancelled && event.kind == "drop" {
+            self.drag.cancel(&event);
+            self.show();
+            return Ok(serde_json::json!({"epoch":event.epoch,"id":event.id,"sequence":event.sequence,"cancelled":true}).to_string());
+        }
+        if excluded {
+            event.shift = false;
+        }
+        event.output = self
+            .layouts
+            .values()
+            .find(|l| {
+                let [x, y, w, h] = l.output.geometry;
+                event.position[0] >= f64::from(x)
+                    && event.position[0] < f64::from(x + w)
+                    && event.position[1] >= f64::from(y)
+                    && event.position[1] < f64::from(y + h)
+            })
+            .map(|l| l.output.name.clone())
+            .unwrap_or_default();
+        if event.kind == "cancel" {
+            self.drag.cancel(&event);
+            self.show();
+            return Ok("{}".into());
+        }
+        let changed = self
+            .drag
+            .update(event, &self.layouts, &self.preferences.preferences)?;
+        if let Some(target) = self.drag.target(&self.layouts)? {
+            let reply = serde_json::to_string(&target).map_err(|e| e.to_string())?;
+            self.drag.clear();
+            self.show();
+            return Ok(reply);
+        }
+        if changed {
+            self.show();
+        }
+        Ok("{}".into())
     }
     fn show(&mut self) {
         if let Some(overlay) = self.overlay.as_mut() {
@@ -634,6 +771,7 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
         layouts: BTreeMap::new(),
         drag: zones::Drag::default(),
         overlay: None,
+        x11_bridge: None,
         settings_window: None,
         capture: None,
         paste_daemon: None,
@@ -658,6 +796,14 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
             Err(_) => break,
         };
         match command {
+            Command::X11Event(value, sender, reply) => {
+                let result = runtime.x11_event(&value, &sender);
+                if let Err(error) = &result {
+                    runtime.stop_zones(&connection);
+                    runtime.status(Some(error.clone()), false);
+                }
+                let _ = reply.send_blocking(result);
+            }
             Command::Event(e) => {
                 if let Err(error) = runtime.event(&e, &connection) {
                     runtime.stop_zones(&connection);

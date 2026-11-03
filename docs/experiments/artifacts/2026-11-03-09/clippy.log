@@ -1,0 +1,17 @@
+    Checking waytoys-runtime v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-runtime)
+error: items after a test module
+   --> crates/waytoys-runtime/src/x11.rs:247:1
+    |
+247 | mod tests {
+    | ^^^^^^^^^
+...
+277 | impl Drop for Bridge {
+    | ^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.99.0/index.html#items_after_test_module
+    = note: `-D clippy::items-after-test-module` implied by `-D warnings`
+    = help: to override `-D warnings` add `#[allow(clippy::items_after_test_module)]`
+    = help: move the items to before the test module was defined
+
+error: could not compile `waytoys-runtime` (bin "waytoys" test) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...

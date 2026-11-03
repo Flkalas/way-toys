@@ -1,0 +1,152 @@
+    Checking futures-channel v0.3.34
+   Compiling crossbeam-utils v0.8.23
+    Checking waytoys-desktop v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-desktop)
+    Checking equivalent v1.0.3
+    Checking allocator-api2 v0.2.21
+    Checking waytoys-zones v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-zones)
+    Checking winit v0.30.13
+    Checking futures-timer v3.0.4
+   Compiling rustversion v1.0.23
+    Checking futures-util v0.3.34
+    Checking signal-hook v0.3.18
+   Compiling getrandom v0.4.3
+    Checking libsqlite3-sys v0.35.0
+    Checking hashbrown v0.15.5
+    Checking fallible-streaming-iterator v0.1.9
+    Checking cpufeatures v0.2.17
+    Checking fallible-iterator v0.3.0
+    Checking sha2 v0.10.9
+    Checking concurrent-queue v2.5.0
+    Checking crossbeam-queue v0.3.14
+    Checking async-channel v2.5.0
+    Checking async-io v2.6.0
+    Checking async-executor v1.14.0
+    Checking hashlink v0.10.0
+    Checking fontdue v0.9.5
+    Checking waytoys-zones-config v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-zones-config)
+    Checking blocking v1.7.0
+    Checking arc-swap v1.9.3
+    Checking async-signal v0.2.14
+    Checking rusqlite v0.37.0
+    Checking task-local v0.1.1
+   Compiling pastey v0.2.3
+    Checking async-process v2.5.0
+    Checking waytoys-zones-editor v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-zones-editor)
+    Checking tempfile v3.27.0
+    Checking waytoys-overlay v0.1.0 (/home/mark/Sources/way-toys/crates/waytoys-overlay)
+    Checking zbus v5.19.0
+error[E0277]: `?` couldn't convert the error: `dyn std::error::Error + std::marker::Send + std::marker::Sync: Sized` is not satisfied
+  --> crates/waytoys-zones-editor/src/x11.rs:37:99
+   |
+37 |         let mut surface=Surface::new(self.display.clone(),output,"waytoys-zones-editor",true,true)?;
+   |                         --------------------------------------------------------------------------^ doesn't have a size known at compile-time
+   |                         |
+   |                         this can't be annotated with `?` because it has type `Result<_, Box<(dyn std::error::Error + std::marker::Send + std::marker::Sync + 'static)>>`
+   |
+   = help: the trait `Sized` is not implemented for `dyn std::error::Error + std::marker::Send + std::marker::Sync`
+   = note: the question mark operation (`?`) implicitly performs a conversion on the error value using the `From` trait
+   = note: required for `Box<dyn std::error::Error + std::marker::Send + std::marker::Sync>` to implement `std::error::Error`
+   = note: required for `Box<dyn std::error::Error>` to implement `From<Box<dyn std::error::Error + std::marker::Send + std::marker::Sync>>`
+
+error[E0277]: `?` couldn't convert the error: `dyn std::error::Error + std::marker::Send + std::marker::Sync: Sized` is not satisfied
+  --> crates/waytoys-zones-editor/src/x11.rs:38:27
+   |
+38 |         surface.show(true)?;
+   |                 ----------^ doesn't have a size known at compile-time
+   |                 |
+   |                 this can't be annotated with `?` because it has type `Result<_, Box<(dyn std::error::Error + std::marker::Send + std::marker::Sync + 'static)>>`
+   |
+   = help: the trait `Sized` is not implemented for `dyn std::error::Error + std::marker::Send + std::marker::Sync`
+   = note: the question mark operation (`?`) implicitly performs a conversion on the error value using the `From` trait
+   = note: required for `Box<dyn std::error::Error + std::marker::Send + std::marker::Sync>` to implement `std::error::Error`
+   = note: required for `Box<dyn std::error::Error>` to implement `From<Box<dyn std::error::Error + std::marker::Send + std::marker::Sync>>`
+
+error[E0277]: `?` couldn't convert the error: `dyn std::error::Error + std::marker::Send + std::marker::Sync: Sized` is not satisfied
+  --> crates/waytoys-zones-editor/src/x11.rs:86:31
+   |
+86 |         surface.paint(&pixels)?;
+   |                 --------------^ doesn't have a size known at compile-time
+   |                 |
+   |                 this can't be annotated with `?` because it has type `Result<_, Box<(dyn std::error::Error + std::marker::Send + std::marker::Sync + 'static)>>`
+   |
+   = help: the trait `Sized` is not implemented for `dyn std::error::Error + std::marker::Send + std::marker::Sync`
+   = note: the question mark operation (`?`) implicitly performs a conversion on the error value using the `From` trait
+   = note: required for `Box<dyn std::error::Error + std::marker::Send + std::marker::Sync>` to implement `std::error::Error`
+   = note: required for `Box<dyn std::error::Error>` to implement `From<Box<dyn std::error::Error + std::marker::Send + std::marker::Sync>>`
+
+error[E0277]: `?` couldn't convert the error: `dyn std::error::Error + std::marker::Send + std::marker::Sync: Sized` is not satisfied
+   --> crates/waytoys-zones-editor/src/x11.rs:103:54
+    |
+103 |                 let key=self.display.keysym(e.detail)?;
+    |                                      ----------------^ doesn't have a size known at compile-time
+    |                                      |
+    |                                      this can't be annotated with `?` because it has type `Result<_, Box<(dyn std::error::Error + std::marker::Send + std::marker::Sync + 'static)>>`
+    |
+    = help: the trait `Sized` is not implemented for `dyn std::error::Error + std::marker::Send + std::marker::Sync`
+    = note: the question mark operation (`?`) implicitly performs a conversion on the error value using the `From` trait
+    = note: required for `Box<dyn std::error::Error + std::marker::Send + std::marker::Sync>` to implement `std::error::Error`
+    = note: required for `Box<dyn std::error::Error>` to implement `From<Box<dyn std::error::Error + std::marker::Send + std::marker::Sync>>`
+
+error[E0277]: `?` couldn't convert the error: `dyn std::error::Error + std::marker::Send + std::marker::Sync: Sized` is not satisfied
+   --> crates/waytoys-zones-editor/src/x11.rs:115:92
+    |
+115 | ...e) if e.event==window=>{let key=self.display.keysym(e.detail)?;if matches!(key,0xffe1|0xffe2)&&let Some(c)=&mut self.controller ...
+    |                                                 ----------------^ doesn't have a size known at compile-time
+    |                                                 |
+    |                                                 this can't be annotated with `?` because it has type `Result<_, Box<(dyn std::error::Error + std::marker::Send + std::marker::Sync + 'static)>>`
+    |
+    = help: the trait `Sized` is not implemented for `dyn std::error::Error + std::marker::Send + std::marker::Sync`
+    = note: the question mark operation (`?`) implicitly performs a conversion on the error value using the `From` trait
+    = note: required for `Box<dyn std::error::Error + std::marker::Send + std::marker::Sync>` to implement `std::error::Error`
+    = note: required for `Box<dyn std::error::Error>` to implement `From<Box<dyn std::error::Error + std::marker::Send + std::marker::Sync>>`
+
+error[E0277]: `?` couldn't convert the error: `dyn std::error::Error + std::marker::Send + std::marker::Sync: Sized` is not satisfied
+   --> crates/waytoys-zones-editor/src/x11.rs:123:32
+    |
+122 | pub fn run(options:Options) -> Result<()> {
+    |                                ---------- required `dyn std::error::Error + std::marker::Send + std::marker::Sync: Sized` because of this
+123 |     let display=Display::open()?;
+    |                 ---------------^ doesn't have a size known at compile-time
+    |                 |
+    |                 this can't be annotated with `?` because it has type `Result<_, Box<(dyn std::error::Error + std::marker::Send + std::marker::Sync + 'static)>>`
+    |
+    = help: the trait `Sized` is not implemented for `dyn std::error::Error + std::marker::Send + std::marker::Sync`
+    = note: the question mark operation (`?`) implicitly performs a conversion on the error value using the `From` trait
+    = note: required for `Box<dyn std::error::Error + std::marker::Send + std::marker::Sync>` to implement `std::error::Error`
+    = note: required for `Box<dyn std::error::Error>` to implement `From<Box<dyn std::error::Error + std::marker::Send + std::marker::Sync>>`
+
+error[E0277]: `?` couldn't convert the error: `dyn std::error::Error + std::marker::Send + std::marker::Sync: Sized` is not satisfied
+   --> crates/waytoys-zones-editor/src/x11.rs:124:34
+    |
+122 | pub fn run(options:Options) -> Result<()> {
+    |                                ---------- required `dyn std::error::Error + std::marker::Send + std::marker::Sync: Sized` because of this
+123 |     let display=Display::open()?;
+124 |     let outputs=display.outputs()?;
+    |                         ---------^ doesn't have a size known at compile-time
+    |                         |
+    |                         this can't be annotated with `?` because it has type `Result<_, Box<(dyn std::error::Error + std::marker::Send + std::marker::Sync + 'static)>>`
+    |
+    = help: the trait `Sized` is not implemented for `dyn std::error::Error + std::marker::Send + std::marker::Sync`
+    = note: the question mark operation (`?`) implicitly performs a conversion on the error value using the `From` trait
+    = note: required for `Box<dyn std::error::Error + std::marker::Send + std::marker::Sync>` to implement `std::error::Error`
+    = note: required for `Box<dyn std::error::Error>` to implement `From<Box<dyn std::error::Error + std::marker::Send + std::marker::Sync>>`
+
+error[E0277]: `?` couldn't convert the error: `dyn std::error::Error + std::marker::Send + std::marker::Sync: Sized` is not satisfied
+   --> crates/waytoys-zones-editor/src/x11.rs:143:40
+    |
+122 | pub fn run(options:Options) -> Result<()> {
+    |                                ---------- required `dyn std::error::Error + std::marker::Send + std::marker::Sync: Sized` because of this
+...
+143 |             if editor.display.outputs()?!=editor.outputs {return Err("화면 구성이 변경되어 편집을 취소했습니다".into());}
+    |                               ---------^ doesn't have a size known at compile-time
+    |                               |
+    |                               this can't be annotated with `?` because it has type `Result<_, Box<(dyn std::error::Error + std::marker::Send + std::marker::Sync + 'static)>>`
+    |
+    = help: the trait `Sized` is not implemented for `dyn std::error::Error + std::marker::Send + std::marker::Sync`
+    = note: the question mark operation (`?`) implicitly performs a conversion on the error value using the `From` trait
+    = note: required for `Box<dyn std::error::Error + std::marker::Send + std::marker::Sync>` to implement `std::error::Error`
+    = note: required for `Box<dyn std::error::Error>` to implement `From<Box<dyn std::error::Error + std::marker::Send + std::marker::Sync>>`
+
+For more information about this error, try `rustc --explain E0277`.
+error: could not compile `waytoys-zones-editor` (bin "waytoys-zones-editor") due to 8 previous errors
+warning: build failed, waiting for other jobs to finish...

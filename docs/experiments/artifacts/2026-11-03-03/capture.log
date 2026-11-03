@@ -1,0 +1,2 @@
+captured output=screen x11=0,0 1280x720
+waytoys-capture: 클립보드 복사 실패: Failed to connect to user scope bus via local transport: No such file or directory

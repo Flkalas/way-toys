@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/mark/Sources/way-toys/scripts/test-x11.py", line 320, in <module>
+    main()
+    ~~~~^^
+  File "/home/mark/Sources/way-toys/scripts/test-x11.py", line 177, in main
+    assert cancelled == origin, (cancelled,origin)
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: ([861, 16, 403, 688], [300, 150, 500, 320])

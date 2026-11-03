@@ -28,9 +28,11 @@ impl App {
         field.into()
     }
     fn toggle(&self, label: &'static str, value: bool, field: Toggle) -> Element<'_, Message> {
+        let supported = !matches!(field, Toggle::Transparent)
+            || waytoys_desktop::Session::current() != Ok(waytoys_desktop::Session::X11);
         checkbox(value)
             .label(label)
-            .on_toggle(move |v| Message::Toggle(field, v))
+            .on_toggle_maybe(supported.then_some(move |v| Message::Toggle(field, v)))
             .text_size(14)
             .into()
     }
@@ -104,6 +106,9 @@ impl App {
                 }
             }
             Category::Window => {
+                if waytoys_desktop::Session::current() == Ok(waytoys_desktop::Session::X11) {
+                    c = c.push(text("드래그 창 투명화는 Wayland에서 적용됩니다.").size(12));
+                }
                 c = c
                     .push(self.toggle(
                         "드래그 창 투명화",

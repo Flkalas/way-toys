@@ -102,6 +102,9 @@ impl App {
     }
 }
 pub fn run(shared: Arc<Shared>) -> Result<()> {
+    if waytoys_desktop::Session::current()? == waytoys_desktop::Session::X11 {
+        return crate::x11::run(shared);
+    }
     let connection = Connection::connect_to_env()?;
     let (globals, mut queue) = registry_queue_init::<App>(&connection)?;
     let qh = queue.handle();

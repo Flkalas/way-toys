@@ -1,0 +1,1 @@
+{"python_syntax": "passed", "markdown_links": "passed", "integration_source_manifest_files": 92, "post_test_whitespace_only": ["crates/waytoys-desktop/Cargo.toml"], "wayland_overlay_unchanged": true, "tests_passed": 104}

@@ -1,4 +1,5 @@
 mod wayland;
+mod x11;
 
 use std::{error::Error, path::PathBuf};
 use waytoys_zones::model::{CustomLayout, CustomLayouts};
@@ -84,5 +85,8 @@ fn run() -> Result<(), Box<dyn Error>> {
             "editor",
         )?)
     };
-    wayland::run(options)
+    match waytoys_desktop::Session::current()? {
+        waytoys_desktop::Session::X11 => x11::run(options),
+        waytoys_desktop::Session::Wayland => wayland::run(options),
+    }
 }

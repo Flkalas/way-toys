@@ -1,0 +1,102 @@
+{
+  "kscreen_unloaded": "true",
+  "kscreen_loaded": "true",
+  "samples": [
+    {
+      "DP-1-1": {
+        "pos": {
+          "x": 16,
+          "y": 1440
+        },
+        "priority": 2,
+        "rotation": 1,
+        "scale": 1,
+        "size": {
+          "height": 1696,
+          "width": 2544
+        },
+        "refresh": 59.942588806152344
+      },
+      "DP-1-2": {
+        "pos": {
+          "x": 0,
+          "y": 0
+        },
+        "priority": 1,
+        "rotation": 1,
+        "scale": 1,
+        "size": {
+          "height": 1440,
+          "width": 2560
+        },
+        "refresh": 100
+      }
+    },
+    {
+      "DP-1-1": {
+        "pos": {
+          "x": 16,
+          "y": 1440
+        },
+        "priority": 2,
+        "rotation": 1,
+        "scale": 1,
+        "size": {
+          "height": 1696,
+          "width": 2544
+        },
+        "refresh": 59.942588806152344
+      },
+      "DP-1-2": {
+        "pos": {
+          "x": 0,
+          "y": 0
+        },
+        "priority": 1,
+        "rotation": 1,
+        "scale": 1,
+        "size": {
+          "height": 1440,
+          "width": 2560
+        },
+        "refresh": 100
+      }
+    },
+    {
+      "DP-1-1": {
+        "pos": {
+          "x": 16,
+          "y": 1440
+        },
+        "priority": 2,
+        "rotation": 1,
+        "scale": 1,
+        "size": {
+          "height": 1696,
+          "width": 2544
+        },
+        "refresh": 59.942588806152344
+      },
+      "DP-1-2": {
+        "pos": {
+          "x": 0,
+          "y": 0
+        },
+        "priority": 1,
+        "rotation": 1,
+        "scale": 1,
+        "size": {
+          "height": 1440,
+          "width": 2560
+        },
+        "refresh": 100
+      }
+    }
+  ],
+  "stored_layout_mode_verified": true,
+  "stored_output_mode_verified": true,
+  "login_action_sha256": "b9e964225335dc496828bc963f796692d4484bb460853cf97ab1063ecd4c9707",
+  "xprofile_syntax": "passed",
+  "relogin_tested": false,
+  "reboot_tested": false
+}

@@ -1,0 +1,30 @@
+{
+  "DP-1-1": {
+    "pos": {
+      "x": 16,
+      "y": 1440
+    },
+    "priority": 2,
+    "rotation": 1,
+    "scale": 1,
+    "size": {
+      "height": 2400,
+      "width": 3600
+    },
+    "refresh": 59.99922561645508
+  },
+  "DP-1-2": {
+    "pos": {
+      "x": 0,
+      "y": 0
+    },
+    "priority": 1,
+    "rotation": 1,
+    "scale": 1,
+    "size": {
+      "height": 1440,
+      "width": 2560
+    },
+    "refresh": 100
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "time": "2026-11-03T19:43:43.383090+09:00",
+  "backup": "/home/mark/.local/state/display-modes/backups/20261103-194340",
+  "registration": "DP-1-1: registered 2544x1696_59.94_mark",
+  "repeat": [
+    "DP-1-1: 2544x1696_59.94_mark already registered",
+    "DP-1-1: 2544x1696_59.94_mark already registered"
+  ],
+  "saved_profiles": [
+    "ed7b2f10d361607666c00173d2bb5cd8"
+  ],
+  "outputs": {
+    "DP-1-1": {
+      "pos": {
+        "x": 16,
+        "y": 1440
+      },
+      "priority": 2,
+      "rotation": 1,
+      "scale": 1,
+      "size": {
+        "height": 1696,
+        "width": 2544
+      },
+      "refresh": 59.942588806152344
+    },
+    "DP-1-2": {
+      "pos": {
+        "x": 0,
+        "y": 0
+      },
+      "priority": 1,
+      "rotation": 1,
+      "scale": 1,
+      "size": {
+        "height": 1440,
+        "width": 2560
+      },
+      "refresh": 100
+    }
+  },
+  "installed_script_sha256": "b9e964225335dc496828bc963f796692d4484bb460853cf97ab1063ecd4c9707",
+  "login_hook": "/home/mark/.xprofile",
+  "relogin_tested": false
+}

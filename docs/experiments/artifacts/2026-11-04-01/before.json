@@ -1,0 +1,31 @@
+{
+  "time": "2026-11-04T20:05:19.128989+09:00",
+  "head": "ce9d1602c6289c270c5cf8537592937490969e4f",
+  "mode": "2544x1696_59.94_mark",
+  "login_log_present": false,
+  "xsessionrc_present": false,
+  "outputs": [
+    {
+      "header": "DP-1-1 connected 3600x2400+16+1440 (normal left inverted right x axis y axis) 586mm x 403mm",
+      "edid_present": true,
+      "edid_matches": true,
+      "mode_available": false
+    },
+    {
+      "header": "DP-1-2 connected primary 2560x1440+0+0 (normal left inverted right x axis y axis) 596mm x 335mm",
+      "edid_present": true,
+      "edid_matches": false,
+      "mode_available": false
+    }
+  ],
+  "session": [
+    "Timestamp=Wed 2026-11-04 19:53:24 KST",
+    "Type=x11",
+    "Active=yes"
+  ],
+  "boot": "2026-11-04 19:37:47",
+  "sddm_session_command": [
+    "SessionCommand=/etc/sddm/wayland-session",
+    "SessionCommand=/etc/sddm/Xsession"
+  ]
+}

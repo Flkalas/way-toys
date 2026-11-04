@@ -1,0 +1,2 @@
+Nov 04 19:53:25 ha-mark-debian13 kded6[2599]: kscreen.kded:         Failed to find a matching mode - this means that our config is corrupted or a different device with the same serial number has been connected (very unlikely). Falling back to preferred modes.
+Nov 04 19:53:26 ha-mark-debian13 kded6[2599]: kscreen.kded:         Failed to find a matching mode - this means that our config is corrupted or a different device with the same serial number has been connected (very unlikely). Falling back to preferred modes.

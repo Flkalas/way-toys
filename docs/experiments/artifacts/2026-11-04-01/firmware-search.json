@@ -1,0 +1,15 @@
+{
+  "time": "2026-11-04T20:12:48.909171+09:00",
+  "query_url": "https://www.crosslcd.co.kr/bbs/board.php?bo_table=down&sca=&sop=and&sfl=wr_subject&stx=2728UDP",
+  "results": [
+    {
+      "title": "[메뉴얼] 듀얼뷰 2728UDP4K UHD 75 PD65",
+      "url": "https://www.crosslcd.co.kr/bbs/board.php?bo_table=down&wr_id=491&sfl=wr_subject&stx=2728UDP&sop=and"
+    }
+  ],
+  "public_firmware_found": false,
+  "vendor_private_firmware": "unconfirmed",
+  "installed_firmware_version": "unconfirmed",
+  "model_source": "https://www.crosslcd.co.kr/shop/item.php?it_id=1756372144",
+  "contact_source": "https://www.crosslcd.co.kr/bbs/board.php?bo_table=custom"
+}

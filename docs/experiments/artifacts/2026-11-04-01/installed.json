@@ -1,0 +1,8 @@
+{
+  "time": "2026-11-04T20:12:33.161756+09:00",
+  "backup": "/home/mark/.local/state/display-modes/backups/20261104-201232",
+  "service_enabled": "enabled",
+  "service_active": "active",
+  "xsessionrc_path": "/home/mark/.xsessionrc",
+  "script_path": "/home/mark/.local/bin/register-3to2-mode"
+}

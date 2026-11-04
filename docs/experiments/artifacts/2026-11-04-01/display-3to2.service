@@ -1,0 +1,16 @@
+[Unit]
+Description=Restore the configured 3:2 X11 monitor mode
+PartOf=graphical-session.target
+After=plasma-kscreen.service
+ConditionEnvironment=XDG_SESSION_TYPE=x11
+StartLimitIntervalSec=60
+StartLimitBurst=3
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/register-3to2-mode --apply --watch --wait 30
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=graphical-session.target

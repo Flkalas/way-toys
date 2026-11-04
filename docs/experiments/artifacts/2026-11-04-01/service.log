@@ -1,0 +1,12 @@
+Nov 04 20:12:32 ha-mark-debian13 systemd[1738]: Started display-3to2.service - Restore the configured 3:2 X11 monitor mode.
+Nov 04 20:12:34 ha-mark-debian13 register-3to2-mode[14401]: 2026-11-04T20:12:34+09:00 DP-1-1: configured mode verified
+Nov 04 20:12:34 ha-mark-debian13 register-3to2-mode[14401]: 2026-11-04T20:12:34+09:00 Watching RandR reconnect/mode events
+Nov 04 20:14:10 ha-mark-debian13 systemd[1738]: Stopping display-3to2.service - Restore the configured 3:2 X11 monitor mode...
+Nov 04 20:14:10 ha-mark-debian13 systemd[1738]: Stopped display-3to2.service - Restore the configured 3:2 X11 monitor mode.
+Nov 04 20:14:12 ha-mark-debian13 systemd[1738]: Started display-3to2.service - Restore the configured 3:2 X11 monitor mode.
+Nov 04 20:14:13 ha-mark-debian13 register-3to2-mode[14899]: 2026-11-04T20:14:13+09:00 DP-1-1: selected 2544x1696@59.94259
+Nov 04 20:14:15 ha-mark-debian13 register-3to2-mode[14899]: 2026-11-04T20:14:15+09:00 DP-1-1: configured mode verified
+Nov 04 20:14:16 ha-mark-debian13 register-3to2-mode[14899]: 2026-11-04T20:14:16+09:00 Watching RandR reconnect/mode events
+Nov 04 20:14:18 ha-mark-debian13 register-3to2-mode[14899]: 2026-11-04T20:14:18+09:00 DP-1-1: registered 2544x1696_59.94_mark
+Nov 04 20:14:19 ha-mark-debian13 register-3to2-mode[14899]: 2026-11-04T20:14:19+09:00 DP-1-1: selected 2544x1696@59.94259
+Nov 04 20:14:21 ha-mark-debian13 register-3to2-mode[14899]: 2026-11-04T20:14:21+09:00 DP-1-1: selected 2544x1696@59.94259

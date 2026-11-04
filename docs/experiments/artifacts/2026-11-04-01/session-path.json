@@ -1,0 +1,17 @@
+[
+  {
+    "path": "/etc/sddm/Xsession",
+    "sha256": "9bdbde965c5b5ad98939e3541e4c64133b6a34589d8083fcf26e4606fbe103e0",
+    "relevant_lines": [
+      ". /etc/X11/Xsession"
+    ]
+  },
+  {
+    "path": "/etc/X11/Xsession.d/40x11-common_xsessionrc",
+    "sha256": "76944eea06861af747d0ed1cd516ef597d4f1543b040e025bfa1df15906ce73f",
+    "relevant_lines": [
+      "if [ -r \"$USERXSESSIONRC\" ]; then",
+      "  . \"$USERXSESSIONRC\""
+    ]
+  }
+]
